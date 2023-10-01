@@ -80,8 +80,8 @@ function ContactUs() {
     </div>
 
     <div className='flex flex-col'>
-        <div className='text-pink text-5xl font-bold'>Contact Us</div>
-        <div className='text-white font-normal text-2xl'>Our friendly team will love to hear from you</div>
+        <div className='text-pink text-5xl pt-4 font-bold'>Contact Us</div>
+        <div className='text-white font-normal text-2xl pt-4'>Our friendly team will love to hear from you</div>
     </div>
 
     <div className='pl-20 pr-20 pt-12  gap-12 flex flex-row'>
