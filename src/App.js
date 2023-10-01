@@ -9,14 +9,14 @@ import Team from './Component/Team/Index'
 function App() {
   return (
     <div className="App">
-    
-    <Index/>
     {/*
+    <Index/>
+    
     <ContactUs/>
      */}
-    {/*
-    <AboutUs/>
     
+    <AboutUs/>
+    {/*
     
     <Team/>
     */}
