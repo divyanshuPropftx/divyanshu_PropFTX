@@ -14,9 +14,9 @@ function App() {
     
     <ContactUs/>
      
-    
+    {/* 
     <AboutUs/>
-    {/* */}
+    */}
     {/*
     <Team/>
     */}
