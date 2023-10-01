@@ -90,3 +90,9 @@ border: 1px solid var(--gradient-1, #D328A7);
 .enlist{
     cursor:pointer;
 }
+
+.saxx{
+border-radius: 16px;
+background: radial-gradient(51.49% 50.59% at 50% 50%, rgba(141, 75, 177, 0.59) 10.73%, rgba(167, 5, 194, 0.00) 100%);
+
+}

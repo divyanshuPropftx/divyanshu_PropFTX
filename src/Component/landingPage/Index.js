@@ -77,7 +77,7 @@ export default function Index() {
               <div className='w-24'></div>
             </div>
         </div>
-        <div className='mainPageRight w-1100 '><img src={Main} alt="main" /></div>
+        <div className='saxx mainPageRight w-1100 text-white pt-2 flex flex-row justify-center '><img src={Main} alt="main" /></div>
     </div>
 
 

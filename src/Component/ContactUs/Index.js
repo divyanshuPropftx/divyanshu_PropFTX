@@ -84,7 +84,7 @@ function ContactUs() {
         <div className='text-white font-normal text-2xl pt-4'>Our friendly team will love to hear from you</div>
     </div>
 
-    <div className='pl-20 pr-20 pt-12  gap-12 flex flex-row'>
+    <div className='pl-20 pr-20 pt-12 gap-12 flex flex-row'>
         <div className=''><img src={Map} alt="Map" className="w-full h-full object-cover pb-24"/></div>
         <div className='flex flex-col'>
         <div className=' text-white text-4xl whitespace-nowrap'>Have a {<span className='text-pink font-semibold text-4xl '>Question? </span>} Don’t be Shy to {<br></br>}{<span className='text-pink text-4xl'>Message Us!</span>}</div>
