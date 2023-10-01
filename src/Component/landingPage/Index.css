@@ -1,0 +1,92 @@
+/* .navbar{
+    border: 1px solid var(--windows-stroke-glass-specular, rgba(255, 255, 255, 0.40));
+    background: linear-gradient(90deg, rgba(23, 23, 55, 0.40) 0%, rgba(10, 21, 40, 0.40) 100.52%);
+    background-blend-mode: luminosity;
+    backdrop-filter: blur(50px);
+} */
+.parent{
+    background: var(--BG-color, #091526);
+}
+.styleBorder{
+border-radius: 8px;
+border: 1px solid var(--gradient-1, #D328A7);
+}
+.styleBorder2{
+border-radius: 16px;
+border: 1px solid var(--gradient-1, #D328A7);
+box-shadow: 0px 8px 20px 0px rgba(0, 0, 0, 0.10);
+}
+.shadoww{
+    z-Index:99;
+cursor: pointer;
+border-radius:20px;
+background: var(--glass-col, rgba(128, 128, 128, 0.20));
+box-shadow: 0px 30px 70px 0px rgba(0, 0, 0, 0.76);
+}
+.stepRadius{
+border-radius: 16px;
+border: 1px solid var(--gradient-3, #D328A7);
+box-shadow: 0px 30px 70px 0px rgba(0, 0, 0, 0.76);
+}
+.shadowy{
+    border-radius: 16px;
+background: #091526;
+
+/* drop shadow 1 */
+box-shadow: 0px 30px 70px 0px rgba(0, 0, 0, 0.76);
+}
+.shadowyMiddle{
+    border-radius: 16px;
+    border: 1px solid var(--gradient-1, #D328A7);
+    background: #091526;
+    box-shadow: 0px 30px 70px 0px rgba(0, 0, 0, 0.76);
+}
+.shad{
+    border-radius: 16px;
+border: 1px solid var(--gradient-2, #D328A7);
+background: var(--mirror-look, rgba(128, 128, 128, 0.20));
+}
+.premiumShadow{
+    border-radius: 16px;
+background: var(--glass-col, rgba(128, 128, 128, 0.20));
+
+/* drop shadow 1 */
+box-shadow: 0px 30px 70px 0px rgba(0, 0, 0, 0.76);
+}
+
+shadowFaq{
+border-radius: 8px;
+border: 1px solid var(--gradient-1, #D328A7);
+}
+.info{
+        padding: 10px 20px;
+        text-align: center;
+        transform: translateY(-150px);
+        opacity: 0;
+        transition: 1s;
+}
+/* .helper:hover{
+    height:400px;
+} */
+.helper:hover> .info{
+    opacity: 1;
+    transform: translateY(-5px);
+}
+
+.knowMore{
+    display:none;
+}
+
+.scrollText{
+        text-align: center;
+        transform: translateY(-50px);
+        opacity: 0;
+        transition: 1s;
+}
+.scrollContainer:hover>.scrollText{
+    opacity: 1;
+    transform: translateY(-5px);
+}
+.enlist{
+    cursor:pointer;
+}
