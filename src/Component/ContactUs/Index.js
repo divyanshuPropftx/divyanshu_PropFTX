@@ -205,7 +205,8 @@ function ContactUs() {
     </div>
 
 
-    <div className='footer  flex flex-row p-4 pt-36 gap-36 font-semibold text-start'>
+    
+    <div className='footer  flex flex-row p-4 gap-36 font-semibold text-start'>
     <div className=''><img className='rounded-3xl' src={FooterImage} alt="main"/></div>
     <div className=' flex flex-col text-white gap-2 whitespace-nowrap'>
       <div className=' text-pink'>Resouces</div>
@@ -225,11 +226,11 @@ function ContactUs() {
       <div className=''>Risk Disclosure</div>
     </div>
     <div className=' flex flex-col gap-2 text-white'>
-      <div className=' text-pink pl-2'>Get in Touch </div>
-      <div className=' flex flex-row'>
-        <div className='pl-2'><img className='w-full h-full object-cover' src={Inbox} alt="main"/></div>
-        <div className='flex flex-col justify-center'>
-        <div className='pl-2'>info@propftx.com</div>
+      <div className=' text-pink pl-4'>Get in Touch </div>
+      <div className='flex flex-row'>
+        <div className=''><img className='w-16' src={Inbox} alt="main"/></div>
+        <div className='flex flex-col justify-center '>
+        <div className=''>info@propftx.com</div>
         </div>
       </div>
       <div className=' flex flex-row justify-between pt-8'>
@@ -240,6 +241,7 @@ function ContactUs() {
       </div>
     </div>
     </div>
+
 
 
 

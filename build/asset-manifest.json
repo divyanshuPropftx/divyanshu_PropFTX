@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/divyanshu_PropFTX/static/css/main.cd2f8659.css",
-    "main.js": "/divyanshu_PropFTX/static/js/main.14bd6584.js",
+    "main.css": "/divyanshu_PropFTX/static/css/main.afe3a344.css",
+    "main.js": "/divyanshu_PropFTX/static/js/main.e6a3bc45.js",
     "static/js/787.66b477fd.chunk.js": "/divyanshu_PropFTX/static/js/787.66b477fd.chunk.js",
     "static/media/investImage.png": "/divyanshu_PropFTX/static/media/investImage.f584494a3d89e36ecae0.png",
     "static/media/adv1.png": "/divyanshu_PropFTX/static/media/adv1.732c6416fc37bafdd76e.png",
@@ -49,12 +49,12 @@
     "static/media/logo.svg": "/divyanshu_PropFTX/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
     "index.html": "/divyanshu_PropFTX/index.html",
     "static/media/email.svg": "/divyanshu_PropFTX/static/media/email.5f41c5019430738e4651b03e4daf12ef.svg",
-    "main.cd2f8659.css.map": "/divyanshu_PropFTX/static/css/main.cd2f8659.css.map",
-    "main.14bd6584.js.map": "/divyanshu_PropFTX/static/js/main.14bd6584.js.map",
+    "main.afe3a344.css.map": "/divyanshu_PropFTX/static/css/main.afe3a344.css.map",
+    "main.e6a3bc45.js.map": "/divyanshu_PropFTX/static/js/main.e6a3bc45.js.map",
     "787.66b477fd.chunk.js.map": "/divyanshu_PropFTX/static/js/787.66b477fd.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.cd2f8659.css",
-    "static/js/main.14bd6584.js"
+    "static/css/main.afe3a344.css",
+    "static/js/main.e6a3bc45.js"
   ]
 }
