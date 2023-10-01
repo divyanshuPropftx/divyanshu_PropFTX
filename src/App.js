@@ -9,11 +9,11 @@ import Team from './Component/Team/Index'
 function App() {
   return (
     <div className="App">
-    {/*
+    
     <Index/>
-    */}
+    {/*
     <ContactUs/>
-     
+     */}
     {/*
     <AboutUs/>
     
