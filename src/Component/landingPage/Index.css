@@ -54,6 +54,9 @@ background: var(--glass-col, rgba(128, 128, 128, 0.20));
 box-shadow: 0px 30px 70px 0px rgba(0, 0, 0, 0.76);
 }
 
+.form-input::placeholder {
+  color: white; /* Change the color to white */
+}
 shadowFaq{
 border-radius: 8px;
 border: 1px solid var(--gradient-1, #D328A7);
@@ -73,9 +76,7 @@ border: 1px solid var(--gradient-1, #D328A7);
     transform: translateY(-5px);
 }
 
-.knowMore{
-    display:none;
-}
+
 
 .scrollText{
         text-align: center;

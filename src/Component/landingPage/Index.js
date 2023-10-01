@@ -1,4 +1,5 @@
 import React from 'react'
+import { useState } from 'react'
 import './Index.css'
 import Logo from '../../Assets/Logo.png'
 import Main from '../../Assets/main.png'
@@ -38,7 +39,34 @@ import Inbox from '../../Assets/email.svg'
 import Dr from '../../Assets/dr.png'
 import Ig from '../../Assets/ig.png'
 import Tw from '../../Assets/tw.png'
+import { toast, ToastContainer } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 export default function Index() {
+
+  const [formData, setFormData] = useState({ email: '' });
+  const [formErrors, setFormErrors] = useState({ email: '' });
+
+  const handleChange = (e) => {
+    const { name, value } = e.target;
+    setFormData({ ...formData, [name]: value });
+    setFormErrors({ ...formErrors, [name]: '' });
+  };
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+
+    // Validation logic (you can add your validation logic here)
+
+    if (!formData.email) {
+      setFormErrors({ email: 'Email is required' });
+      return;
+    }
+    toast.success('Submission successful!', {
+      position: toast.POSITION.TOP_CENTER,
+    });
+  };
+
+
   return (
     <>
 
@@ -59,9 +87,12 @@ export default function Index() {
     <div className='mainPage flex flex-row text-white justify-center'>
         <div className='mainPageLeft pt-16 pl-8 pr-8  flex flex-col gap-3 '>
             <div className=' '><img src={Left} alt="main" /></div>
-            <div className=' flex flex-row font-semibold gap-16'>
-              <div className=' bg-blue rounded-lg text-black pl-4 pr-4 pt-2 pb-2'>Explore</div>
-              <div className='knowMore  shadowFaq flex'>
+            <div className=' flex flex-row font-semibold gap-8'>
+              
+            <div className='text-black font-medium bg-blue p-2 text-xl rounded-lg'>Explore</div>
+
+
+              <div className='knowMore shadowFaq flex'>
                 <div className='flex border border-pink rounded-lg'>
                 <div className='flex flex-col justify-center text-start pl-2'>Know More</div>
                 <div><img src={SmallArrowRight} alt="main"/></div>
@@ -182,7 +213,7 @@ export default function Index() {
         <div><img className='rounded-3xl' src={Adv5} alt="main"/></div>
         <div><img className='rounded-3xl' src={Adv6} alt="main"/></div>
       </div>
-      <div className='text-white '>
+      <div className='text-white'>
         <div><img className='rounded-3xl' src={InvestImage} alt="main"/></div>
       </div>
     </div>
@@ -313,10 +344,10 @@ export default function Index() {
       <div className='premiumShadow bg-silver flex flex-col justify-center gap-10 p-10'>
         <div className='text-4xl font-bold'>Join our premium membership</div>
         <div className='font-normal text-lg'>With PropFTX premium membership, Get early access to all the premium benefits.</div>
-        <div className='flex flex-row justify-center gap-2'>
+        <div className='flex flex-row justify-center gap-12'>
           <div className='text-lg font-medium bg-blue p-4 rounded-lg text-black'>JOIN NOW</div>
           <div className='shadowFaq flex'>
-          <div className='flex border border-pink rounded-lg jus'>
+          <div className='flex border border-pink rounded-lg'>
             <div className=' flex flex-col text-xl font-semibold justify-center text-start pl-4 pr-4'>Benefits </div>
           </div>
           </div>
@@ -340,9 +371,8 @@ export default function Index() {
       unwind, and let us demonstrate our processes.</div>
       </div>
       <div className='shadowFaq flex'>
-      <div className='flex border border-pink rounded-lg'>
-        <div className=' flex flex-col font-semibold justify-center text-start pl-2'>Start Investing !</div>
-        <div><img src={SmallArrowRight} alt="main"/></div>
+      <div className='flex rounded-lg bg-blue font-medium text-xl'>
+      <div className=' bg-blue rounded-lg text-black pl-4 pr-4 pt-2 pb-2'>Invest Now</div>
       </div>
       </div>
       </div>
@@ -402,6 +432,57 @@ export default function Index() {
         </div>
       </div>
     </div>
+
+
+
+    <div className='JoinPremium  text-white flex flex-col justify-center gap-10 pl-20 pr-20 pt-20 pb-20'>
+      <div className='premiumShadow bg-silver flex flex-col justify-center gap-10 p-10'>
+        <div className='text-4xl font-bold'>Subscribe to the dose!</div>
+        <div className='font-normal text-xl'>Signup to the email newsletter. we will share tips, practical life advice, experience{<br></br>} and valuable information delivered directly to your mail box.</div>
+        <div className='flex flex-row justify-center gap-12'>
+        <form className='flex flex-row gap-8' onSubmit={handleSubmit}>
+  <div className='flex flex-col form-group text-start'>
+    <input
+      type='email'
+      id='email'
+      name='email'
+      placeholder='Your Email'
+      value={formData.email}
+      onChange={handleChange}
+      className={`form-input ${formErrors.email ? 'border-red-500' : ''} pt-2  pb-2 pl-8 bg-lightgrey border border-pink rounded-2xl pr-28 text-white font-semibold`}
+      style={{ '::placeholder': { color: 'white' } }} // Style for placeholder text
+    />
+    {formErrors.email && <p className='text-red-500'>{formErrors.email}</p>}
+  </div>
+  <div className='shadowFaq flex'>
+    <div className='flex flex-col justify-center rounded-lg'>
+      <div className='text-start flex flex-col justify-center'>
+        <button type='submit' className='btn btn-primary text-xl font-medium flex flex-col leading-5 pl-6 bg-pink pr-6 pt-2 pb-3 rounded-lg'>
+          Submit
+        </button>
+      </div>
+    </div>
+  </div>
+</form>
+<ToastContainer />
+          
+        </div>
+      </div>
+    </div>
+
+    <div className='flex flex-col justify-center pl-20 pr-20 pb-16'>
+    <div className='flex flex-row premiumShadow gap-8 p-4  justify-between pr-20 '>
+      <div className=' font-bold text-4xl text-white pl-8'>Join our community!</div>
+      <div className='flex flex-row gap-8 pr-8'>
+      <div className='text-black font-medium bg-blue p-2 text-xl rounded-lg'>Whatsapp</div>
+      <div className='text-black font-medium bg-blue p-2 text-xl rounded-lg'>Telegram</div>
+      </div>
+    </div>
+    </div>
+
+
+
+
 
 
 

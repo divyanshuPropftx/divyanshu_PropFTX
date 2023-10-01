@@ -9,6 +9,8 @@ import Inbox from '../../Assets/inbox.png'
 import Dr from '../../Assets/dr.png'
 import Ig from '../../Assets/ig.png'
 import Tw from '../../Assets/tw.png'
+import { toast, ToastContainer } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 function ContactUs() {
 
@@ -43,8 +45,17 @@ function ContactUs() {
     if (!formData.message.trim()) {
       errors.message = 'Message is required';
     }
+
+    // Check if there are any errors
+    if (Object.keys(errors).length === 0) {
+      // No errors, show success toast here
+      toast.success('Submission successful!', {
+        position: toast.POSITION.TOP_CENTER,
+      });
+    }
+
+    // Update formErrors state with any validation errors
     setFormErrors(errors);
-    return Object.keys(errors).length === 0;
   };
 
   const handleSubmit = (e) => {
@@ -171,6 +182,7 @@ function ContactUs() {
           </div>
 
         </form>
+        <ToastContainer />
           </div>
           </div>
         </div>
