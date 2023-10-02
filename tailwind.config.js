@@ -13,11 +13,13 @@ module.exports = {
         blue:'#78F9FF',
         pink:'#D328A7',
         silver:'#212A38',
-        lightgrey:"#7E838C"
+        lightgrey:"#7E838C",
+        darkblue:'#091526'
         
       },
 
       height: {
+        '56':'56px',
         '700': '700px', // Define your custom height value here
         '420':'420px',
         '380':'380px',
@@ -26,6 +28,7 @@ module.exports = {
         '715':'715px',
         '370':'370px',
         '340':'340px',
+        '320':'320px',
         '525':'525px',
         '675':'675px',
         '415':'415px',
@@ -37,6 +40,7 @@ module.exports = {
         '900':'920px'
       },
       width: {
+        '56':'56px',
         '1720':'1400px',
         '820':'820px',
         '1100':'1100px',
@@ -45,7 +49,9 @@ module.exports = {
         '680':'680px',
         '420':'420px',
         '2500':'2500px',
-        '2800':'2800px'
+        '2800':'2800px',
+        '350':'350px',
+        '280':'280px'
       },
 
     },

@@ -1,0 +1,25 @@
+.image-description {
+ border-radius: 20px;
+  width: 280px;
+  height: 280px;
+  transition: width 0.8s, height 0.3s;
+  position: relative;  /* Add smooth transition for width and height changes */
+}
+
+.image-description:hover {
+border: 1px solid var(--gradient-3, #D328A7);
+box-shadow: 0px 30px 70px 0px rgba(0, 0, 0, 0.76);
+  width: 310px; /* Increase the width on hover */
+  height: 380px; /* Increase the height on hover */
+}
+.description {
+display:none;
+transition: transform 1s /* Add transitions for transform and opacity */
+}
+
+/* Show the description when hovering */
+.image-description:hover .description {
+  display:block;
+  transition:transform 1s;
+  opacity: 1; /* Make the description visible */
+}

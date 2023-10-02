@@ -16,13 +16,7 @@ border-radius: 16px;
 border: 1px solid var(--gradient-1, #D328A7);
 box-shadow: 0px 8px 20px 0px rgba(0, 0, 0, 0.10);
 }
-.shadoww{
-    z-Index:99;
-cursor: pointer;
-border-radius:20px;
-background: var(--glass-col, rgba(128, 128, 128, 0.20));
-box-shadow: 0px 30px 70px 0px rgba(0, 0, 0, 0.76);
-}
+
 .stepRadius{
 border-radius: 16px;
 border: 1px solid var(--gradient-3, #D328A7);
@@ -58,24 +52,39 @@ box-shadow: 0px 30px 70px 0px rgba(0, 0, 0, 0.76);
   color: white; /* Change the color to white */
 }
 shadowFaq{
+
 border-radius: 8px;
 border: 1px solid var(--gradient-1, #D328A7);
 }
-.info{
-        padding: 10px 20px;
-        text-align: center;
-        transform: translateY(-150px);
-        opacity: 0;
-        transition: 1s;
+.shadoww {
+    border: 1px solid white;
+    z-index: 99;
+    cursor: pointer;
+    border-radius: 20px;
+    background: var(--glass-col, rgba(128, 128, 128, 0.20));
+    box-shadow: 0px 30px 70px 0px rgba(0, 0, 0, 0.76);
+    transition: width 2s ease, height 2s ease; /* Add height to the transition property */
 }
-/* .helper:hover{
-    height:400px;
-} */
-.helper:hover> .info{
+
+.info {
+    border: 1px solid red;
+    padding: 10px 20px;
+    text-align: center;
+    transform: translateY(-150px);
+    opacity: 0;
+    transition: 1s;
+}
+
+.helper:hover > .info {
     opacity: 1;
     transform: translateY(-5px);
 }
 
+.helper:hover > .shadoww {
+    height: 100px;
+    width: 300px;
+    transition: width 2s ease, height 2s ease; /* Add height to the transition property */
+}
 
 
 .scrollText{
@@ -92,8 +101,13 @@ border: 1px solid var(--gradient-1, #D328A7);
     cursor:pointer;
 }
 
-.saxx{
+.blurr{
 border-radius: 16px;
 background: radial-gradient(51.49% 50.59% at 50% 50%, rgba(141, 75, 177, 0.59) 10.73%, rgba(167, 5, 194, 0.00) 100%);
+
+}
+.faq:hover{
+    border-radius: 8px; /* Adjust the border-radius as needed */
+  background: linear-gradient(95deg, rgba(211, 40, 167, 0.10) 34.45%, rgba(199, 68, 179, 0.09) 43.31%, rgba(199, 68, 179, 0.09) 56.6%, rgba(120, 249, 255, 0.05) 100%);
 
 }

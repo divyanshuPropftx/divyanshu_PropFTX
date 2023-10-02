@@ -41,6 +41,16 @@ import Ig from '../../Assets/ig.png'
 import Tw from '../../Assets/tw.png'
 import { toast, ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
+import CardComp from '../Cards/TradableCards/Index';
+import InvestmentCards from '../Cards/InvestmentCards/Index'
+import FeaturesCard from '../Cards/FeaturesCard/Index'
+import Analytics from '../../Assets/Analytics.png'
+import ArtificialIntelligence from '../../Assets/ArtificialIntelligence.png'
+import CyberSecurity from '../../Assets/CyberSecurity.png'
+import Group from '../../Assets/Group.png'
+import legalDocument from '../../Assets/LegalDocument.png'
+import Research from '../../Assets/Research.png'
+
 export default function Index() {
 
   const [formData, setFormData] = useState({ email: '' });
@@ -69,17 +79,18 @@ export default function Index() {
 
   return (
     <>
-
-    <div className='parent bg- flex flex-col'>
+  
+   
+    <div className='parent flex flex-col'>
     <div className='navbar text-grey  h-24 p-8'>
-    <div className='flex flex-row gap-12  h-10'>
-        <div className='w-64'><img src={Logo} alt="Logo" className="w-full h-full object-cover"/></div>
-        <div className='flex-1 p-1.5'>Properties</div>
-        <div className='flex-1 p-1.5'>Resale</div>
-        <div className='flex-1 p-1.5'>About Us</div>
-        <div className='flex-1 p-1.5'>FAQs</div>
-        <div className=' rounded-lg w-40 bg-blue text-black flex justify-center p-1.5 font-medium'>Club Access</div>
-        <div className=' border border-grey w-40 flex justify-center p-1.5 text-white font-medium rounded-lg'>Login/Signup</div>
+    <div className='flex flex-row h-10'>
+        <div className='pl-2'><img src={Logo} alt="Logo"/></div>
+        <div className='pl-40 text-lg'>Properties</div>
+        <div className='pl-12 text-lg'>Resale</div>
+        <div className='pl-12 text-lg'>About Us</div>
+        <div className='pl-12 text-lg'>FAQs</div>
+        <div className='ml-40 text-lg rounded-lg w-40 bg-blue text-black flex flex-col justify-center pl-6 pr-6 font-medium'>Club Access</div>
+        <div className='ml-12 text-lg border border-grey w-40 flex flex-col justify-center pl-6 pr-6 text-white font-medium rounded-lg'>Login/Signup</div>
     </div>   
     </div>
 
@@ -97,7 +108,8 @@ export default function Index() {
                 <div className='flex flex-col justify-center text-start pl-2'>Know More</div>
                 <div><img src={SmallArrowRight} alt="main"/></div>
               </div>
-      </div>
+              </div>
+              
             </div>
             <div className='pt-2 flex'>
               <div className='styleBorder2 flex flex-row gap-10 pt-6 pb-6 text-start pr-8 pl-8 '>
@@ -108,74 +120,18 @@ export default function Index() {
               <div className='w-24'></div>
             </div>
         </div>
-        <div className='saxx mainPageRight w-1100 text-white pt-2 flex flex-row justify-center '><img src={Main} alt="main" /></div>
+        <div className='blurr mainPageRight w-1100 text-white pt-2 flex flex-row justify-center '><img src={Main} alt="main" /></div>
     </div>
 
 
     <div className='taradableh text-white font-bold text-5xl'>
         <div className='flex flex-col justify-center p-2 gap-3'>
             <div className='leading-loose'>Real State Made {<span className='text-pink'>Tradable</span>}</div>
-            <div className=' flex flex-row gap-12 p-28 pt-4'>
-            <div className='helper flex flex-col gap-2 p-1'>
-            <div className='flex-1 shadoww'><img className='rounded-3xl' src={ImageA} alt="main" /></div>
-            
-            <div className='info flex flex-col gap-2'>
-              <div className='flex-1 text-sm overflow-clip'>Loremksssssklwfmksnjsdv{<br></br>}
-                                                                snfjsemfmfsmksmckcdkdd{<br></br>}
-                                                                sfnejfneuwfwefjefjweu{<br></br>}
-                                                                kfnejwnfewfewnfjwenfj{<br></br>}
-                                                                wlfnwejfejwfewjfjewfe
-              </div>
-              <div className='flex justify-center'>
-              <div className='text-2xl bg-blue text-black pl-2 pr-2 pt-1 pb-1 rounded-lg'>Know More</div>
-              </div>
-            </div>
-            </div>
-              <div className='helper  flex flex-col gap-2 p-1'>
-              <div className='flex-1 shadoww'><img className='rounded-3xl' src={ImageB} alt="main" /></div>
-              
-              <div className='info flex flex-col gap-2'>
-                <div className='flex-1 text-sm overflow-clip'>Loremksssssklwfmksnjsdv{<br></br>}
-                                                                  snfjsemfmfsmksmckcdkdd{<br></br>}
-                                                                  sfnejfneuwfwefjefjweu{<br></br>}
-                                                                  kfnejwnfewfewnfjwenfj{<br></br>}
-                                                                  wlfnwejfejwfewjfjewfe
-                </div>
-                <div className='flex justify-center'>
-                <div className='text-2xl bg-blue text-black pl-2 pr-2 pt-1 pb-1 rounded-lg'>Know More</div>
-                </div>
-              </div>
-              </div>
-              <div className='helper flex flex-col gap-2 p-1'>
-              <div className='flex-1 shadoww'><img className='rounded-3xl' src={ImageC} alt="main" /></div>
-              
-              <div className='info flex flex-col gap-2'>
-                <div className='flex-1 text-sm overflow-clip'>Loremksssssklwfmksnjsdv{<br></br>}
-                                                                  sssnfjsemfmfsmksmckcdkdd{<br></br>}
-                                                                  sfnejfneuwfwefjefjweu{<br></br>}
-                                                                  kfnejwnfewfewnfjwenfj{<br></br>}
-                                                                  wlfnwejfejwfewjfjewfe
-                </div>
-                <div className='flex justify-center'>
-                <div className='text-2xl bg-blue text-black pl-2 pr-2 pt-1 pb-1 rounded-lg'>Know More</div>
-                </div>
-              </div>
-              </div>
-              <div className='helper flex flex-col gap-2 p-1'>
-              <div className='flex-1 shadoww'><img className='rounded-3xl' src={ImageD} alt="main" /></div>
-              
-              <div className='info flex flex-col gap-2'>
-                <div className='flex-1 text-sm overflow-clip'>Loremksssssklwfmksnjsdv{<br></br>}
-                                                                  snfjsemfmfsmksmckcdkdd{<br></br>}
-                                                                  sfnejfneuwfwefjefjweu{<br></br>}
-                                                                  kfnejwnfewfewnfjwenfj{<br></br>}
-                                                                  wlfnwejfejwfewjfjewfe
-                </div>
-                <div className='flex justify-center'>
-                <div className='text-2xl bg-blue text-black pl-2 pr-2 pt-1 pb-1 rounded-lg'>Know More</div>
-                </div>
-              </div>
-              </div>
+            <div className=' flex flex-row gap-12 p-28 pt-4 flex-wrap justify-center'>
+            <CardComp imageUrl={ImageA} description="lorem kjns ajv jjs jkuv svs skv jksvuv jsvv svuv lorem kjns ajv jjs jkuv svs skv jksvuv fjjew wfjwe jv jsvv svuv" />
+            <CardComp imageUrl={ImageB} description="lorem kjns ajv jjs jkuv svs skv jksvuv jsvv svuv lorem kjns ajv jjs jkuv svs skv jksvuv fjjew wfjwe jv jsvv svuv" />
+            <CardComp imageUrl={ImageC} description="lorem kjns ajv jjs jkuv svs skv jksvuv jsvv svuv lorem kjns ajv jjs jkuv svs skv jksvuv fjjew wfjwe jv jsvv svuv" />
+            <CardComp imageUrl={ImageD} description="lorem kjns ajv jjs jkuv svs skv jksvuv jsvv svuv lorem kjns ajv jjs jkuv svs skv jksvuv fjjew wfjwe jv jsvv svuv" />
 
 
             </div>
@@ -185,12 +141,13 @@ export default function Index() {
 
     <div className='seamless text-white font-normal text-5xl'>
     <div className='flex flex-col justify-center p-2 gap-3'>
-    <div className='pb-4 leading-loose -mt-20'>Seamless Real Estate Investment in {<span className='text-pink font-bold'>Four Simple Steps </span>}</div>
-      <div className=' flex flex-row gap-12 p-28 pt-4'>
-        <div className='stepRadius'><img className='rounded-3xl' src={Step4} alt="main" /></div>
-        <div className='stepRadius'><img className='rounded-3xl' src={Step3} alt="main" /></div>
-        <div className='stepRadius'><img className='rounded-3xl' src={Step2} alt="main" /></div>
-        <div className='stepRadius'><img className='rounded-3xl' src={Step1} alt="main" /></div>
+    <div className='pb-4 leading-loose -mt-20'>Seamless Real Estate Investment in {<span className='text-pink font-bold'>Five Simple Steps </span>}</div>
+      <div className=' flex flex-row gap-12 p-28 pt-4 flex-wrap justify-center '>
+      <InvestmentCards Number="1" heading="Select Your Property" description="Visit our property or resale page to start investing now."/>
+      <InvestmentCards Number="2" heading="Signup & KYC" description="Visit our property or resale page to start investing now."/>
+      <InvestmentCards Number="3" heading="Invest & Earn" description="Choose the property and number of tokens you wish to invest in, head to the checkout page, and make it yours. The transaction and investment details will be reflected on the user's dashboard."/>
+      <InvestmentCards Number="4" heading="Track & Hold Token" description="Operate your custom AI-powered dashboard to track your real estate portfolio."/>
+      <InvestmentCards Number="5" heading="Sell Back" description="At PropFTX, you can quickly sell your tokens by listing them on our marketplace. Your token will be listed in the resale market within 24 Hours of placing a request."/>
       </div>
     </div>
     </div>
@@ -205,13 +162,13 @@ export default function Index() {
 
 
     <div className='investInMultiple text-white flex flex-row gap-24'>
-      <div className='text-white flex flex-col w-680 pl-20 pr-16 gap-12'>
-        <div className='p-2'><img className='rounded-3xl'src={Adv1} alt="main"/></div>
-        <div><img className='rounded-3xl' src={Adv2} alt="main"/></div>
-        <div><img className='rounded-3xl' src={Adv3} alt="main"/></div>
-        <div><img className='rounded-3xl' src={Adv4} alt="main"/></div>
-        <div><img className='rounded-3xl' src={Adv5} alt="main"/></div>
-        <div><img className='rounded-3xl' src={Adv6} alt="main"/></div>
+      <div className='text-white flex flex-col w-680 pl-20 pr-16 gap-2'>
+      <FeaturesCard imageUrl={Group} heading="Complete Transparency" description="The no-hidden-costs policy has our backing. The investing process is made simple and secure by full cost disclosures, access to in-depth data, and openness."/>
+        <FeaturesCard imageUrl={ArtificialIntelligence} heading="Powered by AI" description="The no-hidden-costs policy has our backing. The investing process is made simple and secure by full cost disclosures, access to in-depth data, and openness."/>
+        <FeaturesCard imageUrl={Analytics} heading="Proof of Due Diligence" description="The no-hidden-costs policy has our backing. The investing process is made simple and secure by full cost disclosures, access to in-depth data, and openness."/>
+        <FeaturesCard imageUrl={legalDocument} heading="No Drivel Policy" description="The no-hidden-costs policy has our backing. The investing process is made simple and secure by full cost disclosures, access to in-depth data, and openness."/>
+        <FeaturesCard imageUrl={Research} heading="Verifiable Transactions" description="The no-hidden-costs policy has our backing. The investing process is made simple and secure by full cost disclosures, access to in-depth data, and openness."/>
+        <FeaturesCard imageUrl={CyberSecurity} heading="Complete Transparency" description="The no-hidden-costs policy has our backing. The investing process is made simple and secure by full cost disclosures, access to in-depth data, and openness."/>
       </div>
       <div className='text-white'>
         <div><img className='rounded-3xl' src={InvestImage} alt="main"/></div>
@@ -322,7 +279,7 @@ export default function Index() {
                   <div className='flex-2 p-1 bg-white text-black font-normal rounded-full'>1%{<br></br>}Funded</div>
                   </div>
               </div>
-              <div className='flex flex-row justify-between  p-1'>
+              <div className='flex flex-row justify-between p-1'>
                 <div className=' text-start p-1'>Funding Target {<br></br>}<span className='font-semibold'>1,00,0000</span></div>
                 <div className='flex  flex-col justify-center'>
                 <div className=' w-28 p-2 rounded-lg text-white font-semibold bg-pink'>Explore</div>
@@ -333,7 +290,7 @@ export default function Index() {
           <div className='flex-2 '><img className='rounded-3xl' src={rightArrow} alt="main"/></div>
           </div>
         </div>
-        <div className='leading-normal pt-8 text-white text-5xl text-normal pb-4'>Enlist Your {<span className='enlist text-pink font-bold'>Properties For Sale </span>}</div>
+       
       </div>
     </div>
 
@@ -381,19 +338,43 @@ export default function Index() {
     </div>
 
 
-    <div className='faq  flex flex-row justify-between pr-12 pl-16 pt-24'>
+    <div className='flex flex-row justify-between pr-12 pl-16 pt-24'>
     <div className=' flex flex-col gap-5 text-white pt-8'>
     <div className='text-5xl font-medium text-white text-start'>Frequenlty Asked {<span className='text-pink font-bold'>Questions </span>}</div>
       <div className=' text-xl text-start'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
        incididunt ut labore et dolore magna aliqua.</div>
-      <div className=' flex flex-col'>
-        <div className='pr-28'><img className='rounded-lg' src={Faq1} alt="main"/></div>
+
+      <div className=' faq flex flex-col'>
+      <div className='knowMore shadowFaq flex'>
+      <div className='flex rounded-lg'>
+      <div><img className='faq' src={SmallArrowRight} alt="main"/></div>
+
+      <div className='flex flex-col justify-center text-start pl-2 pr-96'>What is blockchain technology?</div>
+    </div>
+    </div>
       </div>
-      <div className='flex flex-col'>
-        <div className='pr-28'><img src={Faq3} alt="main"/></div>
+      
+     
+      <div className=' faq flex flex-col'>
+      <div className='knowMore shadowFaq flex'>
+      <div className='faq flex rounded-lg'>
+      <div><img src={SmallArrowRight} alt="main"/></div>
+
+      <div className='flex flex-col justify-center text-start pl-2 pr-96'>What is blockchain technology?</div>
+    </div>
+    </div>
       </div>
-      <div className='flex flex-col'>
-        <div className='pr-28'><img src={Faq3} alt="main"/></div>
+
+
+      
+      <div className='faq flex flex-col'>
+      <div className='knowMore shadowFaq flex'>
+      <div className='faq flex rounded-lg'>
+      <div><img src={SmallArrowRight} alt="main"/></div>
+
+      <div className=' flex flex-col justify-center text-start pl-2 pr-96'>What is blockchain technology?</div>
+    </div>
+    </div>
       </div>
       <div className='flex flex-row gap-2'>
 
