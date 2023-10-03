@@ -147,7 +147,7 @@ export default function Index() {
     <div className='seamless text-white font-normal text-5xl pl-24 pr-24 pt-36'>
     <div className='flex flex-col justify-center p-4 gap-3'>
     <div className='leading-loose -mt-20'>Seamless Real Estate Investment in {<span className='text-pink font-bold'>Five Simple Steps </span>}</div>
-      <div className='flex flex-row gap-12 flex-wrap justify-center'>
+      <div className='flex flex-row gap-8 flex-wrap justify-center'>
       <InvestmentCards Number="1" heading="Select Your Property" description="Visit our property or resale page to start investing now."/>
       <InvestmentCards Number="2" heading="Signup & KYC" description="Visit our property or resale page to start investing now."/>
       <InvestmentCards Number="3" heading="Invest & Earn" description="Operate your custom AI-powered dashboard to track your real estate portfolio."/>
