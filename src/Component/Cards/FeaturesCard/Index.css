@@ -19,3 +19,7 @@
     border-radius: 8px; /* Adjust the border-radius as needed */
   background: linear-gradient(95deg, rgba(211, 40, 167, 0.10) 34.45%, rgba(199, 68, 179, 0.09) 43.31%, rgba(199, 68, 179, 0.09) 56.6%, rgba(120, 249, 255, 0.05) 100%);
 }
+.circleFeature{
+  border-radius: 80px;
+  border: 1px solid var(--gradient-2, #D328A7);
+}

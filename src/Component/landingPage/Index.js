@@ -1,7 +1,6 @@
 import React from 'react'
 import { useState } from 'react'
 import './Index.css'
-import Logo from '../../Assets/Logo.png'
 import Main from '../../Assets/main.png'
 import Left from '../../Assets/left.png'
 import ImageA from '../../Assets/imageA.png'
@@ -34,11 +33,6 @@ import Faq3 from '../../Assets/faq3.png'
 import Dashboard from '../../Assets/dashboard.png'
 import Dashboard2 from '../../Assets/dashboard2.png'
 import ScrollUp from '../../Assets/scrollUp.png'
-import FooterImage from '../../Assets/footerImage.png'
-import Inbox from '../../Assets/email.svg'
-import Dr from '../../Assets/dr.png'
-import Ig from '../../Assets/ig.png'
-import Tw from '../../Assets/tw.png'
 import { toast, ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import CardComp from '../Cards/TradableCards/Index';
@@ -51,6 +45,8 @@ import Group from '../../Assets/Group.png'
 import legalDocument from '../../Assets/LegalDocument.png'
 import Research from '../../Assets/Research.png'
 import SlideView from '../Slide/Index'
+import Footer from '../Footer/Index'
+import Header from '../Navbar/Index'
 
 export default function Index() {
 
@@ -83,22 +79,11 @@ export default function Index() {
 
     <div className='parent flex flex-col justify-center'>
     <div className='flex flex-col '>
-    <div className='navbar pl-20 text-grey h-24 p-8'>
-    <div className='flex flex-row justify-between h-10'>
-        <div className='pl-4'><img src={Logo} alt="Logo"/></div>
-        <div className='pl-40 text-lg'>Properties</div>
-        <div className='pl-12 text-lg'>Resale</div>
-        <div className='pl-12 text-lg whitespace-nowrap'>About Us</div>
-        <div className='pl-12 text-lg'>FAQs</div>
-        <div className='ml-40 text-lg rounded-lg w-40 bg-blue text-black flex flex-col justify-center pl-6 pr-6 font-medium whitespace-nowrap'>Club Access</div>
-        <div className='ml-12 text-lg border border-grey w-40 flex flex-col justify-center pl-6 pr-6 text-white font-medium rounded-lg whitespace-nowrap'>Login/Signup</div>
-    </div>   
-    </div>
+    <Header/>
 
-
-    <div className='pl-20 mainPage flex flex-row text-white gap-40'>
-        <div className='mainPageLeft pt-16 pl-8 pr-8  flex flex-col gap-3 '>
-            <div className=' '><img src={Left} alt="main" /></div>
+    <div className='pl-20  mainPage flex flex-row text-white gap-40 '>
+        <div className='mainPageLeft   pt-16 pl-8 pr-8  flex flex-col gap-3 '>
+            <div className=''><img src={Left} alt="main" /></div>
             <div className=' flex flex-row font-semibold gap-8'>
               
             <div className='text-black font-medium bg-blue p-2 text-xl rounded-lg'>Explore</div>
@@ -121,7 +106,7 @@ export default function Index() {
               <div className='w-24'></div>
             </div>
         </div>
-        <div className='blurr mainPageRight w-1100 text-white pt-2 flex flex-row justify-center '><img src={Main} alt="main" /></div>
+        <div className='blurr  mainPageRight w-1100 text-white pt-8 flex flex-row justify-end pr-12'><img src={Main} alt="main" /></div>
     </div>
 
 </div>
@@ -166,8 +151,8 @@ export default function Index() {
 
 
 
-    <div className='investInMultiple text-white flex flex-row gap-24'>
-      <div className='text-white flex flex-col w-680 pl-20 pr-16 gap-2'>
+    <div className='investInMultiple  text-white flex flex-row justify-between gap-24'>
+      <div className=' text-white flex flex-col w-680 pl-20 pr-16 gap-2'>
       <FeaturesCard imageUrl={Group} heading="Complete Transparency" description="The no-hidden-costs policy has our backing. The investing process is made simple and secure by full cost disclosures, access to in-depth data, and openness."/>
         <FeaturesCard imageUrl={ArtificialIntelligence} heading="Powered by AI" description="The no-hidden-costs policy has our backing. The investing process is made simple and secure by full cost disclosures, access to in-depth data, and openness."/>
         <FeaturesCard imageUrl={Analytics} heading="Proof of Due Diligence" description="The no-hidden-costs policy has our backing. The investing process is made simple and secure by full cost disclosures, access to in-depth data, and openness."/>
@@ -175,10 +160,12 @@ export default function Index() {
         <FeaturesCard imageUrl={Research} heading="Verifiable Transactions" description="The no-hidden-costs policy has our backing. The investing process is made simple and secure by full cost disclosures, access to in-depth data, and openness."/>
         <FeaturesCard imageUrl={CyberSecurity} heading="Complete Transparency" description="The no-hidden-costs policy has our backing. The investing process is made simple and secure by full cost disclosures, access to in-depth data, and openness."/>
       </div>
-      <div className='text-white'>
+      <div className='text-white '>
         <div><img className='rounded-3xl pr-10' src={InvestImage} alt="main"/></div>
       </div>
     </div>
+
+
 
 
 
@@ -321,16 +308,17 @@ export default function Index() {
 
 
 
-    <div className='video  flex flex-row justify-between text-white pl-24 pr-24 pt-24'>
+    <div className='video flex flex-row justify-center text-white gap-12 pl-24 pr-24 pt-24'>
 
       <div className='flex flex-col gap-4'>
-      <div className=' flex flex-col justify-center '>
+      <div className=' flex flex-col  '>
       
-      <div className='leading-loose text-5xl font-bold'>How do we {<span className='text-pink font-bold'>Work ? </span>}</div>
-      <div className='font-normal text-xl text-start'>We'll go over PropFTX tour with you. We firmly believe {<br></br>}
-      that PropFTX holds the key to make real estate{<br></br>} 
-      investing easy for everyone. So take a seat back,{<br></br>} 
-      unwind, and let us demonstrate our processes.</div>
+      <div className='leading-loose text-5xl font-bold text-start'>How do we {<span className='text-pink font-bold'>Work ? </span>}</div>
+      <div className='font-normal text-xl text-start'>We'll go over PropFTX tour with you. We firmly {<br></br>}
+      believe that PropFTX holds the key to make{<br></br>}
+    real estate
+      investing easy for everyone.{<br></br>} So take a seat back,unwind,
+       and let us demonstrate our processes.</div>
       </div>
       <div className='shadowFaq flex'>
       <div className='flex rounded-lg bg-blue font-medium text-xl'>
@@ -339,13 +327,13 @@ export default function Index() {
       </div>
       </div>
       
-      <div className='border border-white rounded-3xl flex flex-row justify-center'><img className='rounded-3xl' src={Video} alt="main"/></div>
+      <div className='videoContainer border border-white rounded-3xl flex flex-row justify-center'><img className='rounded-3xl' src={Video} alt="main"/></div>
     </div>
 
 
     <div className='flex flex-row justify-between pr-24 pl-24 pt-20'>
     <div className=' flex flex-col gap-5 text-white pt-8'>
-    <div className='text-5xl font-medium text-white text-start'>Frequenlty Asked {<span className='text-pink font-bold'>Questions </span>}</div>
+    <div className='text-5xl font-medium text-white text-start whitespace-nowrap'>Frequenlty Asked {<span className='text-pink font-bold'>Questions </span>}</div>
       <div className=' text-xl text-start'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
        incididunt ut labore et dolore magna aliqua.</div>
 
@@ -354,18 +342,18 @@ export default function Index() {
       <div className='flex rounded-lg'>
       <div><img className='faq' src={SmallArrowRight} alt="main"/></div>
 
-      <div className='flex flex-col justify-center text-start pl-2 pr-96'>What is blockchain technology?</div>
+      <div className='flex flex-col font-normal justify-center text-start pl-2 pr-40 text-2xl'>What is blockchain technology?</div>
     </div>
     </div>
       </div>
       
      
-      <div className=' faq flex flex-col'>
+      <div className='faq flex flex-col'>
       <div className='knowMore shadowFaq flex'>
-      <div className='faq flex rounded-lg'>
+      <div className='flex rounded-lg'>
       <div><img src={SmallArrowRight} alt="main"/></div>
 
-      <div className='flex flex-col justify-center text-start pl-2 pr-96'>What is blockchain technology?</div>
+      <div className='flex flex-col font-normal justify-center text-start pl-2 pr-40 text-2xl '>What is blockchain technology?</div>
     </div>
     </div>
       </div>
@@ -374,10 +362,10 @@ export default function Index() {
       
       <div className='faq flex flex-col'>
       <div className='knowMore shadowFaq flex'>
-      <div className='faq flex rounded-lg'>
+      <div className='flex rounded-lg'>
       <div><img src={SmallArrowRight} alt="main"/></div>
 
-      <div className=' flex flex-col justify-center text-start pl-2 pr-96'>What is blockchain technology?</div>
+      <div className='flex flex-col font-normal justify-center text-start pl-2 pr-40 text-2xl'>What is blockchain technology?</div>
     </div>
     </div>
       </div>
@@ -400,7 +388,7 @@ export default function Index() {
       
       </div>
     </div>
-    <div className=''><img className='rounded-3xl' src={Question} alt="main"/></div>
+    <div className=' flex flex-col justify-center'><img className='rounded-3xl ' src={Question} alt="main"/></div>
     </div>
 
 
@@ -467,43 +455,7 @@ export default function Index() {
     </div>
 
 
-
-
-    <div className='footer  flex flex-row pl-24 pr-24 pt-24 gap-36 font-semibold text-start'>
-    <div className=''><img className='rounded-3xl' src={FooterImage} alt="main"/></div>
-    <div className=' flex flex-col text-white gap-2 whitespace-nowrap'>
-      <div className=' text-pink'>Resouces</div>
-      <div className=''>Pricing</div>
-      <div className=''>FAQ's</div>
-      <div className=''>Blogs & News</div>
-    </div>
-    <div className=' flex flex-col text-white gap-2 whitespace-nowrap'>
-      <div className=' text-pink'>Company</div>
-      <div className=''>Abous Us</div>
-      <div className=''>Contact Us</div>
-    </div>
-    <div className=' flex flex-col text-white gap-2 whitespace-nowrap'>
-      <div className=' text-pink'>Legal</div>
-      <div className=''>Privacy Policy</div>
-      <div className=''>Terms of Use</div>
-      <div className=''>Risk Disclosure</div>
-    </div>
-    <div className=' flex flex-col gap-2 text-white'>
-      <div className=' text-pink pl-2'>Get in Touch </div>
-      <div className=' flex flex-row'>
-        <div className='pl-2'><img className='w-full h-full object-cover' src={Inbox} alt="main"/></div>
-        <div className='flex flex-col justify-center'>
-        <div className='pl-2'>info@propftx.com</div>
-        </div>
-      </div>
-      <div className=' flex flex-row justify-between pt-8'>
-        <div className=''><img className='rounded-3xl' src={Dr} alt="main"/></div>
-        <div className=''><img className='rounded-3xl' src={Dr} alt="main"/></div>
-        <div className=''><img className='rounded-3xl' src={Ig} alt="main"/></div>
-        <div className=''><img className='rounded-3xl' src={Tw} alt="main"/></div>
-      </div>
-    </div>
-    </div>
+<Footer/>
 
 
   </div>

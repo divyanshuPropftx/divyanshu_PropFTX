@@ -12,25 +12,17 @@ import Inbox from '../../Assets/inbox.png'
 import Dr from '../../Assets/dr.png'
 import Ig from '../../Assets/ig.png'
 import Tw from '../../Assets/tw.png'
+import Footer from '../Footer/Index'
+import Navbar from '../Navbar/Index'
 
 
 function AboutUs() {
   return (
     <div className='parent'>
 
-    <div className='navbar text-grey  h-24 p-8'>
-    <div className='flex flex-row gap-12  h-10'>
-        <div className='w-64'><img src={Logo} alt="Logo" className="w-full h-full object-cover"/></div>
-        <div className='flex-1 p-1.5'>Properties</div>
-        <div className='flex-1 p-1.5'>Resale</div>
-        <div className='flex-1 p-1.5'>About Us</div>
-        <div className='flex-1 p-1.5'>FAQs</div>
-        <div className=' rounded-lg w-40 bg-blue text-black flex justify-center p-1.5 font-medium'>Club Access</div>
-        <div className=' border border-grey w-40 flex justify-center p-1.5 text-white font-medium rounded-lg'>Login/Signup</div>
-    </div>   
-    </div>
+    <Navbar/>
 
-    <div className='pt-24 '>
+    <div className='pt-20 '>
       <div className='pr-96 pl-96  text-white text-5xl font-bold p-4'>About {<span className="text-pink">Us</span>}</div>
       <div className='pr-96 pl-96  font-medium text-2xl text-white p-6'>What is PropFTX?</div>
       <div className='leading-8 text-base font-normal text-white'>PropFTX is a unique Digital Real estate Marketplace, blending Realty Assets with Web3 technology. PropFTX is one of the first Buy & Sell{<br></br>}
@@ -51,7 +43,7 @@ function AboutUs() {
     </div>
 
 
-    <div className=' flex flex-row pt-12 gap-40 pl-24 pr-24'>
+    <div className=' flex flex-row gap-40 pl-24 pr-24'>
         <div className=' text-white flex flex-col justify-center'>
           <div className=' text-start text-3xl font-bold p-2'>How PropFTX Works?</div>
           <div className=' text-start font-medium text-xl leading-8 pt-4 whitespace-break-spaces '>To ensure that investors receive the highest possible returns,
@@ -65,7 +57,7 @@ function AboutUs() {
 
 
     <div className='flex justify-center'>
-      <div className='text-white text-2xl font-semibold pt-32 pl-96 pr-96'>PropFTX is the first-ever digital real estate platform offering to invest in residential,
+      <div className='text-white text-2xl font-semibold pt-36 pl-96 pr-96'>PropFTX is the first-ever digital real estate platform offering to invest in residential,
       commercial, and plots on one single platform.</div>
     </div>
 
@@ -127,43 +119,7 @@ function AboutUs() {
 
 
 
-  <div className='footer  flex flex-row p-4 gap-36 font-semibold text-start'>
-    <div className=''><img className='rounded-3xl' src={FooterImage} alt="main"/></div>
-    <div className=' flex flex-col text-white gap-2 whitespace-nowrap'>
-      <div className=' text-pink'>Resouces</div>
-      <div className=''>Pricing</div>
-      <div className=''>FAQ's</div>
-      <div className=''>Blogs & News</div>
-    </div>
-    <div className=' flex flex-col text-white gap-2 whitespace-nowrap'>
-      <div className=' text-pink'>Company</div>
-      <div className=''>Abous Us</div>
-      <div className=''>Contact Us</div>
-    </div>
-    <div className=' flex flex-col text-white gap-2 whitespace-nowrap'>
-      <div className=' text-pink'>Legal</div>
-      <div className=''>Privacy Policy</div>
-      <div className=''>Terms of Use</div>
-      <div className=''>Risk Disclosure</div>
-    </div>
-    <div className=' flex flex-col gap-2 text-white'>
-      <div className=' text-pink pl-4'>Get in Touch </div>
-      <div className='flex flex-row'>
-        <div className=''><img className='w-16' src={Inbox} alt="main"/></div>
-        <div className='flex flex-col justify-center '>
-        <div className=''>info@propftx.com</div>
-        </div>
-      </div>
-      <div className=' flex flex-row justify-between pt-8'>
-        <div className=''><img className='rounded-3xl' src={Dr} alt="main"/></div>
-        <div className=''><img className='rounded-3xl' src={Dr} alt="main"/></div>
-        <div className=''><img className='rounded-3xl' src={Ig} alt="main"/></div>
-        <div className=''><img className='rounded-3xl' src={Tw} alt="main"/></div>
-      </div>
-    </div>
-    </div>
-
-
+  <Footer/>
 
 
 

@@ -1,3 +1,11 @@
 .parent{
     background: var(--BG-color, #091526);
 }
+.mailMeImage{
+    height:200px;
+    width:370px;
+}
+.locationImage{
+    height:200px;
+    width:370px;
+}
