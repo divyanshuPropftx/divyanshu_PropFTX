@@ -7,6 +7,10 @@ module.exports = {
   ],
   theme: {
     extend: {
+      fontFamily: {
+        custom: ['poppins', 'Poppins'], // 'CustomFont' should match the font's CSS font-family name
+      },
+
       colors:{
         grey:'#79747E',
         navyBlue:'#0D192A',
@@ -20,6 +24,7 @@ module.exports = {
 
       height: {
         '56':'56px',
+        '70':'70px',
         '700': '700px', // Define your custom height value here
         '420':'420px',
         '380':'380px',
@@ -41,6 +46,7 @@ module.exports = {
       },
       width: {
         '56':'56px',
+        '70':'70px',
         '1720':'1400px',
         '820':'820px',
         '1100':'1100px',

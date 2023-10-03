@@ -50,6 +50,7 @@ import CyberSecurity from '../../Assets/CyberSecurity.png'
 import Group from '../../Assets/Group.png'
 import legalDocument from '../../Assets/LegalDocument.png'
 import Research from '../../Assets/Research.png'
+import SlideView from '../Slide/Index'
 
 export default function Index() {
 
@@ -79,23 +80,23 @@ export default function Index() {
 
   return (
     <>
-  
-   
-    <div className='parent flex flex-col'>
-    <div className='navbar text-grey  h-24 p-8'>
-    <div className='flex flex-row h-10'>
-        <div className='pl-2'><img src={Logo} alt="Logo"/></div>
+
+    <div className='parent flex flex-col justify-center'>
+    <div className='flex flex-col '>
+    <div className='navbar pl-20 text-grey h-24 p-8'>
+    <div className='flex flex-row justify-between h-10'>
+        <div className='pl-4'><img src={Logo} alt="Logo"/></div>
         <div className='pl-40 text-lg'>Properties</div>
         <div className='pl-12 text-lg'>Resale</div>
-        <div className='pl-12 text-lg'>About Us</div>
+        <div className='pl-12 text-lg whitespace-nowrap'>About Us</div>
         <div className='pl-12 text-lg'>FAQs</div>
-        <div className='ml-40 text-lg rounded-lg w-40 bg-blue text-black flex flex-col justify-center pl-6 pr-6 font-medium'>Club Access</div>
-        <div className='ml-12 text-lg border border-grey w-40 flex flex-col justify-center pl-6 pr-6 text-white font-medium rounded-lg'>Login/Signup</div>
+        <div className='ml-40 text-lg rounded-lg w-40 bg-blue text-black flex flex-col justify-center pl-6 pr-6 font-medium whitespace-nowrap'>Club Access</div>
+        <div className='ml-12 text-lg border border-grey w-40 flex flex-col justify-center pl-6 pr-6 text-white font-medium rounded-lg whitespace-nowrap'>Login/Signup</div>
     </div>   
     </div>
 
 
-    <div className='mainPage flex flex-row text-white justify-center'>
+    <div className='pl-20 mainPage flex flex-row text-white gap-40'>
         <div className='mainPageLeft pt-16 pl-8 pr-8  flex flex-col gap-3 '>
             <div className=' '><img src={Left} alt="main" /></div>
             <div className=' flex flex-row font-semibold gap-8'>
@@ -123,15 +124,19 @@ export default function Index() {
         <div className='blurr mainPageRight w-1100 text-white pt-2 flex flex-row justify-center '><img src={Main} alt="main" /></div>
     </div>
 
+</div>
 
-    <div className='taradableh text-white font-bold text-5xl'>
-        <div className='flex flex-col justify-center p-2 gap-3'>
+
+
+
+    <div className='taradableh text-white font-bold text-5xl pl-24 pr-24 pt-12'>
+        <div className='flex flex-col justify-center gap-3'>
             <div className='leading-loose'>Real State Made {<span className='text-pink'>Tradable</span>}</div>
-            <div className=' flex flex-row gap-12 p-28 pt-4 flex-wrap justify-center'>
-            <CardComp imageUrl={ImageA} description="lorem kjns ajv jjs jkuv svs skv jksvuv jsvv svuv lorem kjns ajv jjs jkuv svs skv jksvuv fjjew wfjwe jv jsvv svuv" />
-            <CardComp imageUrl={ImageB} description="lorem kjns ajv jjs jkuv svs skv jksvuv jsvv svuv lorem kjns ajv jjs jkuv svs skv jksvuv fjjew wfjwe jv jsvv svuv" />
-            <CardComp imageUrl={ImageC} description="lorem kjns ajv jjs jkuv svs skv jksvuv jsvv svuv lorem kjns ajv jjs jkuv svs skv jksvuv fjjew wfjwe jv jsvv svuv" />
-            <CardComp imageUrl={ImageD} description="lorem kjns ajv jjs jkuv svs skv jksvuv jsvv svuv lorem kjns ajv jjs jkuv svs skv jksvuv fjjew wfjwe jv jsvv svuv" />
+            <div className=' flex flex-row gap-12 justify-center'>
+            <CardComp imageUrl={ImageA} description="lorem kjns ajv jjs jkuv svs skv jksvuv jsvv svuv lorem kjns ajv jjs jkuv svs skv jksvuv fjjew " />
+            <CardComp imageUrl={ImageB} description="lorem kjns ajv jjs jkuv svs skv jksvuv jsvv svuv lorem kjns ajv jjs jkuv svs skv jksvuv fjjew " />
+            <CardComp imageUrl={ImageC} description="lorem kjns ajv jjs jkuv svs skv jksvuv jsvv svuv lorem kjns ajv jjs jkuv svs skv jksvuv fjjew " />
+            <CardComp imageUrl={ImageD} description="lorem kjns ajv jjs jkuv svs skv jksvuv jsvv svuv lorem kjns ajv jjs jkuv svs skv jksvuv fjjew " />
 
 
             </div>
@@ -139,22 +144,22 @@ export default function Index() {
     </div>
 
 
-    <div className='seamless text-white font-normal text-5xl'>
-    <div className='flex flex-col justify-center p-2 gap-3'>
-    <div className='pb-4 leading-loose -mt-20'>Seamless Real Estate Investment in {<span className='text-pink font-bold'>Five Simple Steps </span>}</div>
-      <div className=' flex flex-row gap-12 p-28 pt-4 flex-wrap justify-center '>
+    <div className='seamless text-white font-normal text-5xl pl-24 pr-24 pt-36'>
+    <div className='flex flex-col justify-center p-4 gap-3'>
+    <div className='leading-loose -mt-20'>Seamless Real Estate Investment in {<span className='text-pink font-bold'>Five Simple Steps </span>}</div>
+      <div className='flex flex-row gap-12 flex-wrap justify-center'>
       <InvestmentCards Number="1" heading="Select Your Property" description="Visit our property or resale page to start investing now."/>
       <InvestmentCards Number="2" heading="Signup & KYC" description="Visit our property or resale page to start investing now."/>
-      <InvestmentCards Number="3" heading="Invest & Earn" description="Choose the property and number of tokens you wish to invest in, head to the checkout page, and make it yours. The transaction and investment details will be reflected on the user's dashboard."/>
+      <InvestmentCards Number="3" heading="Invest & Earn" description="Operate your custom AI-powered dashboard to track your real estate portfolio."/>
       <InvestmentCards Number="4" heading="Track & Hold Token" description="Operate your custom AI-powered dashboard to track your real estate portfolio."/>
-      <InvestmentCards Number="5" heading="Sell Back" description="At PropFTX, you can quickly sell your tokens by listing them on our marketplace. Your token will be listed in the resale market within 24 Hours of placing a request."/>
+      <InvestmentCards Number="5" heading="Sell Back" description="Operate your custom AI-powered dashboard to track your real estate portfolio."/>
       </div>
     </div>
     </div>
 
 
 
-    <div className='investorLove text-white text-5xl flex pl-20 pb-5'>
+    <div className='investorLove text-white text-5xl flex pl-24 pr-24 pt-12'>
     <div className='leading-loose'>Why Investors Love {<span className='text-pink font-bold'>PropFTX </span>}</div>
     </div>
 
@@ -171,18 +176,18 @@ export default function Index() {
         <FeaturesCard imageUrl={CyberSecurity} heading="Complete Transparency" description="The no-hidden-costs policy has our backing. The investing process is made simple and secure by full cost disclosures, access to in-depth data, and openness."/>
       </div>
       <div className='text-white'>
-        <div><img className='rounded-3xl' src={InvestImage} alt="main"/></div>
+        <div><img className='rounded-3xl pr-10' src={InvestImage} alt="main"/></div>
       </div>
     </div>
 
 
 
 
-    <div className='investInMultiple text-white'>
+    <div className='investInMultiple text-white pl-24 pr-24 pt-24'>
       <div className='flex  flex-col justify-center'>
         <div className='leading-loose text-5xl font-bold'>{<span className='text-pink font-bold'>Invest </span>} in Multiple Asset Classes</div>
         <div className='text-xl font-normal'>PropFTX is a one-stop-shop investment platform that brings all asset {<br></br>}classes together in a single marketplace under one roof.</div>
-        <div className='flex flex-row justify-center pt-16 gap-2 p-60'>
+        <div className='flex flex-row justify-center pt-16 pb-16 gap-2 p-40'>
         <div className='pt-6'>
           <div className='shadowy flex flex-col justify-center p-4'>
             <div className='pt-12 pl-6'><img className='rounded-3xl' src={Commercial} alt="main" /></div>
@@ -216,10 +221,10 @@ export default function Index() {
 
 
 
-    <div className='exploredFeature'>
-      <div className='flex flex-col pl-16 pr-16'>
+    <div className='exploredFeature pl-24 pr-24 pt-16'>
+      <div className='flex flex-col'>
       <div className='leading-normal text-white text-5xl text-normal pb-4'>Explore Featured {<span className='text-pink font-bold'>Properties </span>}</div>
-        <div className='text-white  flex flex-row gap-8'>
+        <div className='text-white  flex flex-row gap-8 pl-8 '>
         <div className='flex flex-col justify-center'>
           <div className='flex-2'><img className='rounded-3xl' src={leftArrow} alt="main"/></div>
         </div>
@@ -297,7 +302,7 @@ export default function Index() {
 
 
 
-    <div className='JoinPremium  text-white flex flex-col justify-center gap-10 pl-20 pr-20 pt-20'>
+    <div className='JoinPremium  text-white flex flex-col justify-center gap-10 pl-24 pr-24 pt-24'>
       <div className='premiumShadow bg-silver flex flex-col justify-center gap-10 p-10'>
         <div className='text-4xl font-bold'>Join our premium membership</div>
         <div className='font-normal text-lg'>With PropFTX premium membership, Get early access to all the premium benefits.</div>
@@ -316,7 +321,7 @@ export default function Index() {
 
 
 
-    <div className='video  flex flex-row justify-between text-white pl-10 pr-10 pt-20'>
+    <div className='video  flex flex-row justify-between text-white pl-24 pr-24 pt-24'>
 
       <div className='flex flex-col gap-4'>
       <div className=' flex flex-col justify-center '>
@@ -338,7 +343,7 @@ export default function Index() {
     </div>
 
 
-    <div className='flex flex-row justify-between pr-12 pl-16 pt-24'>
+    <div className='flex flex-row justify-between pr-24 pl-24 pt-20'>
     <div className=' flex flex-col gap-5 text-white pt-8'>
     <div className='text-5xl font-medium text-white text-start'>Frequenlty Asked {<span className='text-pink font-bold'>Questions </span>}</div>
       <div className=' text-xl text-start'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
@@ -400,7 +405,7 @@ export default function Index() {
 
 
 
-    <div className='dashboard  flex flex-row pt-4'>
+    <div className='dashboard  flex flex-row pt-12 pl-24 pr-24'>
       <div className=' p-12 pl-4'><img className='rounded-3xl' src={Dashboard} alt="main"/></div>
       <div className=' flex flex-col justify-between'>
         <div className=''><img className='rounded-3xl' src={Dashboard2} alt="main"/></div>
@@ -416,7 +421,7 @@ export default function Index() {
 
 
 
-    <div className='JoinPremium  text-white flex flex-col justify-center gap-10 pl-20 pr-20 pt-20 pb-20'>
+    <div className='JoinPremium  text-white flex flex-col justify-center gap-10 pl-24 pr-24 pt-12'>
       <div className='premiumShadow bg-silver flex flex-col justify-center gap-10 p-10'>
         <div className='text-4xl font-bold'>Subscribe to the dose!</div>
         <div className='font-normal text-xl'>Signup to the email newsletter. we will share tips, practical life advice, experience{<br></br>} and valuable information delivered directly to your mail box.</div>
@@ -451,7 +456,7 @@ export default function Index() {
       </div>
     </div>
 
-    <div className='flex flex-col justify-center pl-20 pr-20 pb-16'>
+    <div className='flex flex-col justify-center pl-24 pr-24 pt-24'>
     <div className='flex flex-row premiumShadow gap-8 p-4  justify-between pr-20 '>
       <div className=' font-bold text-4xl text-white pl-8'>Join our community!</div>
       <div className='flex flex-row gap-8 pr-8'>
@@ -464,10 +469,7 @@ export default function Index() {
 
 
 
-
-
-
-    <div className='footer  flex flex-row p-4 gap-36 font-semibold text-start'>
+    <div className='footer  flex flex-row pl-24 pr-24 pt-24 gap-36 font-semibold text-start'>
     <div className=''><img className='rounded-3xl' src={FooterImage} alt="main"/></div>
     <div className=' flex flex-col text-white gap-2 whitespace-nowrap'>
       <div className=' text-pink'>Resouces</div>
