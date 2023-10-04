@@ -1,6 +1,6 @@
 import React from 'react'
 import './Index.css'
-import Logo from '../../Assets/Logo.png'
+import Logo from '../../Assets/logo.png'
 import AboutUsBlockchain from '../../Assets/aboutUsBlockchain.png'
 import AboutUsAll from '../../Assets/aboutUsAIl.png'
 import Unique from '../../Assets/unique.png'

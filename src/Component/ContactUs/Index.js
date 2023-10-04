@@ -1,6 +1,6 @@
 import React from 'react'
 import { useState } from 'react';
-import Logo from '../../Assets/Logo.png'
+
 import Map from '../../Assets/map.png'
 import Mailme from '../../Assets/mailme.png'
 import Location from '../../Assets/location.png'

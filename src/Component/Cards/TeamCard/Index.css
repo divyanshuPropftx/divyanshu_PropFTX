@@ -1,0 +1,9 @@
+.teamCard{
+    width:260px;
+    height:320px;
+}
+.image{
+height:65px;
+border-radius: 0px 0px 8px 8px;
+background: var(--black-40, rgba(0, 0, 0, 0.40));
+}

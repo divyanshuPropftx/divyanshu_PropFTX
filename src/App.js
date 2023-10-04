@@ -16,7 +16,7 @@ function App() {
   
     
     <AboutUs/>
-         
+         <Team/>
  
      {/*Y
     <Team/>
