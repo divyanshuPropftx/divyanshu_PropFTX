@@ -6,11 +6,11 @@ box-shadow: 0px 30px 70px 0px rgba(0, 0, 0, 0.76);
 cursor:pointer;
 }
 .circle{
-    border-radius: 80px;
+border-radius: 80px;
 background: var(--gradient-2, linear-gradient(95deg, #D328A7 34.45%, rgba(199, 68, 179, 0.93) 43.31%, rgba(199, 68, 179, 0.93) 56.6%, rgba(120, 249, 255, 0.50) 100%));
 }
 .tradableCard:hover{
-padding-right:0px;
 transition:0.5s;
+width:210px;
 border: 3px solid var(--gradient-3, #D328A7);
 }

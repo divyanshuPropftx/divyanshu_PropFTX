@@ -2,6 +2,7 @@
  border-radius: 20px;
   width: 290px;
   height: 320px;
+  overflow:hidden;
   transition: width 0.8s, height 0.3s;
   position: relative;  /* Add smooth transition for width and height changes */
 }
@@ -13,13 +14,13 @@ box-shadow: 0px 30px 70px 0px rgba(0, 0, 0, 0.76);
   height: 380px; /* Increase the height on hover */
 }
 .description {
-display:none;
-transition: transform 1s /* Add transitions for transform and opacity */
+  display: none;
+  transition: transform 1s, opacity 0.5s;
+  transform: translateY(100%);
 }
 
-/* Show the description when hovering */
 .image-description:hover .description {
-  display:block;
-  transition:transform 1s;
-  opacity: 1; /* Make the description visible */
+  display: block;
+  transform: translateY(0);
+  opacity: 1;
 }

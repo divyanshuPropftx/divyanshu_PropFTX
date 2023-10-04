@@ -114,7 +114,8 @@ export default function Index() {
 
 
 
-    <div className='taradableh text-white font-bold text-5xl pl-24 pr-24 pt-12'>
+
+    <div className='taradable  text-white font-bold text-4xl pl-24 pr-24 pt-12'>
         <div className='flex flex-col justify-center gap-3'>
             <div className='leading-loose'>Real State Made {<span className='text-pink'>Tradable</span>}</div>
             <div className=' flex flex-row gap-12 justify-center'>
@@ -129,22 +130,22 @@ export default function Index() {
     </div>
 
 
-    <div className='seamless text-white font-normal text-5xl pl-24 pr-24 pt-36'>
+    <div className='seamless  text-white font-normal text-4xl pl-24 pr-24 pt-36'>
     <div className='flex flex-col justify-center p-4 gap-3'>
     <div className='leading-loose -mt-20'>Seamless Real Estate Investment in {<span className='text-pink font-bold'>Five Simple Steps </span>}</div>
-      <div className='flex flex-row gap-8 flex-wrap justify-center'>
+      <div className='flex flex-row gap-4 flex-wrap justify-center'>
       <InvestmentCards Number="1" heading="Select Your Property" description="Visit our property or resale page to start investing now."/>
       <InvestmentCards Number="2" heading="Signup & KYC" description="Visit our property or resale page to start investing now."/>
-      <InvestmentCards Number="3" heading="Invest & Earn" description="Operate your custom AI-powered dashboard to track your real estate portfolio."/>
-      <InvestmentCards Number="4" heading="Track & Hold Token" description="Operate your custom AI-powered dashboard to track your real estate portfolio."/>
-      <InvestmentCards Number="5" heading="Sell Back" description="Operate your custom AI-powered dashboard to track your real estate portfolio."/>
+      <InvestmentCards Number="3" heading="Invest & Earn" description="Operate your custom AI-powered dashboard to track your real portfolio  estate"/>
+      <InvestmentCards Number="4" heading="Signup & KYC" description="Visit our property or resale page to start investing now."/>
+      <InvestmentCards Number="5" heading="Sell Back" description="Visit our property or resale page to start investing now."/>
       </div>
     </div>
     </div>
 
 
 
-    <div className='investorLove text-white text-5xl flex pl-24 pr-24 pt-12'>
+    <div className='investorLove text-white text-4xl flex pl-24 pr-24 pt-12'>
     <div className='leading-loose'>Why Investors Love {<span className='text-pink font-bold'>PropFTX </span>}</div>
     </div>
 
@@ -172,7 +173,7 @@ export default function Index() {
 
     <div className='investInMultiple text-white pl-24 pr-24 pt-24'>
       <div className='flex  flex-col justify-center'>
-        <div className='leading-loose text-5xl font-bold'>{<span className='text-pink font-bold'>Invest </span>} in Multiple Asset Classes</div>
+        <div className='leading-loose text-4xl font-bold'>{<span className='text-pink font-bold'>Invest </span>} in Multiple Asset Classes</div>
         <div className='text-xl font-normal'>PropFTX is a one-stop-shop investment platform that brings all asset {<br></br>}classes together in a single marketplace under one roof.</div>
         <div className='flex flex-row justify-center pt-16 pb-16 gap-2 p-40'>
         <div className='pt-6'>
@@ -210,7 +211,7 @@ export default function Index() {
 
     <div className='exploredFeature pl-24 pr-24 pt-16'>
       <div className='flex flex-col'>
-      <div className='leading-normal text-white text-5xl text-normal pb-4'>Explore Featured {<span className='text-pink font-bold'>Properties </span>}</div>
+      <div className='leading-normal text-white text-4xl text-normal pb-4'>Explore Featured {<span className='text-pink font-bold'>Properties </span>}</div>
         <div className='text-white  flex flex-row gap-8 pl-8 '>
         <div className='flex flex-col justify-center'>
           <div className='flex-2'><img className='rounded-3xl' src={leftArrow} alt="main"/></div>
@@ -313,7 +314,7 @@ export default function Index() {
       <div className='flex flex-col gap-4'>
       <div className=' flex flex-col  '>
       
-      <div className='leading-loose text-5xl font-bold text-start'>How do we {<span className='text-pink font-bold'>Work ? </span>}</div>
+      <div className='leading-loose text-4xl font-bold text-start'>How do we {<span className='text-pink font-bold'>Work ? </span>}</div>
       <div className='font-normal text-xl text-start'>We'll go over PropFTX tour with you. We firmly {<br></br>}
       believe that PropFTX holds the key to make{<br></br>}
     real estate
@@ -333,7 +334,7 @@ export default function Index() {
 
     <div className='flex flex-row justify-between pr-24 pl-24 pt-20'>
     <div className=' flex flex-col gap-5 text-white pt-8'>
-    <div className='text-5xl font-medium text-white text-start whitespace-nowrap'>Frequenlty Asked {<span className='text-pink font-bold'>Questions </span>}</div>
+    <div className='text-4xl font-medium text-white text-start whitespace-nowrap'>Frequenlty Asked {<span className='text-pink font-bold'>Questions </span>}</div>
       <div className=' text-xl text-start'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
        incididunt ut labore et dolore magna aliqua.</div>
 
