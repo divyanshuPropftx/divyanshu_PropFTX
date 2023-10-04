@@ -22,8 +22,8 @@ function AboutUs() {
 
     <Navbar/>
 
-    <div className='pt-20 '>
-      <div className='pr-96 pl-96  text-white text-5xl font-bold p-4'>About {<span className="text-pink">Us</span>}</div>
+    <div className='pt-12 '>
+      <div className='pr-96 pl-96  text-white text-4xl font-bold p-4'>About {<span className="text-pink">Us</span>}</div>
       <div className='pr-96 pl-96  font-medium text-2xl text-white p-6'>What is PropFTX?</div>
       <div className='leading-8 text-base font-normal text-white'>PropFTX is a unique Digital Real estate Marketplace, blending Realty Assets with Web3 technology. PropFTX is one of the first Buy & Sell{<br></br>}
        platforms in the world of Real Estate, which ensures transparency, liquidity, and ownership proof for the investment recorded on {<br></br>}
@@ -82,7 +82,7 @@ function AboutUs() {
 
 
 
-  <div className='seamless text-white font-normal text-5xl pt-28'>
+  <div className='seamless text-white font-normal text-4xl pt-28'>
   <div className='flex flex-col justify-center p-2 gap-3'>
   <div className='pb-4 leading-loose -mt-20'>The {<span className='text-pink font-bold'>Principles</span>} We Uphold at PropFTX</div> 
     <div className=' flex flex-row gap-12 p-28 pt-4'>
@@ -98,7 +98,7 @@ function AboutUs() {
 
   <div className=' flex flex-row gap-40'>
     <div className=' flex flex-col pl-24'>
-      <div className=' text-5xl text-pink font-bold p-2'>Mission</div>
+      <div className=' text-4xl text-pink font-bold p-2'>Mission</div>
       <div className=' text-white text-xl font-normal pt-8 text-start leading-9'>Our vision at PROPFTX is to position ourselves as a cutting-edge Real estate marketplace. 
       Our primary focus is on providing secure and transparent transactions, setting new standards for 
       excellence. We are committed to simplify processes and ensure accessibility, catering to the 
@@ -107,7 +107,7 @@ function AboutUs() {
       </div>
     </div>
     <div className=' flex flex-col pr-24'>
-    <div className='  text-5xl text-pink font-bold p-2'>Vision</div>
+    <div className='  text-4xl text-pink font-bold p-2'>Vision</div>
     <div className=' text-white text-xl font-normal pt-8 text-start leading-9'>Our Mission at PROPFTX is to onboard One Million Square Feet worth of diverse and quality 
     real estate projects, catering to the needs and aspirations of a wide range of investors. With
      a customer-centric approach, we strive to provide exceptional online experience, ensuring the 

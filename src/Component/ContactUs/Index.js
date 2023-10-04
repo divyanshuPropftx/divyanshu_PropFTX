@@ -84,7 +84,7 @@ function ContactUs() {
     <Navbar/>
 
     <div className='flex flex-col'>
-        <div className='text-pink text-5xl pt-12 font-bold'>Contact Us</div>
+        <div className='text-pink text-4xl pt-12 font-bold'>Contact Us</div>
         <div className='text-white font-normal text-2xl pt-4'>Our friendly team will love to hear from you</div>
     </div>
 
