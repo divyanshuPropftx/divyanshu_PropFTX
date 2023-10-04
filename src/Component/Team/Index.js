@@ -43,10 +43,10 @@ function Team() {
     <div className=' text-white text-start pt-4 text-xl font-medium flex flex-col justify-center'>The Driving force behind PropFTX</div>
     <div className='album flex flex-row pt-8 flex-wrap'>
       <div className=' flex flex-wrap gap-8'>
-      <TeamCard imageUrl={Rajeev} name="Rajeev Chhabra"/>
-      <TeamCard imageUrl={Vishal} name="Vishal Rajput"/>
-      <TeamCard imageUrl={Sathinarayanan} name="Sathinarayanan M"/>
-      <TeamCard imageUrl={Varun} name="Varun Singhi"/>      
+      <TeamCard imageUrl={Rajeev} name="Rajeev Chhabra" position="Founder"/>
+      <TeamCard imageUrl={Vishal} name="Vishal Rajput" position="Co-Founder & Head Of Product"/>
+      <TeamCard imageUrl={Sathinarayanan} name="Sathinarayanan M" position="Co-Founder & COO"/>
+      <TeamCard imageUrl={Varun} name="Varun Singhi" position="Co-Founder & Strategy Head"/>      
       </div>
       </div>
   </div>
@@ -57,12 +57,12 @@ function Team() {
       <div className=' text-white text-start pt-4 text-xl font-medium flex flex-col justify-center'>The Driving force behind PropFTX</div>
       <div className='album flex flex-row pt-8 flex-wrap'>
         <div className=' flex flex-wrap gap-8'>
-        <TeamCard imageUrl={Bipin} name="Bipin Agravat"/>
-        <TeamCard imageUrl={Prashita} name="Prashita Rao"/>
-        <TeamCard imageUrl={Ravindran} name="Ravindran Parthasarathi"/>
-        <TeamCard imageUrl={Junaid} name="Junaid Ahmed"/>
-        <TeamCard imageUrl={Shubhajeet} name="Subhajeet Naha"/>
-        <TeamCard imageUrl={Sridhar} name="Sridhar Subramanian"/>       
+        <TeamCard imageUrl={Bipin} name="Bipin Agravat" position="Investment Advisor"/>
+        <TeamCard imageUrl={Prashita} name="Prashita Rao" position="Co-Founder & Strategy Head"/>
+        <TeamCard imageUrl={Ravindran} name="Ravindran Parthasarathi" position="Chief Technical Architect"/>
+        <TeamCard imageUrl={Junaid} name="Junaid Ahmed" position="Head of Business Development" />
+        <TeamCard imageUrl={Shubhajeet} name="Subhajeet Naha" position="Cyber Security Advisor"/>
+        <TeamCard imageUrl={Sridhar} name="Sridhar Subramanian" position="Management Professional"/>       
         </div>
         </div>
     </div>
@@ -72,10 +72,10 @@ function Team() {
       <div className=' text-white text-start pt-4 text-xl font-medium flex flex-col justify-center'>The Driving force behind PropFTX</div>
       <div className='album flex flex-row pt-8 flex-wrap'>
         <div className=' flex flex-wrap gap-8'>
-        <TeamCard imageUrl={Prashanth} name="Prashanth Nair"/>
-        <TeamCard imageUrl={Prerna} name="Prerna Rohilla"/>
-        <TeamCard imageUrl={Anmol} name="Anmol Prasad"/>
-        <TeamCard imageUrl={Parthavi} name="Parthavi Pattnaik"/>      
+        <TeamCard imageUrl={Prashanth} name="Prashanth Nair" position="Head of Marketing"/>
+        <TeamCard imageUrl={Prerna} name="Prerna Rohilla" position="Content Writer"/>
+        <TeamCard imageUrl={Anmol} name="Anmol Prasad" position="Brand Communicaton Designer"/>
+        <TeamCard imageUrl={Parthavi} name="Parthavi Pattnaik" position="Video Editor"/>      
         </div>
         </div>
     </div>
@@ -86,8 +86,8 @@ function Team() {
       <div className=' text-white text-start pt-4 text-xl font-medium flex flex-col justify-center'>The Driving force behind PropFTX</div>
       <div className='album flex flex-row pt-8 flex-wrap'>
         <div className=' flex flex-wrap gap-8'>
-        <TeamCard imageUrl={Ipsa} name="Ipsha Rashmi"/>
-        <TeamCard imageUrl={Shubhankar} name="Subhankar Lokhande"/>      
+        <TeamCard imageUrl={Ipsa} name="Ipsha Rashmi" position="UI/UX Designer "/>
+        <TeamCard imageUrl={Shubhankar} name="Subhankar Lokhande" position="UI/UX Designer"/>      
         </div>
         </div>
     </div>
