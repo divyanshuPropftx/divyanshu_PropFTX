@@ -3,19 +3,22 @@ import Index from './Component/landingPage/Index';
 import ContactUs from './Component/ContactUs/Index';
 import AboutUs from './Component/AboutUs/Index';
 import Team from './Component/Team/Index'
-
+import FAQPage from './Component/FAQPage/Index';
 
 function App() {
   return (
     <div className="App">
-  {/*  */}
-    <Index/>
-      
+
+<FAQPage/>
+
+     {/*   
+         <Index/>  
     <ContactUs/>
   
     
     <AboutUs/>
          <Team/>
+       */}  
  
      {/*Y
     <Team/>

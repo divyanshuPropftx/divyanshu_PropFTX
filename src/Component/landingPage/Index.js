@@ -33,6 +33,7 @@ import legalDocument from '../../Assets/LegalDocument.png'
 import Research from '../../Assets/Research.png'
 import Footer from '../Footer/Index'
 import Header from '../Navbar/Index'
+import SearchBar from '../SearchBar/Index'
 
 export default function Index() {
 
