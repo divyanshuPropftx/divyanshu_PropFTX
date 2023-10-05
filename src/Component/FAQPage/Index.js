@@ -9,17 +9,20 @@ import Investment from '../../Assets/Investment.png'
 import Legal from '../../Assets/legal.png'
 import UserGuide from '../../Assets/userGuide.png'
 import QuestionCard from '../Cards/QuestionCard/Index'
+import FAQPageForm from '../Forms/FaqPageForm/Index'
+
 
 
 function FAQPage() {
   return (
  
 
+
     <div className='parent'>
     <Navbar/>
     <div className='leading-loose text-4xl font-bold  text-white pt-12'>Hello, How can we {<span className='text-pink font-bold'>help? </span>}</div>
     <div className='pt-10'><SearchBar/></div>
-    <div className='pt-10 text-white text-xl'>or choose a category to quickly find the help you need</div>
+    <div className='pt-10 text-white text-lg font-medium'>or choose a category to quickly find the help you need</div>
 
     <div className='pt-20 pl-48 pr-48'>
       <div className='faqCardBox flex flex-row justify-center gap-8'>
@@ -43,10 +46,20 @@ function FAQPage() {
       <div className='rounded-lg'><QuestionCard number="8" question="What is resale and how does it work in the context of token sales?" answer="Lorem ipsum dolor sit amet consectetur. Orci placerat condimentum ipsum etiam proin egestas. Maecenas pretium mattis risus lectus semper praesent nunc.Lorem ipsum dolor sit amet consectetur. Orci placerat condimentum ipsbhbu"/></div>
       <div className='rounded-lg'><QuestionCard number="9" question="What is a presale ?" answer="Lorem ipsum dolor sit amet consectetur. Orci placerat condimentum ipsum etiam proin egestas. Maecenas pretium mattis risus lectus semper praesent nunc.Lorem ipsum dolor sit amet consectetur. Orci placerat condimentum ipsbhbu"/></div>
       <div className='rounded-lg'><QuestionCard number="10" question="Why we call PropFTX’s dashboard an ‘AI powered dashboard’?" answer="Lorem ipsum dolor sit amet consectetur. Orci placerat condimentum ipsum etiam proin egestas. Maecenas pretium mattis risus lectus semper praesent nunc.Lorem ipsum dolor sit amet consectetur. Orci placerat condimentum ipsbhbu"/></div>
-
     </div>
 
+    <div className='leading-loose text-4xl font-bold  text-white pt-12'>You still have a {<span className='text-pink font-bold'>question?  </span>}</div>
+    <div className='pt-4 text-white text-lg font-medium'>If you cannot find answer to your question in our FAQ, you can always contact us. We will answer you shortly</div>
+
+
+    <div className='flex flex-row justify-center'>
+    <div className='pt-12'><FAQPageForm/></div>
     </div>
+
+
+    <Footer/>
+    </div>
+    
 
   )
 }

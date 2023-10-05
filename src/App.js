@@ -9,16 +9,17 @@ function App() {
   return (
     <div className="App">
 
-<FAQPage/>
 
-     {/*   
+
+     {/*      */}  
          <Index/>  
     <ContactUs/>
   
     
     <AboutUs/>
          <Team/>
-       */}  
+         <FAQPage/>
+    
  
      {/*Y
     <Team/>
