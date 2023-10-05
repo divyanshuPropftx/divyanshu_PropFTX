@@ -171,7 +171,7 @@ export default function Index() {
     <div className='investInMultiple text-white pl-24 pr-24 pt-24'>
       <div className='flex  flex-col justify-center'>
         <div className='leading-loose text-4xl font-bold'>{<span className='text-pink font-bold'>Invest </span>} in Multiple Asset Classes</div>
-        <div className='text-xl font-normal'>PropFTX is a one-stop-shop investment platform that brings all asset {<br></br>}classes together in a single marketplace under one roof.</div>
+        <div className='text-lg font-medium'>PropFTX is a one-stop-shop investment platform that brings all asset {<br></br>}classes together in a single marketplace under one roof.</div>
         <div className='flex flex-row justify-center pt-16 pb-16 gap-2 p-40'>
         <div className='pt-6'>
           <div className='shadowy flex flex-col justify-center p-4'>
@@ -312,7 +312,7 @@ export default function Index() {
       <div className=' flex flex-col  '>
       
       <div className='leading-loose text-4xl font-bold text-start'>How do we {<span className='text-pink font-bold'>Work ? </span>}</div>
-      <div className='font-normal text-xl text-start'>We'll go over PropFTX tour with you. We firmly {<br></br>}
+      <div className='font-medium text-base text-start'>We'll go over PropFTX tour with you. We firmly {<br></br>}
       believe that PropFTX holds the key to make{<br></br>}
     real estate
       investing easy for everyone.{<br></br>} So take a seat back,unwind,
@@ -332,7 +332,7 @@ export default function Index() {
     <div className='flex flex-row justify-between pr-24 pl-24 pt-20'>
     <div className=' flex flex-col gap-5 text-white pt-8'>
     <div className='text-4xl font-medium text-white text-start whitespace-nowrap'>Frequenlty Asked {<span className='text-pink font-bold'>Questions </span>}</div>
-      <div className=' text-xl text-start'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+      <div className=' text-lg font-medium text-start'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
        incididunt ut labore et dolore magna aliqua.</div>
 
       <div className=' faq flex flex-col'>
@@ -340,7 +340,7 @@ export default function Index() {
       <div className='flex rounded-lg'>
       <div><img className='faq' src={SmallArrowRight} alt="main"/></div>
 
-      <div className='flex flex-col font-normal justify-center text-start pl-2 pr-40 text-2xl'>What is blockchain technology?</div>
+      <div className='flex flex-col font-medium justify-center text-start pl-2 pr-40 text-lg'>What is blockchain technology?</div>
     </div>
     </div>
       </div>
@@ -351,7 +351,7 @@ export default function Index() {
       <div className='flex rounded-lg'>
       <div><img src={SmallArrowRight} alt="main"/></div>
 
-      <div className='flex flex-col font-normal justify-center text-start pl-2 pr-40 text-2xl '>What is blockchain technology?</div>
+      <div className='flex flex-col font-medium justify-center text-start pl-2 pr-40 text-lg '>What is blockchain technology?</div>
     </div>
     </div>
       </div>
@@ -363,7 +363,7 @@ export default function Index() {
       <div className='flex rounded-lg'>
       <div><img src={SmallArrowRight} alt="main"/></div>
 
-      <div className='flex flex-col font-normal justify-center text-start pl-2 pr-40 text-2xl'>What is blockchain technology?</div>
+      <div className='flex flex-col font-medium justify-center text-start pl-2 pr-40 text-lg'>What is blockchain technology?</div>
     </div>
     </div>
       </div>
