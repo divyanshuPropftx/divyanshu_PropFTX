@@ -85,13 +85,13 @@ function ContactUs() {
 
     <div className='flex flex-col'>
         <div className='text-pink text-4xl pt-12 font-bold'>Contact Us</div>
-        <div className='text-white font-normal text-2xl pt-4'>Our friendly team will love to hear from you</div>
+        <div className='text-white font-medium text-lg pt-4'>Our friendly team will love to hear from you</div>
     </div>
 
     <div className='pl-20 pr-20 pt-24 gap-12 flex flex-row'>
         <div className=''><img src={Map} alt="Map" className="w-full h-full object-cover pb-24"/></div>
         <div className='flex flex-col'>
-        <div className=' text-white text-4xl whitespace-nowrap'>Have a {<span className='text-pink font-semibold text-4xl '>Question? </span>} Don’t be Shy to {<br></br>}{<span className='text-pink text-4xl'>Message Us!</span>}</div>
+        <div className=' text-white text-3xl whitespace-nowrap'>Have a {<span className='text-pink font-semibold text-3xl '>Question? </span>} Don’t be Shy to {<br></br>}{<span className='text-pink text-3xl'>Message Us!</span>}</div>
         <div className=' flex flex-col text-white gap-6'>
           <div className=' flex flex-col'>
           <form onSubmit={handleSubmit} className="space-y-4">
@@ -186,7 +186,7 @@ function ContactUs() {
 
     <div className='text text-white  pl-24 pr-24 pt-24'>
               <div className='text-4xl font-semibold'>Get In Touch</div>
-              <div className='text-xl font-normal pt-4'>We would love to hear from either you are an investor, who is looking for more in-depth clarifications, or would like to tokenize your property.</div>
+              <div className='text-lg font-medium pt-4'>We would love to hear from either you are an investor, who is looking for more in-depth clarifications, or would like to tokenize your property.</div>
               <div className='pt-12 flex flex-row justify-center gap-24 pl-60 pr-60'>
                 <div className='mailMeImage'><a href='mailto:your.email@example.com'><img src={Mailme} alt="Map" className="w-full h-full object-cover"/></a></div>
                 <div className='locationImage'> 

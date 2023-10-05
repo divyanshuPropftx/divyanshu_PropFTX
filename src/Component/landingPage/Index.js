@@ -149,7 +149,7 @@ export default function Index() {
 
 
 
-    <div className='investInMultiple  text-white flex flex-row justify-between gap-24'>
+    <div className='investInMultiple  text-white flex flex-row justify-between gap-8'>
       <div className=' text-white flex flex-col w-680 pl-20 pr-16 gap-2 '>
       <FeaturesCard imageUrl={Group} heading="Complete Transparency" description="The no-hidden-costs policy has our backing. The investing process is made simple and secure by full cost disclosures, access to in-depth data, and openness."/>
         <FeaturesCard imageUrl={ArtificialIntelligence} heading="Powered by AI" description="The no-hidden-costs policy has our backing. The investing process is made simple and secure by full cost disclosures, access to in-depth data, and openness."/>
@@ -159,7 +159,7 @@ export default function Index() {
         <FeaturesCard imageUrl={CyberSecurity} heading="Complete Transparency" description="The no-hidden-costs policy has our backing. The investing process is made simple and secure by full cost disclosures, access to in-depth data, and openness."/>
       </div>
       <div className='text-white '>
-        <div><img className='rounded-3xl pr-10' src={InvestImage} alt="main"/></div>
+        <div className='investImage'><img className='rounded-3xl pr-10 w-full h-full' src={InvestImage} alt="main"/></div>
       </div>
     </div>
 

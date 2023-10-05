@@ -31,7 +31,7 @@ function Team() {
 
     <div className='pt-12 pr-64 pl-64 '>
       <div className=' font-medium text-4xl text-white p-6'>About Our Team</div>
-      <div className='leading-8 text-xl font-medium text-white pt-8'>At PropFTX, our team is the heart and soul of 
+      <div className='leading-8 text-lg font-medium text-white pt-8'>At PropFTX, our team is the heart and soul of 
       our fractional real estate journey. We are a dedicated group of professionals who share a passion for real 
       estate and a commitment to delivering exceptional service to our clients. Get to know the faces behind our success:
       </div>
@@ -40,7 +40,7 @@ function Team() {
 
     <div className='flex flex-col pt-16 pl-28 pr-28 justify-center'>
     <div className='text-white text-start text-3xl font-semibold'>Founders</div>
-    <div className=' text-white text-start pt-4 text-xl font-medium flex flex-col justify-center'>The Driving force behind PropFTX</div>
+    <div className=' text-white text-start pt-4 text-lg font-medium flex flex-col justify-center'>The Driving force behind PropFTX</div>
     <div className='album flex flex-row pt-8 flex-wrap'>
       <div className=' flex flex-wrap gap-8'>
       <TeamCard imageUrl={Rajeev} name="Rajeev Chhabra" position="Founder"/>
@@ -54,7 +54,7 @@ function Team() {
 
     <div className='flex flex-col pt-16 pl-28 pr-28 justify-center'>
       <div className='text-white text-start text-3xl font-semibold'>Advisors</div>
-      <div className=' text-white text-start pt-4 text-xl font-medium flex flex-col justify-center'>The Driving force behind PropFTX</div>
+      <div className=' text-white text-start pt-4 text-lg font-medium flex flex-col justify-center'>The Driving force behind PropFTX</div>
       <div className='album flex flex-row pt-8 flex-wrap'>
         <div className=' flex flex-wrap gap-8'>
         <TeamCard imageUrl={Bipin} name="Bipin Agravat" position="Investment Advisor"/>
@@ -69,7 +69,7 @@ function Team() {
 
     <div className='flex flex-col pt-16 pl-28 pr-28 justify-center'>
       <div className='text-white text-start text-3xl font-semibold'>Marketing</div>
-      <div className=' text-white text-start pt-4 text-xl font-medium flex flex-col justify-center'>The Driving force behind PropFTX</div>
+      <div className=' text-white text-start pt-4 text-lg font-medium flex flex-col justify-center'>The Driving force behind PropFTX</div>
       <div className='album flex flex-row pt-8 flex-wrap'>
         <div className=' flex flex-wrap gap-8'>
         <TeamCard imageUrl={Prashanth} name="Prashanth Nair" position="Head of Marketing"/>
@@ -83,7 +83,7 @@ function Team() {
 
     <div className='flex flex-col pt-16 pl-28 pr-28 justify-center'>
       <div className='text-white text-start text-3xl font-semibold'>Designer</div>
-      <div className=' text-white text-start pt-4 text-xl font-medium flex flex-col justify-center'>The Driving force behind PropFTX</div>
+      <div className=' text-white text-start pt-4 text-lg font-medium flex flex-col justify-center'>The Driving force behind PropFTX</div>
       <div className='album flex flex-row pt-8 flex-wrap'>
         <div className=' flex flex-wrap gap-8'>
         <TeamCard imageUrl={Ipsa} name="Ipsha Rashmi" position="UI/UX Designer "/>
