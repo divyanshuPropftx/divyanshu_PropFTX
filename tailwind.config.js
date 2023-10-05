@@ -18,7 +18,8 @@ module.exports = {
         pink:'#D328A7',
         silver:'#212A38',
         lightgrey:"#7E838C",
-        darkblue:'#091526'
+        darkblue:'#091526',
+        paleWhite:'#D3D4D7'
         
       },
 
