@@ -1,4 +1,3 @@
-import logo from './logo.svg';
 import './App.css';
 import Index from './Component/landingPage/Index';
 import ContactUs from './Component/ContactUs/Index';

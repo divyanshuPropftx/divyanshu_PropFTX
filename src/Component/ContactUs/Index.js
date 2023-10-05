@@ -4,11 +4,6 @@ import { useState } from 'react';
 import Map from '../../Assets/map.png'
 import Mailme from '../../Assets/mailme.png'
 import Location from '../../Assets/location.png'
-import FooterImage from '../../Assets/footerImage.png'
-import Inbox from '../../Assets/inbox.png'
-import Dr from '../../Assets/dr.png'
-import Ig from '../../Assets/ig.png'
-import Tw from '../../Assets/tw.png'
 import { toast, ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import Navbar from '../Navbar/Index';

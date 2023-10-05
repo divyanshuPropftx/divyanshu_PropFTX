@@ -14,7 +14,7 @@ const TeamCard = ({ imageUrl, name, position }) => {
     <div className='name text-white font-bold text-xl flex flex-col justify-center text-start whitespace-nowrap'>{name}</div>
       <div className='position text-white text-sm text-start font-semibold whitespace-nowrap'>{position}</div>
     </div>
-    <div className='linkedIn pt-2'><img src={LinkedIn}/></div>
+    <div className='linkedIn pt-2'><img src={LinkedIn} alt='alt' /></div>
         
     </div>
   
