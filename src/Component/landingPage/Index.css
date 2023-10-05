@@ -115,3 +115,24 @@ background: radial-gradient(51.49% 50.59% at 50% 50%, rgba(141, 75, 177, 0.59) 1
 .taradable{
     height:430px;
 }
+
+.residential {
+width:300px;
+height:340px;
+}
+.commercial{
+margin-right:-2rem;
+height:290px;
+width:200px;
+
+}
+.plots{
+margin-left:-1.4rem;
+height:290px;
+width:200px;
+}
+
+.button{
+height:40px;
+
+}

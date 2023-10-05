@@ -9,7 +9,7 @@ const CardComp = ({ imageUrl,heading,description }) => {
             <div className='circleFeature featurePic'><img src={imageUrl} className='h-9 pt-3 pl-3'></img></div>
             <div className=' flex flex-col gap-1'>
                 <div className=' text-2xl font-bold text-start'>{heading}</div>
-                <div className=' text-lg font-normal text-start'>{description}</div>
+                <div className=' text-base font-normal text-start '>{description}</div>
             </div>
       </div>
     );

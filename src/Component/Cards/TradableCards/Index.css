@@ -1,7 +1,7 @@
 .image-description {
  border-radius: 20px;
-  width: 290px;
-  height: 320px;
+  width: 240px;
+  height: 250px;
   overflow:hidden;
   transition: width 0.8s, height 0.3s;
   position: relative;  /* Add smooth transition for width and height changes */
@@ -10,8 +10,8 @@
 .image-description:hover {
 border: 1px solid var(--gradient-3, #D328A7);
 box-shadow: 0px 30px 70px 0px rgba(0, 0, 0, 0.76);
-  width: 310px; /* Increase the width on hover */
-  height: 380px; /* Increase the height on hover */
+  width: 250px; /* Increase the width on hover */
+  height: 320px; /* Increase the height on hover */
 }
 .description {
   display: none;
@@ -23,4 +23,9 @@ box-shadow: 0px 30px 70px 0px rgba(0, 0, 0, 0.76);
   display: block;
   transform: translateY(0);
   opacity: 1;
+}
+.imageTradable{
+height:240px;
+width:190px;
+
 }
