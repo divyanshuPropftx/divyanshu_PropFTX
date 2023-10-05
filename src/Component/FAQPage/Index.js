@@ -8,9 +8,13 @@ import GettingStarted from '../../Assets/gettingStarted.png'
 import Investment from '../../Assets/Investment.png'
 import Legal from '../../Assets/legal.png'
 import UserGuide from '../../Assets/userGuide.png'
+import QuestionCard from '../Cards/QuestionCard/Index'
+
 
 function FAQPage() {
   return (
+ 
+
     <div className='parent'>
     <Navbar/>
     <div className='leading-loose text-4xl font-bold  text-white pt-12'>Hello, How can we {<span className='text-pink font-bold'>help? </span>}</div>
@@ -24,10 +28,26 @@ function FAQPage() {
         <div> <GuideCard imageUrl={Legal} description="Legal"/></div>
         <div> <GuideCard imageUrl={UserGuide} description="User Guide"/></div>
       </div>
+    </div>
+
+    <div className='text-white pt-12 text-4xl font-semibold'>Getting Started</div>
+
+    <div className='flex flex-col gap-6 pt-10 pl-24 pr-24 rounded-lg'>
+      <div className='rounded-lg'><QuestionCard number="1" question="Why PropFTX" answer="Lorem ipsum dolor sit amet consectetur. Orci placerat condimentum ipsum etiam proin egestas. Maecenas pretium mattis risus lectus semper praesent nunc.Lorem ipsum dolor sit amet consectetur. Orci placerat condimentum ipsbhbu"/></div>
+      <div className='rounded-lg'><QuestionCard number="2" question="What is blockchain technology?" answer="Lorem ipsum dolor sit amet consectetur. Orci placerat condimentum ipsum etiam proin egestas. Maecenas pretium mattis risus lectus semper praesent nunc.Lorem ipsum dolor sit amet consectetur. Orci placerat condimentum ipsbhbu"/></div>
+      <div className='rounded-lg'><QuestionCard number="3" question="What is property tokenization on a blockchain?" answer="Lorem ipsum dolor sit amet consectetur. Orci placerat condimentum ipsum etiam proin egestas. Maecenas pretium mattis risus lectus semper praesent nunc.Lorem ipsum dolor sit amet consectetur. Orci placerat condimentum ipsbhbu"/></div>
+      <div className='rounded-lg'><QuestionCard number="4" question="How can AI help in simplifying the process of buying a property?" answer="Lorem ipsum dolor sit amet consectetur. Orci placerat condimentum ipsum etiam proin egestas. Maecenas pretium mattis risus lectus semper praesent nunc.Lorem ipsum dolor sit amet consectetur. Orci placerat condimentum ipsbhbu"/></div>
+      <div className='rounded-lg'><QuestionCard number="5" question="Who can invest with PropFTX?" answer="Lorem ipsum dolor sit amet consectetur. Orci placerat condimentum ipsum etiam proin egestas. Maecenas pretium mattis risus lectus semper praesent nunc.Lorem ipsum dolor sit amet consectetur. Orci placerat condimentum ipsbhbu"/></div>
+      <div className='rounded-lg'><QuestionCard number="6" question="What is tokenisation?" answer="Lorem ipsum dolor sit amet consectetur. Orci placerat condimentum ipsum etiam proin egestas. Maecenas pretium mattis risus lectus semper praesent nunc.Lorem ipsum dolor sit amet consectetur. Orci placerat condimentum ipsbhbu"/></div>
+      <div className='rounded-lg'><QuestionCard number="7" question="What are the different phases of token sales?" answer="Lorem ipsum dolor sit amet consectetur. Orci placerat condimentum ipsum etiam proin egestas. Maecenas pretium mattis risus lectus semper praesent nunc.Lorem ipsum dolor sit amet consectetur. Orci placerat condimentum ipsbhbu"/></div>
+      <div className='rounded-lg'><QuestionCard number="8" question="What is resale and how does it work in the context of token sales?" answer="Lorem ipsum dolor sit amet consectetur. Orci placerat condimentum ipsum etiam proin egestas. Maecenas pretium mattis risus lectus semper praesent nunc.Lorem ipsum dolor sit amet consectetur. Orci placerat condimentum ipsbhbu"/></div>
+      <div className='rounded-lg'><QuestionCard number="9" question="What is a presale ?" answer="Lorem ipsum dolor sit amet consectetur. Orci placerat condimentum ipsum etiam proin egestas. Maecenas pretium mattis risus lectus semper praesent nunc.Lorem ipsum dolor sit amet consectetur. Orci placerat condimentum ipsbhbu"/></div>
+      <div className='rounded-lg'><QuestionCard number="10" question="Why we call PropFTX’s dashboard an ‘AI powered dashboard’?" answer="Lorem ipsum dolor sit amet consectetur. Orci placerat condimentum ipsum etiam proin egestas. Maecenas pretium mattis risus lectus semper praesent nunc.Lorem ipsum dolor sit amet consectetur. Orci placerat condimentum ipsbhbu"/></div>
 
     </div>
 
     </div>
+
   )
 }
 
