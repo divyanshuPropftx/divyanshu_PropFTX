@@ -74,7 +74,7 @@ function ContactUs() {
 
 
   return (
-    <div className='parent'>
+    <div className='parent font-poppins'>
 
     <Navbar/>
 

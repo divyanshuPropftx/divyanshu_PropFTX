@@ -10,11 +10,11 @@ const QuestionCard = ({ question, answer, number }) => {
   };
 
   return (
-    <div className={`parent p-1 questionContainer ${isAnswerVisible ? 'border border-pink' : 'border border-white'} flex flex-col rounded-lg`}>
+    <div className={`parent font-poppins p-1 questionContainer ${isAnswerVisible ? 'border border-pink' : 'border border-white'} flex flex-col rounded-lg`}>
       <div className='flex flex-row justify-between text-white'>
         <div className='flex flex-row'>
           <div className='serialNo flex flex-col justify-center pl-2 pr-2'>{number+'.'}</div>
-          <div className='question flex flex-col justify-center text-lg font-medium'>{question}</div>
+          <div className='question flex flex-col justify-center text-lg font-medium '>{question}</div>
         </div>
         <div className='clickMe' onClick={toggleAnswerVisibility}>
           <img className='flex flex-col justify-center' src={ArrowDown}/>

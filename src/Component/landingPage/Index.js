@@ -64,7 +64,7 @@ export default function Index() {
   return (
     <>
 
-    <div className='parent flex flex-col justify-center'>
+    <div className='parent font-poppins  flex flex-col justify-center'>
     <div className='flex flex-col '>
     <Header/>
 
@@ -72,7 +72,7 @@ export default function Index() {
         <div className='mainPageLeft   pt-16 pl-8 pr-8  flex flex-col gap-3 '>
             <div className=''><img src={Left} alt="main" /></div>
             <div className=' flex flex-row font-semibold gap-8'>             
-            <div className='text-black font-medium bg-blue pt-2 pb-2 pl-4 pr-4 text-xl rounded-lg'>Explore</div>
+            <div className='text-black font-medium bg-blue pt-3  pl-3 pr-3 text-base w-20 rounded-lg'>Explore</div>
               <div className='knowMore shadowFaq flex'>
                 <div className='flex border border-pink rounded-lg'>
                 <div className='flex flex-col justify-center text-start pl-4'><p>Know More</p></div>
@@ -101,7 +101,7 @@ export default function Index() {
 
     <div className='taradable  text-white font-bold text-4xl pl-24 pr-24 pt-12'>
         <div className='flex flex-col justify-center gap-3'>
-            <div className='leading-loose'>Real State Made {<span className='text-pink'>Tradable</span>}</div>
+            <div className='leading-loose '>Real State Made {<span className='text-pink'>Tradable</span>}</div>
             <div className=' flex flex-row gap-12 justify-center'>
             <CardComp imageUrl={ImageA} description="lorem kjns ajv jjs jkuv svs skv jksvuv jsvv svuv lorem kjns ajv jjs jkuv svs " />
             <CardComp imageUrl={ImageB} description="lorem kjns ajv jjs jkuv svs skv jksvuv jsvv svuv lorem kjns ajv jjs jkuv svs " />
@@ -129,28 +129,34 @@ export default function Index() {
 
 
 
-    <div className='investorLove text-white text-4xl flex pl-24 pr-24 pt-12'>
-    <div className='leading-loose'>Why Investors Love {<span className='text-pink font-bold'>PropFTX </span>}</div>
-    </div>
-
-
-
-
-    <div className='investInMultiple  text-white flex flex-row justify-between gap-8'>
-      <div className=' text-white flex flex-col w-680 pl-20 pr-16 gap-2 '>
-      <FeaturesCard imageUrl={Group} heading="Complete Transparency" description="The no-hidden-costs policy has our backing. The investing process is made simple and secure by full cost disclosures, access to in-depth data, and openness."/>
-        <FeaturesCard imageUrl={ArtificialIntelligence} heading="Powered by AI" description="The no-hidden-costs policy has our backing. The investing process is made simple and secure by full cost disclosures, access to in-depth data, and openness."/>
-        <FeaturesCard imageUrl={Analytics} heading="Proof of Due Diligence" description="The no-hidden-costs policy has our backing. The investing process is made simple and secure by full cost disclosures, access to in-depth data, and openness."/>
-        <FeaturesCard imageUrl={legalDocument} heading="No Drivel Policy" description="The no-hidden-costs policy has our backing. The investing process is made simple and secure by full cost disclosures, access to in-depth data, and openness."/>
-        <FeaturesCard imageUrl={Research} heading="Verifiable Transactions" description="The no-hidden-costs policy has our backing. The investing process is made simple and secure by full cost disclosures, access to in-depth data, and openness."/>
-        <FeaturesCard imageUrl={CyberSecurity} heading="Complete Transparency" description="The no-hidden-costs policy has our backing. The investing process is made simple and secure by full cost disclosures, access to in-depth data, and openness."/>
+    <div className=' flex flex-row justify-center' >
+    <div className='middleContainer '>
+      <div className='investorLove text-white text-4xl flex pl-24 pr-24 pt-12'>
+      <div className='leading-loose'>Why Investors Love {<span className='text-pink font-bold'>PropFTX </span>}</div>
       </div>
+
+
+
+
+      <div className='investInMultiple  text-white flex flex-row justify-between gap-8'>
+        <div className=' text-white flex flex-col w-680 pl-20 pr-16 gap-2 '>
+        <FeaturesCard imageUrl={Group} heading="Complete Transparency" description="The no-hidden-costs policy has our backing. The investing process is made simple and secure by full cost disclosures, access to in-depth data, and openness."/>
+          <FeaturesCard imageUrl={ArtificialIntelligence} heading="Powered by AI" description="The no-hidden-costs policy has our backing. The investing process is made simple and secure by full cost disclosures, access to in-depth data, and openness."/>
+          <FeaturesCard imageUrl={Analytics} heading="Proof of Due Diligence" description="The no-hidden-costs policy has our backing. The investing process is made simple and secure by full cost disclosures, access to in-depth data, and openness."/>
+          <FeaturesCard imageUrl={legalDocument} heading="No Drivel Policy" description="The no-hidden-costs policy has our backing. The investing process is made simple and secure by full cost disclosures, access to in-depth data, and openness."/>
+          <FeaturesCard imageUrl={Research} heading="Verifiable Transactions" description="The no-hidden-costs policy has our backing. The investing process is made simple and secure by full cost disclosures, access to in-depth data, and openness."/>
+          <FeaturesCard imageUrl={CyberSecurity} heading="Complete Transparency" description="The no-hidden-costs policy has our backing. The investing process is made simple and secure by full cost disclosures, access to in-depth data, and openness."/>
+        </div>
+        <div className='text-white '>
+          <div className='investImage'><img className='rounded-3xl pr-10 w-full h-full' src={InvestImage} alt="main"/></div>
+        </div>
+      </div>
+
       <div className='text-white '>
         {/* <div className='investImage'><img className='rounded-3xl pr-10 w-full h-full' src={InvestImage} alt="main"/></div> */}
+
       </div>
     </div>
-
-
 
 
 
@@ -164,14 +170,14 @@ export default function Index() {
           <div className='shadowy flex flex-col justify-center p-4'>
             <div className='  commercial pt-12'><img src={Commercial} alt="main" /></div>
               <div className='flex justify-center pt-4'>
-               <div className='text-black font-medium bg-blue pt-2 pb-2 pl-4 pr-4 text-xl rounded-lg'>Explore</div>
+               <div className='text-black font-medium bg-blue pt-2 pb-2 pl-4 pr-4 text-base rounded-lg'>Explore</div>
               </div>
           </div>
         </div>
           <div className='shadowyMiddle flex flex-col justify-center p-4'>
              <div className='residential pl-3 pr-3'><img className='rounded-3xl' src={Residential} alt="main" /></div>
             <div className='flex justify-center pt-3'>
-              <div className='text-black font-medium bg-blue w-32  pt-2 pb-2 pl-4 pr-4 text-xl rounded-lg'>Explore</div>
+              <div className='text-black font-medium bg-blue w-32  pt-2 pb-2 pl-4 pr-4 text-base rounded-lg'>Explore</div>
             </div>
              
           </div>
@@ -179,7 +185,7 @@ export default function Index() {
           <div className='shadowy flex flex-col justify-center p-4'>
              <div className='plots pt-12'><img src={Plots} alt="main" /></div>
              <div className='flex justify-center pt-4'>
-              <div className='text-black font-medium bg-blue  pt-2 pb-2 pl-4 pr-4  text-xl rounded-lg'>Explore</div>
+              <div className='text-black font-medium bg-blue  pt-2 pb-2 pl-4 pr-4  text-base rounded-lg'>Explore</div>
              </div>
           </div>
           </div>
@@ -279,10 +285,10 @@ export default function Index() {
         <div className='text-4xl font-bold'>Join our premium membership</div>
         <div className='font-normal text-lg'>With PropFTX premium membership, Get early access to all the premium benefits.</div>
         <div className='flex flex-row justify-center gap-6'>
-          <div className='button text-lg font-medium bg-blue pt-2 pb-2 pl-4 pr-4 rounded-lg text-black'>JOIN NOW</div>
+          <div className='button text-base font-medium bg-blue pt-2 pb-2 pl-4 pr-4 rounded-lg text-black'>JOIN NOW</div>
           <div className='shadowFaq flex'>
           <div className='flex border border-pink rounded-lg'>
-            <div className=' button flex flex-col text-xl font-semibold justify-center text-start pt-2 pb-2 pl-4 pr-4 '>Benefits </div>
+            <div className=' button flex flex-col text-base font-semibold justify-center text-start pt-2 pb-2 pl-4 pr-4 '>Benefits </div>
           </div>
           </div>
           
@@ -307,7 +313,7 @@ export default function Index() {
       </div>
       <div className='shadowFaq flex'>
       <div className='flex rounded-lg bg-blue font-medium text-xl'>
-      <div className=' bg-blue rounded-lg text-black pl-4 pr-4 pt-2 pb-2'>Invest Now</div>
+      <div className=' bg-blue text-base rounded-lg text-black pl-4 pr-4 pt-2 pb-2'>Invest Now</div>
       </div>
       </div>
       </div>
@@ -358,14 +364,14 @@ export default function Index() {
 
       <div className='shadowFaq flex'>
       <div className='flex border border-pink rounded-lg'>
-        <div className=' flex flex-col justify-center text-start pl-4 pr-2'>View All FAQs</div>
+        <div className=' flex flex-col justify-center text-start text-base pl-4 pr-2'>View All FAQs</div>
         <div><img className='rounded-2xl' src={SmallArrowRight} alt="main"/></div>
       </div>
       
       </div>
       <div className='shadowFaq flex'>
       <div className='flex border border-pink rounded-lg'>
-        <div className=' flex flex-col justify-center text-start pl-4'>Ask a Question</div>
+        <div className=' flex flex-col justify-center text-start text-base pl-4'>Ask a Question</div>
         <div><img className='rounded-2xl' src={SmallArrowRight} alt="main"/></div>
       </div>
       </div>
@@ -416,7 +422,7 @@ export default function Index() {
   <div className='shadowFaq flex'>
     <div className='flex flex-col justify-center rounded-lg'>
       <div className='text-start flex flex-col justify-center'>
-        <button type='submit' className='btn btn-primary text-xl font-medium flex flex-col leading-5 pl-6 bg-pink pr-6 pt-2 pb-3 rounded-lg'>
+        <button type='submit' className='btn btn-primary text-base font-medium flex flex-col leading-5 pl-6 bg-pink pr-6 pt-2 pb-3 rounded-lg'>
           Submit
         </button>
       </div>
@@ -433,8 +439,8 @@ export default function Index() {
     <div className='flex flex-row premiumShadow gap-8 p-4  justify-between pr-20 '>
       <div className=' font-bold text-4xl text-white pl-8'>Join our community!</div>
       <div className='flex flex-row gap-4 pr-8'>
-      <div className='text-black font-medium bg-blue pt-2 pb-2 pl-4 pr-4 text-xl rounded-lg'>Whatsapp</div>
-      <div className='text-black font-medium bg-blue pt-2 pb-2 pl-4 pr-4 text-xl rounded-lg'>Telegram</div>
+      <div className='text-black font-medium bg-blue pt-2 pb-2 pl-4 pr-4 text-base rounded-lg'>Whatsapp</div>
+      <div className='text-black font-medium bg-blue pt-2 pb-2 pl-4 pr-4 text-base rounded-lg'>Telegram</div>
       </div>
     </div>
     </div>

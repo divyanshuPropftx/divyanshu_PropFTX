@@ -8,7 +8,7 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        custom: ['poppins', 'Poppins'], // 'CustomFont' should match the font's CSS font-family name
+        poppins: ['Poppins'], // 'CustomFont' should match the font's CSS font-family name
       },
 
       colors:{
