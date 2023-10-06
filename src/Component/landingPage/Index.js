@@ -34,6 +34,7 @@ import Research from '../../Assets/Research.png'
 import Footer from '../Footer/Index'
 import Header from '../Navbar/Index'
 import SearchBar from '../SearchBar/Index'
+import { useScrollToTop } from '../ScrollToTop/Index'
 
 export default function Index() {
 
@@ -59,6 +60,9 @@ export default function Index() {
       position: toast.POSITION.TOP_CENTER,
     });
   };
+
+  const { showScroll, scrollToTop } = useScrollToTop();
+  
 
 
   return (
@@ -386,10 +390,9 @@ export default function Index() {
         <div className=''><img className='rounded-3xl' src={Dashboard2} alt="main"/></div>
         <div className=' flex flex-row justify-between pb-8'>
           <div className=''>a</div>
-          <div className=' scrollContainer flex flex-col'>
-          <div className='scrollUp pr-8 pl-8'><img className='rounded-3xl' src={ScrollUp} alt="main"/></div>
-          <div className='text-white scrollText text-sm font-semibold'>Go to Home</div>
-          </div>
+          <div className='scroll-to-top' onClick={scrollToTop} style={{ display: showScroll ? 'block' : 'none' }}>
+          <img className='rounded-3xl bg-transparent' src={ScrollUp} alt="main"/>
+        </div>
         </div>
       </div>
     </div>

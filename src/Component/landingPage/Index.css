@@ -88,16 +88,16 @@ border: 1px solid var(--gradient-1, #D328A7);
 }
 
 
-.scrollText{
-        text-align: center;
-        transform: translateY(-50px);
-        opacity: 0;
-        transition: 1s;
-}
-.scrollContainer:hover>.scrollText{
-    opacity: 1;
-    transform: translateY(-5px);
-}
+
+  .scroll-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    cursor: pointer;
+    display: none;
+    /* Add any other styling you want, e.g., background color, padding, etc. */
+  }
+
 .enlist{
     cursor:pointer;
 }
