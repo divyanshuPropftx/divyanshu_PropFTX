@@ -62,6 +62,7 @@ export default function Index() {
 
 
   return (
+    <>
 
     <div className='parent font-poppins  flex flex-col justify-center'>
     <div className='flex flex-col '>
@@ -150,10 +151,6 @@ export default function Index() {
           <div className='investImage'><img className='rounded-3xl pr-10 w-full h-full' src={InvestImage} alt="main"/></div>
         </div>
       </div>
-
-      <div className='text-white '>
-        {/* <div className='investImage'><img className='rounded-3xl pr-10 w-full h-full' src={InvestImage} alt="main"/></div> */}
-
       </div>
     </div>
 
@@ -421,8 +418,8 @@ export default function Index() {
   <div className='shadowFaq flex'>
     <div className='flex flex-col justify-center rounded-lg'>
       <div className='text-start flex flex-col justify-center'>
-        <button type='submit' className='btn btn-primary text-base font-medium flex flex-col leading-5 pl-6 bg-pink pr-6 pt-2 pb-3 rounded-lg'>
-          Submit
+        <button type='submit' className='button-submit'>
+          Coming Soon
         </button>
       </div>
     </div>
@@ -448,7 +445,8 @@ export default function Index() {
 <Footer/>
 
 
-</div>
-</div>
+  </div>
+
+    </>
   )
 }

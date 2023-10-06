@@ -1,11 +1,71 @@
-.parent{
+.parent {
     background: var(--BG-color, #091526);
-}
-.mailMeImage{
-    height:200px;
-    width:370px;
-}
-.locationImage{
-    height:200px;
-    width:370px;
-}
+  }
+  .mailMeImage {
+    height: 200px;
+    width: 370px;
+  }
+  .locationImage {
+    height: 200px;
+    width: 370px;
+  }
+  
+  .bg-color {
+    background: #091526;
+  }
+  
+  .left-price-button {
+    border-radius: 16px;
+    background: var(--glass-col, rgba(128, 128, 128, 0.2));
+    backdrop-filter: blur(50px);
+    /* margin: 5px; */
+  }
+  
+  .button-class {
+    border-radius: 24px;
+    border: 1px solid
+      var(--windows-stroke-glass-specular, rgba(255, 255, 255, 0.4));
+    background: var(--glass-col, rgba(128, 128, 128, 0.2));
+    background-blend-mode: luminosity;
+    backdrop-filter: blur(10px);
+    padding: 8px;
+  }
+  
+  .remove-border {
+    border-color: transparent;
+  }
+  
+  .button-submit {
+    display: flex;
+    width: 309px;
+    height: 60px;
+    padding: 14.5px 22px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    flex-shrink: 0;
+    border-radius: 8px;
+    background: var(--primary-electric-blue, #78f9ff);
+  }
+  
+  .small-button {
+  
+      border-radius: 4px;
+      background: var(--Primary-Accent-Color, #78F9FF);
+  }
+  
+  
+  /* YourComponent.css */
+  @media (max-width: 768px) {
+      .text-3xl {
+        font-size: 2rem;
+      }
+      .text-4xl {
+        font-size: 2.5rem;
+      }
+      .text-lg {
+        font-size: 1rem;
+      }
+      /* Add more responsive styles here as needed */
+    }
+    
