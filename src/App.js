@@ -4,6 +4,7 @@ import ContactUs from './Component/ContactUs/Index';
 import AboutUs from './Component/AboutUs/Index';
 import Team from './Component/Team/Index'
 import FAQPage from './Component/FAQPage/Index';
+import PricingDetails from './Component/PricingDetails';
 
 function App() {
   return (
@@ -19,7 +20,7 @@ function App() {
     <AboutUs/>
          <Team/>
          <FAQPage/>
-    
+    <PricingDetails/>
  
      {/*Y
     <Team/>
