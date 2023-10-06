@@ -7,7 +7,7 @@ const CardComp = ({ imageUrl, description }) => {
 
         <div className=' flex flex-col gap-2'>
           <div className='imageTradable'><img src={imageUrl} alt="Description" className=' h-full w-full' /></div>
-          <div className='description text-sm pb-6 font-medium -mt-3'>{description}</div>
+          <div className='description text-xs pb-6 font-medium -mt-3'>{description}</div>
           
         </div>
       </div>
