@@ -62,7 +62,6 @@ export default function Index() {
 
 
   return (
-    <>
 
     <div className='parent font-poppins  flex flex-col justify-center'>
     <div className='flex flex-col '>
@@ -449,8 +448,7 @@ export default function Index() {
 <Footer/>
 
 
-  </div>
-
-    </>
+</div>
+</div>
   )
 }
