@@ -6,13 +6,14 @@ import Team from './Component/Team/Index'
 import FAQPage from './Component/FAQPage/Index';
 import PricingDetails from './Component/PricingDetails';
 import PrivacyPolicy from './Component/PrivacyPolicy/Index';
+import RiskDisclosure from './Component/Risk&Concern/Index';
 
 function App() {
   return (
     <div className="App">
 
 
-     {/*     */}    
+     {/*    */}     
          <Index/>  
     <ContactUs/>
   
@@ -22,6 +23,7 @@ function App() {
          <FAQPage/>
     <PricingDetails/>
     <PrivacyPolicy/>
+    <RiskDisclosure/>
 
      {/*Y
     <Team/>

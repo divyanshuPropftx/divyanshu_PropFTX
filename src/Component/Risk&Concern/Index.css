@@ -1,0 +1,5 @@
+/* In your CSS file */
+ol {
+    list-style-type: decimal; /* Set the list item marker to numbers (default) */
+  }
+  
