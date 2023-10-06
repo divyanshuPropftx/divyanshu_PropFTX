@@ -2,3 +2,41 @@
     width:165px;
     height:45px;
 }
+.dropdown1{
+    width:110px;
+    border-radius: 8px;
+    background: var(--glass-col, rgba(128, 128, 128, 0.20));
+}
+.dropdown2{
+    width:150px;
+    border-radius: 8px;
+    background: var(--glass-col, rgba(128, 128, 128, 0.20));
+}
+
+.arrowNav{
+    height:20px;
+    width:20px;
+}
+.logo{
+    width:160px;
+
+}
+.properties{
+    width:210px;
+ 
+}
+.resale{
+    width:100px;
+
+}
+.aboutUs{
+    width:140px;
+
+}
+.learn{
+    width:130px;
+
+}
+.clubAccess{
+height:40px;
+}
