@@ -15,4 +15,4 @@ const GuideCard = ({ imageUrl,description }) => {
 
 export default GuideCard
 
-
+  

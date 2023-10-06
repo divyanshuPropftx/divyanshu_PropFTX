@@ -151,6 +151,10 @@ export default function Index() {
           <div className='investImage'><img className='rounded-3xl pr-10 w-full h-full' src={InvestImage} alt="main"/></div>
         </div>
       </div>
+
+      <div className='text-white '>
+        {/* <div className='investImage'><img className='rounded-3xl pr-10 w-full h-full' src={InvestImage} alt="main"/></div> */}
+
       </div>
     </div>
 
