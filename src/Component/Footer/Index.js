@@ -1,7 +1,8 @@
 import React from 'react'
 import FooterImage from '../../Assets/footerImage.png'
 import Inbox from '../../Assets/email.svg'
-import Dr from '../../Assets/dr.png'
+import Wp from '../../Assets/Wp.png'
+import In from '../../Assets/In.png'
 import Ig from '../../Assets/ig.png'
 import Tw from '../../Assets/tw.png'
 
@@ -35,8 +36,8 @@ function Footer() {
         </div>
       </div>
       <div className=' flex flex-row justify-between pt-8'>
-        <div className='w-56 h-56 '><img className='rounded-3xl' src={Dr} alt="main"/></div>
-        <div className='w-56 h-56 '><img className='rounded-3xl' src={Dr} alt="main"/></div>
+        <div className='w-56 h-56 '><img className='rounded-3xl' src={In} alt="main"/></div>
+        <div className='w-56 h-56 '><img className='rounded-3xl' src={Wp} alt="main"/></div>
         <div className='w-56 h-56 '><img className='rounded-3xl' src={Ig} alt="main"/></div>
         <div className='w-56 h-56 '><img className='rounded-3xl' src={Tw} alt="main"/></div>
       </div>
