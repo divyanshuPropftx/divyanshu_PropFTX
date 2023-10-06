@@ -4,8 +4,8 @@ import QuestionCard from '../../QuestionCard/Index'
 function UserGuideFAQ() {
   return (
     <>
-    <div className='text-white pt-12 text-4xl font-semibold'>User Guide</div>
-    <div className='flex flex-col gap-6 pt-10 pl-24 pr-24 rounded-lg'>
+    <div className='text-white font-poppins pt-12 text-4xl font-semibold'>User Guide</div>
+    <div className='flex font-poppins flex-col gap-6 pt-10 pl-24 pr-24 rounded-lg'>
     <div className='rounded-lg'><QuestionCard number="1" question="Why PropFTX" answer="Lorem ipsum dolor sit amet consectetur. Orci placerat condimentum ipsum etiam proin egestas. Maecenas pretium mattis risus lectus semper praesent nunc.Lorem ipsum dolor sit amet consectetur. Orci placerat condimentum ipsbhbu"/></div>
     <div className='rounded-lg'><QuestionCard number="2" question="What is blockchain technology?" answer="Lorem ipsum dolor sit amet consectetur. Orci placerat condimentum ipsum etiam proin egestas. Maecenas pretium mattis risus lectus semper praesent nunc.Lorem ipsum dolor sit amet consectetur. Orci placerat condimentum ipsbhbu"/></div>
     <div className='rounded-lg'><QuestionCard number="3" question="What is property tokenization on a blockchain?" answer="Lorem ipsum dolor sit amet consectetur. Orci placerat condimentum ipsum etiam proin egestas. Maecenas pretium mattis risus lectus semper praesent nunc.Lorem ipsum dolor sit amet consectetur. Orci placerat condimentum ipsbhbu"/></div>

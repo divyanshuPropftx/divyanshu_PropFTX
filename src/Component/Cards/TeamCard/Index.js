@@ -8,7 +8,7 @@ const TeamCard = ({ imageUrl, name, position }) => {
     backgroundSize: '100% 100%',
   };
   return (
-    <div className='teamCard flex flex-col justify-end' style={cardStyle}>
+    <div className='teamCard font-poppins flex flex-col justify-end' style={cardStyle}>
     <div className='image flex flex-row justify-between p-2'>
     <div className='flex flex-col'>
     <div className='name text-white font-bold text-xl flex flex-col justify-center text-start whitespace-nowrap'>{name}</div>

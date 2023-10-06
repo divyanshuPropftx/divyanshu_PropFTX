@@ -7,7 +7,7 @@ import Tw from '../../Assets/tw.png'
 
 function Footer() {
   return (
-    <div className='footer  flex flex-row pl-24 pr-24 pt-24 gap-12 font-semibold text-start justify-between'>
+    <div className='footer font-poppins  flex flex-row pl-24 pr-24 pt-24 gap-12 font-semibold text-start justify-between'>
     <div className=''><img className='rounded-3xl' src={FooterImage} alt="main"/></div>
     <div className=' flex flex-col text-white gap-2 whitespace-nowrap'>
       <div className=' text-pink'>Resouces</div>

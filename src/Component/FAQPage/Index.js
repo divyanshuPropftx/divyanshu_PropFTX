@@ -19,7 +19,7 @@ function FAQPage() {
 
 
   return (
-    <div className="parent">
+    <div className="parent font-poppins">
       <Navbar />
       <div className="leading-loose text-4xl font-bold text-white pt-12">
         Hello, How can we {<span className="text-pink font-bold">help? </span>}

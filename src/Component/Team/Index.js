@@ -25,7 +25,7 @@ import TeamCard from '../Cards/TeamCard/Index'
 function Team() {
 
   return (
-    <div className='parent'>
+    <div className='parent font-poppins'>
 
 <Navbar/>
 

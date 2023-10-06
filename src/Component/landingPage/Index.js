@@ -64,7 +64,7 @@ export default function Index() {
   return (
     <>
 
-    <div className='parent flex flex-col justify-center'>
+    <div className='parent font-poppins  flex flex-col justify-center'>
     <div className='flex flex-col '>
     <Header/>
 
@@ -101,7 +101,7 @@ export default function Index() {
 
     <div className='taradable  text-white font-bold text-4xl pl-24 pr-24 pt-12'>
         <div className='flex flex-col justify-center gap-3'>
-            <div className='leading-loose'>Real State Made {<span className='text-pink'>Tradable</span>}</div>
+            <div className='leading-loose '>Real State Made {<span className='text-pink'>Tradable</span>}</div>
             <div className=' flex flex-row gap-12 justify-center'>
             <CardComp imageUrl={ImageA} description="lorem kjns ajv jjs jkuv svs skv jksvuv jsvv svuv lorem kjns ajv jjs jkuv svs " />
             <CardComp imageUrl={ImageB} description="lorem kjns ajv jjs jkuv svs skv jksvuv jsvv svuv lorem kjns ajv jjs jkuv svs " />

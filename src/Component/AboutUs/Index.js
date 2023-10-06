@@ -12,7 +12,7 @@ import Navbar from '../Navbar/Index'
 
 function AboutUs() {
   return (
-    <div className='parent'>
+    <div className='parent font-poppins'>
 
     <Navbar/>
 
