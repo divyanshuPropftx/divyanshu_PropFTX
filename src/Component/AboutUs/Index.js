@@ -19,7 +19,7 @@ function AboutUs() {
     <div className='pt-12 '>
       <div className='pr-96 pl-96  text-white text-4xl font-bold p-4'>About {<span className="text-pink">Us</span>}</div>
       <div className='pr-96 pl-96  font-medium text-lg text-white p-6'>What is PropFTX?</div>
-      <div className='leading-8 text-base font-medium text-white'>PropFTX is a unique Digital Real estate Marketplace, blending Realty Assets with Web3 technology. PropFTX is one of the first Buy & Sell{<br></br>}
+      <div className='leading-8 text-base font-normal text-white'>PropFTX is a unique Digital Real estate Marketplace, blending Realty Assets with Web3 technology. PropFTX is one of the first Buy & Sell{<br></br>}
        platforms in the world of Real Estate, which ensures transparency, liquidity, and ownership proof for the investment recorded on {<br></br>}
        Blockchain.</div>
     </div>
@@ -51,8 +51,8 @@ function AboutUs() {
 
 
     <div className='flex justify-center'>
-      <div className='text-white text-2xl font-semibold pt-36 pl-96 pr-96'>PropFTX is the first-ever digital real estate platform offering to invest in residential,
-      commercial, and plots on one single platform.</div>
+      <div className='text-white text-xl font-semibold pt-36 pl-96 pr-96 whitespace-nowrap '>PropFTX is the first-ever digital real estate platform offering to invest in residential,
+      {<br></br>}commercial, and plots on one single platform.</div>
     </div>
 
 
@@ -61,7 +61,7 @@ function AboutUs() {
     <div className='JoinPremium  text-white flex flex-col justify-center gap-10 pl-20 pr-20 pt-20'>
     <div className='premiumShadow bg-silver flex flex-col justify-center gap-10 p-10'>
       <div className='text-4xl font-bold'>Join our premium membership</div>
-      <div className='font-medium text-lg'>With PropFTX premium membership, Get early access to all the premium benefits.</div>
+      <div className='font-normal text-base'>With PropFTX premium membership, Get early access to all the premium benefits.</div>
       <div className='flex flex-row justify-center gap-2'>
         <div className='text-lg font-medium bg-blue p-4 rounded-lg text-black'>JOIN NOW</div>
         <div className='shadowFaq flex'>

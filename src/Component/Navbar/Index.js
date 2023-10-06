@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import Logo from '../../Assets/logo.png';
+import Logo from '../../Assets/Logo.png';
 import './Index.css';
 import ArrowDown from '../../Assets/arrowDown.png'
 
