@@ -72,7 +72,7 @@ export default function Index() {
         <div className='mainPageLeft   pt-16 pl-8 pr-8  flex flex-col gap-3 '>
             <div className=''><img src={Left} alt="main" /></div>
             <div className=' flex flex-row font-semibold gap-8'>             
-            <div className='text-black font-medium bg-blue pt-2  pl-3 pr-3 text-base w-20 rounded-lg'>Explore</div>
+            <div className='text-black font-medium bg-blue pt-3  pl-3 pr-3 text-base w-20 rounded-lg'>Explore</div>
               <div className='knowMore shadowFaq flex'>
                 <div className='flex border border-pink rounded-lg'>
                 <div className='flex flex-col justify-center text-start pl-4'><p>Know More</p></div>
