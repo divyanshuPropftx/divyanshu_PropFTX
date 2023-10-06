@@ -51,8 +51,8 @@ function AboutUs() {
 
 
     <div className='flex justify-center'>
-      <div className='text-white text-xl font-semibold pt-36 pl-96 pr-96 whitespace-nowrap '>PropFTX is the first-ever digital real estate platform offering to invest in residential,
-      {<br></br>}commercial, and plots on one single platform.</div>
+      <div className='text-white text-xl font-semibold pt-36 pl-96 pr-96'>PropFTX is the first-ever digital real estate platform offering to invest in residential,
+      commercial, and plots on one single platform.</div>
     </div>
 
 
