@@ -1,12 +1,12 @@
 import React from 'react'
-import Logo from '../../Assets/logo.png'
+import logo from '../../Assets/logo.png'
 import './Index.css'
 
 function Navbar() {
   return (
     <div className='navbar pl-20 text-grey h-24 p-8'>
     <div className='flex flex-row justify-between h-10'>
-        <div className='logo'><img className='w-full h-full p-2' src={Logo} alt="Logo"/></div>
+        <div className='logo'><img className='w-full h-full p-2' src={logo} alt="Logo"/></div>
         <div className='pl-28 text-lg'>Properties</div>
         <div className='pl-8 text-lg'>Resale</div>
         <div className='pl-8 text-lg whitespace-nowrap'>About Us</div>
