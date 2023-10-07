@@ -106,13 +106,13 @@ export default function Index() {
     <div className='taradable  text-white font-bold text-4xl pl-24 pr-24 pt-12'>
         <div className='flex flex-col justify-center gap-3'>
             <div className='leading-loose '>Real State Made {<span className='text-pink'>Tradable</span>}</div>
-            <div className=' flex flex-row gap-12 justify-center'>
+            <div className=' flex flex-row justify-center'>
+            <div className='tradableContainer flex flex-row gap-12 justify-between'>
             <CardComp imageUrl={ImageA} description="lorem kjns ajv jjs jkuv svs skv jksvuv jsvv svuv lorem kjns ajv jjs jkuv svs " />
             <CardComp imageUrl={ImageB} description="lorem kjns ajv jjs jkuv svs skv jksvuv jsvv svuv lorem kjns ajv jjs jkuv svs " />
             <CardComp imageUrl={ImageC} description="lorem kjns ajv jjs jkuv svs skv jksvuv jsvv svuv lorem kjns ajv jjs jkuv svs " />
             <CardComp imageUrl={ImageD} description="lorem kjns ajv jjs jkuv svs skv jksvuv jsvv svuv lorem kjns ajv jjs jkuv svs " />
-
-
+            </div>
             </div>
         </div>
     </div>
@@ -121,12 +121,14 @@ export default function Index() {
     <div className='seamless  text-white font-normal text-4xl pl-24 pr-24 pt-40'>
     <div className='flex flex-col justify-center p-4 gap-3'>
     <div className='leading-loose -mt-20'>Seamless Real Estate Investment in {<span className='text-pink font-bold'>Five Simple Steps </span>}</div>
-      <div className='flex flex-row gap-4 flex-wrap justify-center'>
+     <div className='flex flex-row justify-center'>
+    <div className='seamlessContainer flex flex-row gap-4 flex-wrap justify-between'>
       <InvestmentCards Number="1" heading="Signup & KYC" description="Visit our property or resale page to start investing now."/>
       <InvestmentCards Number="2" heading="Signup & KYC" description="Visit our property or resale page to start investing now."/>
       <InvestmentCards Number="3" heading="Invest & Earn" description="Operate your custom AI-powered dashboard to track your real portfolio  estate"/>
       <InvestmentCards Number="4" heading="Signup & KYC" description="Visit our property or resale page to start investing now."/>
       <InvestmentCards Number="5" heading="Sell Back" description="Visit our property or resale page to start investing now."/>
+      </div>
       </div>
     </div>
     </div>
@@ -151,7 +153,7 @@ export default function Index() {
           <FeaturesCard imageUrl={Research} heading="Verifiable Transactions" description="The no-hidden-costs policy has our backing. The investing process is made simple and secure by full cost disclosures, access to in-depth data, and openness."/>
           <FeaturesCard imageUrl={CyberSecurity} heading="Complete Transparency" description="The no-hidden-costs policy has our backing. The investing process is made simple and secure by full cost disclosures, access to in-depth data, and openness."/>
         </div>
-        <div className='text-white  flex flex-col justify-center  '>
+        <div className='text-white border border-white flex flex-col justify-center  '>
           <div className='investImage'><img className='rounded-3xl pr-10 w-full h-full' src={InvestImage} alt="main"/></div>
         </div>
       </div>

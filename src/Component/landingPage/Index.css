@@ -137,9 +137,14 @@ height:40px;
 
 }
 .investImage{
-margin-top:-7rem;
 height:800px;
 }
 .middleContainer{
     width:1400px;
+}
+.seamlessContainer{
+    width:1250px;
+}
+.tradableContainer{
+    width:1250px;
 }
