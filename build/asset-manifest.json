@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/divyanshu_PropFTX/static/css/main.1e834df9.css",
-    "main.js": "/divyanshu_PropFTX/static/js/main.f9d83492.js",
+    "main.css": "/divyanshu_PropFTX/static/css/main.854a89fa.css",
+    "main.js": "/divyanshu_PropFTX/static/js/main.2e806531.js",
     "static/js/787.66b477fd.chunk.js": "/divyanshu_PropFTX/static/js/787.66b477fd.chunk.js",
     "static/media/investImage.png": "/divyanshu_PropFTX/static/media/investImage.156ff32be71a852ac8ed.png",
     "static/media/residential.png": "/divyanshu_PropFTX/static/media/residential.2e7dbc2674e06ca6d307.png",
@@ -9,14 +9,11 @@
     "static/media/aboutUsBlockchain.png": "/divyanshu_PropFTX/static/media/aboutUsBlockchain.60fde0d692dbfddb4f30.png",
     "static/media/dashboard.png": "/divyanshu_PropFTX/static/media/dashboard.43ae8f8197888ad5dc63.png",
     "static/media/MPrashanthSir.png": "/divyanshu_PropFTX/static/media/MPrashanthSir.26227c9d7a14b26a86a8.png",
-    "static/media/unique.png": "/divyanshu_PropFTX/static/media/unique.c39761755288f6c86eb1.png",
-    "static/media/transparency.png": "/divyanshu_PropFTX/static/media/transparency.d7b687dfbbb258828541.png",
     "static/media/MPrernaRohillaMaam.png": "/divyanshu_PropFTX/static/media/MPrernaRohillaMaam.d114c5d633c641a4324f.png",
     "static/media/FVarunSir.png": "/divyanshu_PropFTX/static/media/FVarunSir.4d1b999fd4334cff1e9c.png",
     "static/media/question.png": "/divyanshu_PropFTX/static/media/question.708423ba9027dfcc4a0e.png",
     "static/media/DIpsaMaam.png": "/divyanshu_PropFTX/static/media/DIpsaMaam.0a2e402024df1f81cb0f.png",
     "static/media/FSathinarayananSir.png": "/divyanshu_PropFTX/static/media/FSathinarayananSir.0d01f15c3b12f06f1955.png",
-    "static/media/availability.png": "/divyanshu_PropFTX/static/media/availability.f5447edc0bf721ac682f.png",
     "static/media/ABipinSir.png": "/divyanshu_PropFTX/static/media/ABipinSir.79dbd4121682bf224a5d.png",
     "static/media/AJunaidSir.png": "/divyanshu_PropFTX/static/media/AJunaidSir.feee40385d57e4da2698.png",
     "static/media/APrashitaMaam.png": "/divyanshu_PropFTX/static/media/APrashitaMaam.9f2d2b4f9eb79c21176e.png",
@@ -26,7 +23,6 @@
     "static/media/commercial.png": "/divyanshu_PropFTX/static/media/commercial.e84451eb6464f853c8dd.png",
     "static/media/aboutUsAIl.png": "/divyanshu_PropFTX/static/media/aboutUsAIl.eb68e855f3a5fc00697e.png",
     "static/media/FRajeevSir.png": "/divyanshu_PropFTX/static/media/FRajeevSir.b83c90455fa0824b373e.png",
-    "static/media/oneStop.png": "/divyanshu_PropFTX/static/media/oneStop.b38d236034d5ec26c366.png",
     "static/media/ASubhajeetSir.png": "/divyanshu_PropFTX/static/media/ASubhajeetSir.e6b7539cc08242ab4334.png",
     "static/media/MAnmolPrasad.png": "/divyanshu_PropFTX/static/media/MAnmolPrasad.bf3b2a0d92dd887d57d7.png",
     "static/media/left.png": "/divyanshu_PropFTX/static/media/left.aab3d43667d6ca226003.png",
@@ -39,8 +35,12 @@
     "static/media/DShubhankarSir.png": "/divyanshu_PropFTX/static/media/DShubhankarSir.36b57ad4b6d93c0d0595.png",
     "static/media/main.png": "/divyanshu_PropFTX/static/media/main.c1ed320a09857bc1c759.png",
     "static/media/imageA.png": "/divyanshu_PropFTX/static/media/imageA.b87629dfa5e1bf64f15c.png",
+    "static/media/unique.png": "/divyanshu_PropFTX/static/media/unique.32dc0d08dceac3bce3c6.png",
     "static/media/dashboard2.png": "/divyanshu_PropFTX/static/media/dashboard2.4300bf3bc2aa99b86d6f.png",
+    "static/media/transparency.png": "/divyanshu_PropFTX/static/media/transparency.5d8a2ff3c97c5867e4ac.png",
+    "static/media/availability.png": "/divyanshu_PropFTX/static/media/availability.914a309eef1aac16ce7d.png",
     "static/media/linkedIn.png": "/divyanshu_PropFTX/static/media/linkedIn.b25a48373d23dce804b7.png",
+    "static/media/oneStop.png": "/divyanshu_PropFTX/static/media/oneStop.c428ae92044ede0b94d5.png",
     "static/media/Logo.png": "/divyanshu_PropFTX/static/media/Logo.bf97e62fffac9e254108.png",
     "static/media/footerImage.png": "/divyanshu_PropFTX/static/media/footerImage.a6d3d3be7b096f00f625.png",
     "static/media/Wp.png": "/divyanshu_PropFTX/static/media/Wp.114118b7ee04579057b1.png",
@@ -52,12 +52,12 @@
     "static/media/rightArrow.png": "/divyanshu_PropFTX/static/media/rightArrow.0b16eb2c2cc976583fb0.png",
     "index.html": "/divyanshu_PropFTX/index.html",
     "static/media/email.svg": "/divyanshu_PropFTX/static/media/email.5f41c5019430738e4651b03e4daf12ef.svg",
-    "main.1e834df9.css.map": "/divyanshu_PropFTX/static/css/main.1e834df9.css.map",
-    "main.f9d83492.js.map": "/divyanshu_PropFTX/static/js/main.f9d83492.js.map",
+    "main.854a89fa.css.map": "/divyanshu_PropFTX/static/css/main.854a89fa.css.map",
+    "main.2e806531.js.map": "/divyanshu_PropFTX/static/js/main.2e806531.js.map",
     "787.66b477fd.chunk.js.map": "/divyanshu_PropFTX/static/js/787.66b477fd.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.1e834df9.css",
-    "static/js/main.f9d83492.js"
+    "static/css/main.854a89fa.css",
+    "static/js/main.2e806531.js"
   ]
 }

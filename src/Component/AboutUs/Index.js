@@ -8,6 +8,7 @@ import Transparency from '../../Assets/transparency.png'
 import Availability from '../../Assets/availability.png'
 import Footer from '../Footer/Index'
 import Navbar from '../Navbar/Index'
+import PrincipleCard from '../Cards/PrincipleCard/Index'
 
 
 function AboutUs() {
@@ -76,21 +77,23 @@ function AboutUs() {
 
 
 
-  <div className='seamless text-white font-normal text-4xl pt-28'>
+  <div className='seamless pl-12 pr-12 text-white font-normal text-4xl pt-28'>
   <div className='flex flex-col justify-center p-2 gap-3'>
   <div className='pb-4 leading-loose  text-4xl -mt-20'>The {<span className='text-pink text-4xl font-bold'>Principles</span>} We Uphold at PropFTX</div> 
-    <div className=' flex flex-row gap-12 p-28 pt-4'>
-      <div><img className='rounded-3xl' src={Transparency} alt="main" /></div>
-      <div><img className='rounded-3xl' src={Availability} alt="main" /></div>
-      <div><img className='rounded-3xl' src={Unique} alt="main" /></div>
-      <div><img className='rounded-3xl' src={Onestop} alt="main" /></div>
+  <div className='flex flex-row justify-center'>
+  <div className='principleContainer  flex flex-row gap-4 justify-between'>
+      <PrincipleCard  imageUrl={Transparency} heading="Ensuring Absoute Transparency"  />
+      <PrincipleCard  imageUrl={Availability}  heading="24*7 Availability"  />
+      <PrincipleCard   imageUrl={Unique} heading="Unique Resale Model"  />
+      <PrincipleCard  imageUrl={Onestop} heading="One-stop investment platform"  />
+    </div>
     </div>
   </div>
   </div>
 
 
 
-  <div className=' flex flex-row gap-40'>
+  <div className=' flex flex-row pt-12 gap-40'>
     <div className=' flex flex-col pl-24'>
       <div className=' text-4xl text-pink font-bold p-2'>Mission</div>
       <div className=' text-white text-base font-medium pt-8 text-start leading-9'>Our vision at PROPFTX is to position ourselves as a cutting-edge Real estate marketplace. 

@@ -1,3 +1,6 @@
 .parent{
     background: var(--BG-color, #091526);
 }
+.principleContainer{
+    width:1250px;
+}
