@@ -93,7 +93,7 @@ function AboutUs() {
   <div className=' flex flex-row gap-40'>
     <div className=' flex flex-col pl-24'>
       <div className=' text-4xl text-pink font-bold p-2'>Mission</div>
-      <div className=' text-white text-lg font-medium pt-8 text-start leading-9'>Our vision at PROPFTX is to position ourselves as a cutting-edge Real estate marketplace. 
+      <div className=' text-white text-base font-medium pt-8 text-start leading-9'>Our vision at PROPFTX is to position ourselves as a cutting-edge Real estate marketplace. 
       Our primary focus is on providing secure and transparent transactions, setting new standards for 
       excellence. We are committed to simplify processes and ensure accessibility, catering to the 
       diverse needs of all types of investors. By offering 24X7 online platform, we strive to exceed 
@@ -102,7 +102,7 @@ function AboutUs() {
     </div>
     <div className=' flex flex-col pr-24'>
     <div className='  text-4xl text-pink font-bold p-2'>Vision</div>
-    <div className=' text-white text-lg font-medium pt-8 text-start leading-9'>Our Mission at PROPFTX is to onboard One Million Square Feet worth of diverse and quality 
+    <div className=' text-white text-base font-medium pt-8 text-start leading-9'>Our Mission at PROPFTX is to onboard One Million Square Feet worth of diverse and quality 
     real estate projects, catering to the needs and aspirations of a wide range of investors. With
      a customer-centric approach, we strive to provide exceptional online experience, ensuring the 
      satisfaction and success of our 10,000 strong customer base by the year 2024.
