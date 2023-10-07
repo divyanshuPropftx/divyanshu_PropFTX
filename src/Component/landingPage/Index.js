@@ -108,10 +108,10 @@ export default function Index() {
             <div className='leading-loose '>Real State Made {<span className='text-pink'>Tradable</span>}</div>
             <div className=' flex flex-row justify-center'>
             <div className='tradableContainer flex flex-row gap-12 justify-between'>
-            <CardComp imageUrl={ImageA} description="lorem kjns ajv jjs jkuv svs skv jksvuv jsvv svuv lorem kjns ajv jjs jkuv svs " />
-            <CardComp imageUrl={ImageB} description="lorem kjns ajv jjs jkuv svs skv jksvuv jsvv svuv lorem kjns ajv jjs jkuv svs " />
-            <CardComp imageUrl={ImageC} description="lorem kjns ajv jjs jkuv svs skv jksvuv jsvv svuv lorem kjns ajv jjs jkuv svs " />
-            <CardComp imageUrl={ImageD} description="lorem kjns ajv jjs jkuv svs skv jksvuv jsvv svuv lorem kjns ajv jjs jkuv svs " />
+            <CardComp imageUrl={ImageA} heading="Hold Tradable Real Estate Token" description="lorem kjns ajv jjs jkuv svs skv jksvuv jsvv svuv lorem kjns ajv jjs jkuv svs " />
+            <CardComp imageUrl={ImageB} heading="Become Owner of Leased Properties" description="lorem kjns ajv jjs jkuv svs skv jksvuv jsvv svuv lorem kjns ajv jjs jkuv svs " />
+            <CardComp imageUrl={ImageC} heading="Nominal Investment" description="lorem kjns ajv jjs jkuv svs skv jksvuv jsvv svuv lorem kjns ajv jjs jkuv svs " />
+            <CardComp imageUrl={ImageD} heading="Buy of Sell tokens 24/7" description="lorem kjns ajv jjs jkuv svs skv jksvuv jsvv svuv lorem kjns ajv jjs jkuv svs " />
             </div>
             </div>
         </div>
@@ -153,7 +153,7 @@ export default function Index() {
           <FeaturesCard imageUrl={Research} heading="Verifiable Transactions" description="The no-hidden-costs policy has our backing. The investing process is made simple and secure by full cost disclosures, access to in-depth data, and openness."/>
           <FeaturesCard imageUrl={CyberSecurity} heading="Complete Transparency" description="The no-hidden-costs policy has our backing. The investing process is made simple and secure by full cost disclosures, access to in-depth data, and openness."/>
         </div>
-        <div className='text-white border border-white flex flex-col justify-center  '>
+        <div className='text-white flex flex-col justify-center  '>
           <div className='investImage'><img className='rounded-3xl pr-10 w-full h-full' src={InvestImage} alt="main"/></div>
         </div>
       </div>

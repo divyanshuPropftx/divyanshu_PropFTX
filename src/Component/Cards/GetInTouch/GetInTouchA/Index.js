@@ -9,8 +9,10 @@ const GetInTouchA = ({ imageUrl,heading, description }) => {
         <div className='flex flex-row justify-center'>
         <div className='imageGetInTouch'><img src={imageUrl} className='w-12 h-12' /></div>
         </div>
-        <div className='imageDescriptionGetInTouch pt-6 text-white text-lg font-medium'>{heading}</div>
-        <div className='imageDescriptionGetInTouch text-white text-base text-start pl-2 font-normal -mt-3'>{description}</div>
+        <div className='imageDescriptionGetInTouch pt-2  text-white text-lg font-medium'>{heading}</div>
+        <div className='flex flex-row justify-center'>
+        <div className='imageDescriptionGetInTouch pt-2 text-white text-sm text-start pl-2 font-normal -mt-3 '>{description}</div>
+        </div>
       </div>
     );
   }; 
