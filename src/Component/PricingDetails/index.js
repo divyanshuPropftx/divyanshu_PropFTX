@@ -103,7 +103,7 @@ function PricingDetails() {
           </button>
         </div>
       </div>
-      <div className="text text-white  pl-24 pr-24 pt-24">
+      {/* <div className="text text-white  pl-24 pr-24 pt-24">
         <div className="text-4xl font-semibold">Get In Touch</div>
         <div className="text-lg font-medium pt-4">
           We would love to hear from either you are an investor, who is looking
@@ -130,7 +130,7 @@ function PricingDetails() {
             </a>
           </div>
         </div>
-      </div>
+      </div> */}
 
       <Footer />
     </div>
