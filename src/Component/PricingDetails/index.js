@@ -67,7 +67,7 @@
             {/* Move the button section to a different position */}
             <div className="flex flex-col sm:mt-10 md:mt-10 lg:mt-10 xl-mt-0 justify-between align-middle ">
               <div className="remove-border text-white  button-class">  
-                <div className="relative inline-flex items-center align-middle justify-center w-full">
+                <div className="relative inline-flex items-center align-middle justify-center h-full w-full">
                   <button
                     className={` h-32 align-middle justify-center w-full text-sm font-medium rounded-md outline-none focus:outline-none relative overflow-hidden`}
                     onClick={handleToggle}
@@ -75,7 +75,7 @@
                     <div className="w-full h-full flex relative justify-center">
                       <div
                         className={`w-full h-full flex flex-col items-center align-middle justify-center ${
-                          isThreeMonthsSelected ? "" : ""
+                          isThreeMonthsSelected ? "left-price-button  " : ""
                         }`}
                       >
                         <div>3months</div>
@@ -84,7 +84,7 @@
                             LimitedOffer
                           </button>
                         </div>
-                      </div>
+                      </div>    
 
                       <div
                         className={`w-full h-full flex items-center align-middle justify-center ${

@@ -18,9 +18,7 @@
   border-radius: 16px;
   background: var(--glass-col, rgba(128, 128, 128, 0.20));
   backdrop-filter: blur(50px);
-  width: 415px;
-height: 158.129px;
-flex-shrink: 0;
+  
 }
 
 .right-price-button {
