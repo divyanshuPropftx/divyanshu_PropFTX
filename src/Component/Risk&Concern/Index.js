@@ -29,7 +29,7 @@ function RiskDisclosure() {
 
         <div className=' text-sm font-normal text-start pt-12'>
           <ul className='pl-6'>
-            <li className='font-bold'>Speculative declarations:</li>
+            <li className='font-bold text-lg'>Speculative declarations:</li>
           </ul>
         </div>
         <div className=' pt-2 text-sm font-normal text-start'>Company's investments are not ideal for all investors and are meant to be a partial investment program. It is impossible to predict if the Company's investing goals will be met. Traders run the risk of losing the entire or a portion of their money. Future outcomes cannot be predicted based on past performance.</div>
@@ -39,7 +39,7 @@ function RiskDisclosure() {
 
         <div className=' text-sm font-normal text-start pt-12'>
           <ul className='pl-6'>
-            <li className='font-bold'>Leverage:</li>
+            <li className='font-bold text-lg'>Leverage:</li>
           </ul>
         </div>
         <div className=' pt-2 text-sm font-normal text-start'>The Company employs both direct and indirect influence. In order to boost an investment's profitability, natural leverage entails borrowing money, whereas indirect leverage emerges when the assets in which the Company engages are leveraged. Utilising leverage entails risk, including the possibility of greater instability, higher NAV reductions, and variations in dividends paid by the Company.
@@ -50,7 +50,7 @@ function RiskDisclosure() {
 
         <div className=' text-sm font-normal text-start pt-12'>
           <ul className='pl-6'>
-            <li className='font-bold'>Generic Statements:</li>
+            <li className='font-bold text-lg'>Generic Statements:</li>
           </ul>
         </div>
         <div className=' pt-2 text-sm font-normal text-start'>We have a fresh idea and unique service. As we build our business, we steadily roll out various Platform functionalities while developing new features constantly. We anticipate that it will require time and effort and that there will be challenges along the way that are difficult to predict at this time. This implies that there is no assurance as to whether or not our idea will demonstrate its viability, develop into a valuable service for our clients, and—most importantly—have a substantial impact on protecting the Earth's ecosystems.
@@ -70,7 +70,7 @@ function RiskDisclosure() {
 
         <div className=' text-sm font-normal text-start pt-12'>
         <ul className='pl-6'>
-          <li className='font-bold'>Expert Recommendations:</li>
+          <li className='font-bold text-lg'>Expert Recommendations:</li>
         </ul>
       </div>
       <div className=' pt-2 text-sm font-normal text-start'>Even though the asset manager will seek advice from lawyers, auditors, and other specialists concerning the Company, conditions, and management of the corporation offering the opportunity, these experts won't advise any potential or former investors. Any potential investor is recommended by the business or the portfolio management to speak with their own financial, tax, and legal advisor to determine whether investing is beneficial and the best opportunity for them.
@@ -80,7 +80,7 @@ function RiskDisclosure() {
 
       <div className=' text-sm font-normal text-start pt-12'>
       <ul className='pl-6'>
-        <li className='font-bold'>Modifications to Indian regulations:</li>
+        <li className='font-bold text-lg'>Modifications to Indian regulations:</li>
       </ul>
     </div>
     <div className=' pt-2 text-sm font-normal text-start'>The Company's expenditure or valuation of the real estate might be negatively impacted by regulatory or legal changes. Regulatory changes can have a severe influence on forecasts and investment values.
@@ -89,7 +89,7 @@ function RiskDisclosure() {
 
     <div className=' text-sm font-normal text-start pt-12'>
     <ul className='pl-6'>
-      <li className='font-bold'>Artificial or natural disasters:</li>
+      <li className='font-bold text-lg'>Artificial or natural disasters:</li>
     </ul>
   </div>
   <div className=' pt-2 text-sm font-normal text-start'>Man-made tragedies such as terrorist attacks and military operations, as well as natural disasters like pandemic diseases, fires, earthquakes, hurricanes, explosions, tornadoes, and hurricanes, may negatively affect the Indian economy, which results in a negative impact on the real estate industry as a whole. Therefore, impacting the achievements of the possibility negatively.
@@ -99,7 +99,7 @@ function RiskDisclosure() {
 
   <div className=' text-sm font-normal text-start pt-12'>
   <ul className='pl-6'>
-    <li className='font-bold'>Failure to complete the assessment causes a halt in stamping</li>
+    <li className='font-bold text-lg'>Failure to complete the assessment causes a halt in stamping</li>
   </ul>
 </div>
 <div className=' pt-2 text-sm font-normal text-start'>The accessibility and reliability of various third-party data sources are crucial to our evaluation of ecosystems. We might not be able to complete our evaluation if any of these sources were to stop being available or if their quality did not correspond to the predicted operation of our models. In this case, we strive to maintain continuity and use alternate sources.</div>
@@ -110,7 +110,7 @@ function RiskDisclosure() {
 
 <div className=' text-sm font-normal text-start pt-12'>
 <ul className='pl-6'>
-  <li className='font-bold'>Ecosystem service appraisal and Minting:</li>
+  <li className='font-bold text-lg'>Ecosystem service appraisal and Minting:</li>
 </ul>
 </div>
 <div className=' pt-2 text-sm font-normal text-start'>As we believe in presenting our clients' latest features and models, our evaluation models will evolve. We always strive to improve our models, and this implies that new models may fully replace or alter our current ones, which will have an impact on the Minting of s in some way, such as when and how many tokens are produced. Additionally, we encourage honest and constructive comments about our models, which will help us improve them.
@@ -119,7 +119,7 @@ function RiskDisclosure() {
 
 <div className=' text-sm font-normal text-start pt-12'>
 <ul className='pl-6'>
-  <li className='font-bold'>Currency volatility and expenses:</li>
+  <li className='font-bold text-lg'>Currency volatility and expenses:</li>
 </ul>
 </div>
 <div className=' pt-2 text-sm font-normal text-start'>We initially only accept and process payments in Indian rupees (INR). When users send or receive payments to or from us in a currency other than the Indian rupee, the payment processor will add or subtract the appropriate fees and costs for currency conversion and fund transfers. Please keep in mind that as currencies lose or gain value relative to one another, the value of cash held by us or in transit may change proportionally.</div>
@@ -132,7 +132,7 @@ function RiskDisclosure() {
 
 <div className=' text-sm font-normal text-start pt-12'>
 <ul className='pl-6'>
-  <li className='font-bold'>Cryptocurrencies or Tokens:</li>
+  <li className='font-bold text-lg'>Cryptocurrencies or Tokens:</li>
 </ul>
 </div>
 <div className=' pt-2 text-sm font-normal text-start'>Cryptocurrency investments are uncontrolled. As a result, PropFTX's operations as a virtual currency service provider are exempt from financial sector regulations and oversight, and token trades are also exempt from statutory business conduct laws. The protections provided by financial sector rules are not available to our users, and they also have no access to deposit or investment compensation plans.</div>
