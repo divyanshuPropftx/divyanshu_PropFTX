@@ -57,7 +57,14 @@
 .small-button {
   border-radius: 4px;
   background: var(--Primary-Accent-Color, #78f9ff);
-  
+  display: flex;
+width: 120px;
+height: 22.194px;
+padding: 8px 40px;
+justify-content: center;
+align-items: center;
+gap: 8px;
+flex-shrink: 0;
 }
 
 /* YourComponent.css */

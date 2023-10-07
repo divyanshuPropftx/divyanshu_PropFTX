@@ -80,7 +80,7 @@ function PricingDetails() {
                   <div>3months</div>
                   <div>
                     <button className="small-button text-black font-bold">
-                      Limited Offer
+                      LimitedOffer
                     </button>
                   </div>
                 </div>
