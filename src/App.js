@@ -7,6 +7,7 @@ import FAQPage from './Component/FAQPage/Index';
 import PricingDetails from './Component/PricingDetails';
 import PrivacyPolicy from './Component/PrivacyPolicy/Index';
 import RiskDisclosure from './Component/Risk&Concern/Index';
+import TermsOfUse from './Component/TermsOfUse/Index';
 
 function App() {
   return (
@@ -24,6 +25,7 @@ function App() {
     <PricingDetails/>
     <PrivacyPolicy/>
     <RiskDisclosure/>
+    <TermsOfUse/>
 
      {/*Y
     <Team/>
