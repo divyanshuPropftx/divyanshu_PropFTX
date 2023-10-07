@@ -21,19 +21,20 @@ function PricingDetails() {
       <Navbar />
 
       <div className="flex flex-col">
-      <div className="text-blue text-3xl pt-12 font-bold">
-        Pricing Details
+        <div className="text-blue text-3xl pt-12 font-bold">
+          Pricing Details
+        </div>
+        <div className="text-pink text-4xl pt-12 font-bold">
+          Choose Your Plan
+        </div>
+        <div className="text-white font-medium text-lg pt-4">
+          Start investing today and get real-time data with the help of
+          cutting-edge AI technology to make the best investment decisions.
+        </div>
       </div>
-      <div className="text-pink text-4xl pt-12 font-bold">
-        Choose Your Plan
-      </div>
-      <div className="text-white font-medium text-lg pt-4">
-        Start investing today and get real-time data with the help of cutting-edge AI technology to make the best investment decisions.
-      </div>
-    </div>
 
       <div className="pl-20 pt-24 flex flex-row relative">
-        <div className="shad p-4 bg-color w-128 h-128">
+        <div className="benefit-box">
           <div className="investInMultiple text-white flex flex-row justify-between gap-8">
             <div className="text-white flex flex-col w-680 pl-5 pr-16 gap-2">
               <h2 className="text-3xl font-semibold text-left text-pink">
@@ -72,14 +73,13 @@ function PricingDetails() {
             >
               <div className={`w-full h-full flex relative`}>
                 <div
-                  className={`w-1/2 h-full flex items-center justify-center  ${
+                  className={`w-1/2 h-full flex flex-col items-center justify-center ${
                     isThreeMonthsSelected ? "left-price-button" : ""
                   }`}
                 >
-                  3months
+                  <div>3months</div>
                   <div>
                     <button className="small-button text-black font-bold">
-                      {" "}
                       Limited Offer
                     </button>
                   </div>
@@ -97,7 +97,7 @@ function PricingDetails() {
           </div>
         </div>
 
-        <div className="absolute top-80 right-20">
+        <div className="absolute bottom-80 right-20">
           <button type="submit" className="button-submit">
             Coming Soon
           </button>
@@ -137,7 +137,4 @@ function PricingDetails() {
   );
 }
 
-
-
 export default PricingDetails;
-  
