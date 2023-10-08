@@ -74,8 +74,13 @@ export default function Index() {
 
     <div className='pl-20  mainPage flex flex-row text-white gap-40 '>
         <div className='mainPageLeft   pt-16 pl-8 pr-8  flex flex-col gap-3 '>
-            <div className=''><img src={Left} alt="main" /></div>
-            <div className=' flex flex-row font-semibold gap-8'>             
+            <div className='flex flex-col'>
+                <div className='topText font-bold text-4xl text-start'>World's First Fractional </div>
+                <div className='topText font-bold text-4xl text-start pt-4'>Real Estate {<span className='text-pink'>"Marketplace"</span>}</div>
+                <div className='middleText font-bold text-2xl pt-4 text-start'>Powered by AI & Blockchain.</div>
+                <div className='bottomText text-base font-medium text-start pt-4'>A marketplace that enables end-to-end encryption, healthy & risk-free returns, and multiple asset classes to grow your money </div>
+            </div>
+            <div className=' flex flex-row font-semibold gap-8 pt-2'>             
             <div className='text-black font-medium bg-blue pt-3  pl-3 pr-3 text-base w-20 rounded-lg'>Explore</div>
               <div className='knowMore shadowFaq flex'>
                 <div className='flex border border-pink rounded-lg'>
