@@ -21,13 +21,16 @@ import Ipsa from '../../Assets/DIpsaMaam.png'
 import Shubhankar from '../../Assets/DShubhankarSir.png'
 import Shubhajeet from '../../Assets/ASubhajeetSir.png'
 import TeamCard from '../Cards/TeamCard/Index'
-
+import TeamHelperCard from '../Cards/TeamHelperCard/Index'
+import HelperImage from '../../Assets/teamhelperimage.png'
 function Team() {
+
 
   return (
     <div className='parent font-poppins'>
 
 <Navbar/>
+
 
     <div className='pt-12 pr-64 pl-64 '>
       <div className=' font-medium text-4xl text-white p-6'>About Our Team</div>
@@ -37,12 +40,11 @@ function Team() {
       </div>
     </div>
 
-
     <div className='flex flex-col pt-16 pl-28 pr-28 justify-center'>
     <div className='text-white text-start text-3xl font-semibold'>Founders</div>
     <div className=' text-white text-start pt-4 text-lg font-medium flex flex-col justify-center'>The Catalyst Behind PropFTX's Innovation in Real Estate</div>
     <div className='album flex flex-row pt-8 flex-wrap'>
-      <div className=' flex flex-wrap gap-8'>
+    <div className='flex flex-row gap-12'>
       <TeamCard imageUrl={Rajeev} name="Rajeev Chhabra" position="Founder"/>
       <TeamCard imageUrl={Vishal} name="Vishal Rajput" position="Co-Founder & Head Of Product"/>
       <TeamCard imageUrl={Sathinarayanan} name="Sathinarayanan M" position="Co-Founder & COO"/>
@@ -56,13 +58,19 @@ function Team() {
       <div className='text-white text-start text-3xl font-semibold'>Advisors</div>
       <div className=' text-white text-start pt-4 text-lg font-medium flex flex-col justify-center'>The Expert Minds Behind PropFTX: Our Esteemed Advisory Team</div>
       <div className='album flex flex-row pt-8 flex-wrap'>
-        <div className=' flex flex-wrap gap-8'>
-        <TeamCard imageUrl={Bipin} name="Bipin Agravat" position="Investment Advisor"/>
-        <TeamCard imageUrl={Prashita} name="Prashita Rao" position="Co-Founder & Strategy Head"/>
-        <TeamCard imageUrl={Ravindran} name="Ravindran Parthasarathi" position="Chief Technical Architect"/>
-        <TeamCard imageUrl={Junaid} name="Junaid Ahmed" position="Head of Business Development" />
+      <div className='flex flex-col gap-12'>
+      <div className='flex flex-row gap-12'>
+      <TeamCard imageUrl={Bipin} name="Bipin Agravat" position="Investment Advisor"/>
+      <TeamCard imageUrl={Prashita} name="Prashita Rao" position="Co-Founder & Strategy Head"/>
+      <TeamCard imageUrl={Ravindran} name="Ravindran P" position="Chief Technical Architect"/>
+      <TeamCard imageUrl={Junaid} name="Junaid Ahmed" position="Head of Business Development" />
+        </div>
+        <div className='flex flex-row gap-12'>
         <TeamCard imageUrl={Shubhajeet} name="Subhajeet Naha" position="Cyber Security Advisor"/>
-        <TeamCard imageUrl={Sridhar} name="Sridhar Subramanian" position="Management Professional"/>       
+        <TeamCard imageUrl={Sridhar} name="Sridhar S" position="Management Professional"/>  
+        <TeamHelperCard imageUrl={HelperImage}/>
+        <TeamHelperCard imageUrl={HelperImage}/>
+        </div>
         </div>
         </div>
     </div>
@@ -71,11 +79,11 @@ function Team() {
       <div className='text-white text-start text-3xl font-semibold'>Marketing</div>
       <div className=' text-white text-start pt-4 text-lg font-medium flex flex-col justify-center'>The PropFTX Marketing Squad: Elevating Real Estate Investment</div>
       <div className='album flex flex-row pt-8 flex-wrap'>
-        <div className=' flex flex-wrap gap-8'>
-        <TeamCard imageUrl={Prashanth} name="Prashanth Nair" position="Head of Marketing"/>
-        <TeamCard imageUrl={Prerna} name="Prerna Rohilla" position="Content Writer"/>
-        <TeamCard imageUrl={Anmol} name="Anmol Prasad" position="Brand Communicaton Designer"/>
-        <TeamCard imageUrl={Parthavi} name="Parthavi Pattnaik" position="Video Editor"/>      
+      <div className='flex flex-row gap-12'>
+      <TeamCard imageUrl={Prashanth} name="Prashanth Nair" position="Head of Marketing"/>
+      <TeamCard imageUrl={Prerna} name="Prerna Rohilla" position="Content Writer"/>
+      <TeamCard imageUrl={Anmol} name="Anmol Prasad" position="Brand Communicaton Designer"/>
+      <TeamCard imageUrl={Parthavi} name="Parthavi Pattnaik" position="Video Editor"/>       
         </div>
         </div>
     </div>
@@ -85,9 +93,11 @@ function Team() {
       <div className='text-white text-start text-3xl font-semibold'>Designer</div>
       <div className=' text-white text-start pt-4 text-lg font-medium flex flex-col justify-center'>Crafting Aesthetics: PropFTX's Design Dream Team</div>
       <div className='album flex flex-row pt-8 flex-wrap'>
-        <div className=' flex flex-wrap gap-8'>
+      <div className='flex flex-row gap-12'>
         <TeamCard imageUrl={Ipsa} name="Ipsha Rashmi" position="UI/UX Designer "/>
-        <TeamCard imageUrl={Shubhankar} name="Subhankar Lokhande" position="UI/UX Designer"/>      
+        <TeamCard imageUrl={Shubhankar} name="Subhankar L." position="UI/UX Designer"/>
+        <TeamHelperCard imageUrl={HelperImage}/>
+        <TeamHelperCard imageUrl={HelperImage}/> 
         </div>
         </div>
     </div>

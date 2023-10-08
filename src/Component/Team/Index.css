@@ -1,3 +1,57 @@
 .parent{
     background: var(--BG-color, #091526);
 }
+.help{
+    background: var(--black-40, rgba(0, 0, 0, 0.40));
+}
+.teamCard {
+    width: 260px;
+    height: 320px;
+    position: relative;
+    overflow: hidden; /* Add overflow to hide any content that overflows the card */
+  }
+  .name{
+    padding-top:0.5rem;
+    font-size:20px;
+    margin-top:-.5rem;
+    
+  }
+
+ .teamCard:hover .name{
+    transition:0.5s;
+    font-size:18px;
+
+  }
+  
+  .teamCard:hover .image{
+    transition:0.2s;
+    height:4rem;
+  }
+
+  .teamCard:hover .name{
+    margin-top:-0.5rem;
+  }
+  /* Style the .image container */
+  .image {
+    height: 45px;
+    border-radius: 0px 0px 8px 8px;
+    background: var(--black-40, rgba(0, 0, 0, 0.40));
+  }
+  
+  /* Style the LinkedIn icon and position element */
+  .linkedIn,
+  .position {
+    width: 0;
+    height: 0;
+    opacity: 0;
+    transition: height 0.5s ease, opacity 0.5s ease;
+  }
+  
+  /* Show the .position and .linkedIn elements when .teamCard is hovered */
+  .teamCard:hover .position,
+  .teamCard:hover .linkedIn {
+    width: 20px; /* Adjust the desired width */
+    height: 20px; /* Adjust the desired height */
+    opacity: 1;
+  }
+ 
