@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import './Index.css'
 
 function FAQPageForm() {
   const [formData, setFormData] = useState({
@@ -33,8 +34,6 @@ function FAQPageForm() {
     }
 
     if (Object.keys(newErrors).length === 0) {
-      // Submit the form or perform further actions here
-      console.log('Form submitted:', formData);
     } else {
       setErrors(newErrors);
     }
@@ -47,7 +46,8 @@ function FAQPageForm() {
 
   return (
     <div className='flex flex-row'>
-      <form className='gap-6 flex flex-row' onSubmit={handleSubmit}>
+      <form className='quesContainer gap-6 flex flex-row' onSubmit={handleSubmit}>
+        <div className='flex flex-col'>
         <div className='rounded-lg text-base font-medium text-white'>
           <input
           className='w-full pr-12 pt-2 pb-2 text-white pl-4 bg-transparent text-base font-medium border border-white rounded-lg '
@@ -58,8 +58,11 @@ function FAQPageForm() {
             value={formData.question}
             onChange={handleInputChange}
           />
-          {errors.question && <span className="error">{errors.question}</span>}
+          
         </div>
+        <div>{errors.question &&<span className="error text-white">{errors.question}</span>}</div>
+        </div>
+        <div>
         <div className='rounded-lg text-base font-medium text-white '>
           <input
             className='w-full pt-2 pb-2 pl-4 pr-12 bg-transparent text-base font-medium border border-white rounded-lg '
@@ -70,9 +73,12 @@ function FAQPageForm() {
             value={formData.email}
             onChange={handleInputChange}
           />
-          {errors.email && <span className="error">{errors.email}</span>}
+          
+        </div>
+        <div>{errors.email && <span className="error text-white">{errors.email}</span>}</div>
         </div>
         <div>
+
           <button className='pt-2 pb-2 pl-12 pr-12 bg-blue text-base font-medium rounded-lg' type="submit">Submit</button>
         </div>
       </form>
