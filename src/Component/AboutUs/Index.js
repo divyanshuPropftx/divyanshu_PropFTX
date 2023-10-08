@@ -29,7 +29,7 @@ function AboutUs() {
         <div className=' text-white w-2500'><img src={AboutUsBlockchain} alt="Logo" className="bg-transparent"/></div>
         <div className=' text-white flex flex-col justify-center'>
           <div className=' text-start text-3xl font-bold p-2'>What PropFTX offers?</div>
-          <div className=' text-start font-medium text-lg leading-8 pt-4 whitespace-break-spaces '>PropFTX Market Place offers real estate investment options for short-term
+          <div className=' text-start font-medium text-base leading-8 pt-4 whitespace-break-spaces '>PropFTX Market Place offers real estate investment options for short-term
            investments (Resale) and long-term Investments for better ROI specifically
             designed for small investors, thereby eliminating myths of larger real estate
            investments. Each listed property on our marketplace is subject to an extensive
@@ -41,7 +41,7 @@ function AboutUs() {
     <div className=' flex flex-row gap-40 pl-24 pr-24'>
         <div className=' text-white flex flex-col justify-center'>
           <div className=' text-start text-3xl font-bold p-2'>How PropFTX Works?</div>
-          <div className=' text-start font-medium text-lg leading-8 pt-4 whitespace-break-spaces '>To ensure that investors receive the highest possible returns,
+          <div className=' text-start font-medium text-base leading-8 pt-4 whitespace-break-spaces '>To ensure that investors receive the highest possible returns,
            we use data-driven artificial intelligence pricing technology, an AI-supported solution that aids in estimating the token’s market price for
             the properties depending on their location. It is a user-friendly framework designed with predictive analytics insights and extensive experience to 
             assist clients in determining smart, intelligent investments to build a solid, long-term portfolio.</div>
@@ -52,7 +52,7 @@ function AboutUs() {
 
 
     <div className='flex justify-center'>
-      <div className='text-white text-xl font-semibold pt-36 pl-96 pr-96'>PropFTX is the first-ever digital real estate platform offering to invest in residential,
+      <div className='text-white text-base font-semibold pt-36 pl-80 pr-80'>PropFTX is the first-ever digital real estate platform offering to invest in residential,
       commercial, and plots on one single platform.</div>
     </div>
 
@@ -107,7 +107,7 @@ function AboutUs() {
     </div>
     <div className=' flex flex-col pr-24'>
     <div className='  text-4xl text-pink font-bold p-2'>Vision</div>
-    <div className=' text-white text-base font-medium pt-8 text-start leading-9'>Our Mission at PROPFTX is to onboard One Million Square Feet worth of diverse and quality 
+    <div className=' text-white text-lg font-medium pt-8 text-start leading-9'>Our Mission at PROPFTX is to onboard One Million Square Feet worth of diverse and quality 
     real estate projects, catering to the needs and aspirations of a wide range of investors. With
      a customer-centric approach, we strive to provide exceptional online experience, ensuring the 
      satisfaction and success of our 10,000 strong customer base by the year 2024.

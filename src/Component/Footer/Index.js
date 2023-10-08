@@ -16,7 +16,7 @@ function Footer() {
       <div className='footerLogo '><img src={Logo}/></div>
       <div className='footerMainText text-base font-medium text-paleGrey pt-4'>World’s first fractional real-estate market place Powered by AI & Blockchain</div>
       <div className='footerSecondaryImage pt-3'><img src={FooterSecondaryImage}/></div>
-      <div className='footerBottomText pt-2 text-xs font-medium text-start text-paleGrey pt-5'>© 2023 PropFTX | All rights reserved</div>
+      <div className='footerBottomText text-xs font-medium text-start text-paleGrey pt-5'>© 2023 PropFTX | All rights reserved</div>
       </div>
     <div className=' flex flex-col text-white gap-2 whitespace-nowrap'>
       <div className=' text-pink'>Resouces</div>
@@ -47,10 +47,10 @@ function Footer() {
         </div>
       </div>
       <div className=' flex flex-row justify-between pt-8'>
-        <div className='w-56 h-56 '><img className='rounded-3xl' src={In} alt="main"/></div>
-        <div className='w-56 h-56 '><img className='rounded-3xl' src={Wp} alt="main"/></div>
-        <div className='w-56 h-56 '><img className='rounded-3xl' src={Ig} alt="main"/></div>
-        <div className='w-56 h-56 '><img className='rounded-3xl' src={Tw} alt="main"/></div>
+        <div className='w-36'><img className='rounded-3xl' src={In} alt="main"/></div>
+        <div className='w-36'><img className='rounded-3xl' src={Wp} alt="main"/></div>
+        <div className='w-36'><img className='rounded-3xl' src={Ig} alt="main"/></div>
+        <div className='w-36'><img className='rounded-3xl' src={Tw} alt="main"/></div>
       </div>
     </div>
     </div>

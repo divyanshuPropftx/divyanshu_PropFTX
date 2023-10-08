@@ -185,12 +185,14 @@ function ContactUs() {
     <div className='text text-white  pl-24 pr-24 pt-24'>
               <div className='text-4xl font-semibold'>Get In Touch</div>
               <div className='text-base font-medium pt-4 whitespace-nowrap'>We would love to hear from either you are an investor, who is looking for more in-depth clarifications, or would like to tokenize your property.</div>
-              <div className='pt-12 flex flex-row justify-center gap-12 pl-60 pr-60'>
-                <div className='mailMeImage '><a href='mailto:your.email@example.com'><GetInTouchA imageUrl={Mailme} description="The best way to get answer faster" heading="support@propftx.com"/></a></div>
-                <div className='locationImage'> 
+              <div className='pt-12 flex flex-row justify-center'>
+                <div className='flex flex-row justify-between'>
+                <div className='mailMeImage flex flex-row justify-center '><a href='mailto:your.email@example.com'><GetInTouchA imageUrl={Mailme} description="The best way to get answer faster" heading="support@propftx.com"/></a></div>
+                <div className='locationImage flex flex-row justify-center'> 
                   <a href='https://www.google.com/maps/place/PropFTX/@12.9720849,77.6138608,17z/data=!3m1!4b1!4m6!3m5!1s0x3bae17f622fd72df:0x384b8b6c1eb20bd!8m2!3d12.9720849!4d77.6164357!16s%2Fg%2F11l2611mh5?entry=ttu'>
                   <GetInTouchB imageUrl={Location}  heading="PropFTX" description="21/11, Mahatma gandhi Rd, craig park Layout, Ashok Nagar, Bengaluru, Karnataka 560001"/>
                 </a>
+                </div>
                 </div>
               </div>
     </div>
