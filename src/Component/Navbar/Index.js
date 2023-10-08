@@ -1,19 +1,51 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import Logo from '../../Assets/Logo.png';
 import './Index.css';
-import ArrowDown from '../../Assets/arrowDown.png'
+import ArrowDown from '../../Assets/arrowDown.png';
 
 function Navbar() {
   const [showAboutUsDropdown, setShowAboutUsDropdown] = useState(false);
   const [showLearnDropdown, setShowLearnDropdown] = useState(false);
+  const dropdownRefs = {
+    aboutUs: useRef(null),
+    learn: useRef(null),
+  };
 
   const toggleAboutUsDropdown = () => {
     setShowAboutUsDropdown(!showAboutUsDropdown);
+    setShowLearnDropdown(false); 
   };
 
   const toggleLearnDropdown = () => {
     setShowLearnDropdown(!showLearnDropdown);
+    setShowAboutUsDropdown(false); 
   };
+
+  useEffect(() => {
+  
+    const handleClickOutside = (event) => {
+      if (
+        dropdownRefs.aboutUs.current &&
+        !dropdownRefs.aboutUs.current.contains(event.target)
+      ) {
+        setShowAboutUsDropdown(false);
+      }
+      if (
+        dropdownRefs.learn.current &&
+        !dropdownRefs.learn.current.contains(event.target)
+      ) {
+        setShowLearnDropdown(false);
+      }
+    };
+
+
+    document.addEventListener('click', handleClickOutside);
+
+
+    return () => {
+      document.removeEventListener('click', handleClickOutside);
+    };
+  }, []);
 
   return (
     <div className='navbar font-poppins pl-20 text-grey h-24 p-8'>
@@ -22,40 +54,57 @@ function Navbar() {
           <img className='w-full h-full pl-2 pr-2 pb-4' src={Logo} alt='Logo' />
         </div>
         <div className='flex flex-row'>
-        <div className='properties pl-28 text-base text-white'>Properties</div>
-        <div className='resale pl-8 text-base text-white'>Resale</div>
-        <div
-          className='aboutUs pl-8 text-base whitespace-nowrap text-white'
-          onClick={toggleAboutUsDropdown}
-        ><div className='flex flex-row gap-1'>
-          <div className='pl-2'>About Us</div>
-          <div className='arrowNav mt-1' ><img className='flex flex-col justify-center w-full h-full' src={ArrowDown}/></div>
-        </div>
+          <div className='properties pl-28 text-base text-white'>Properties</div>
+          <div className='resale pl-8 text-base text-white'>Resale</div>
+          <div
+            className={`aboutUs pl-8 text-base whitespace-nowrap text-white ${
+              showAboutUsDropdown ? 'active' : ''
+            }`}
+            onClick={toggleAboutUsDropdown}
+            ref={dropdownRefs.aboutUs}
+          >
+            <div className='flex flex-row gap-1'>
+              <div className='aboutUs pl-2'>About Us</div>
+              <div className='arrowNav mt-1'>
+                <img
+                  className='flex flex-col -mt-1 justify-center w-full h-full'
+                  src={ArrowDown}
+                />
+              </div>
+            </div>
 
-          {showAboutUsDropdown && (
-            <div className='dropdown1 text-start pt-5 pb-5 pl-2'>
-              <div className='dropdown-item p-0.5'>Company</div>
-              <div className='dropdown-item pl-1 pr-1'>Team</div>
+            {showAboutUsDropdown && (
+              <div className='dropdown1 text-start pt-5 pb-5 pl-2'>
+                <div className='dropdown-item p-0.5'>Company</div>
+                <div className='dropdown-item pl-1 pr-1'>Team</div>
+              </div>
+            )}
+          </div>
+          <div
+            className={`learn pl-8 text-base  text-white whitespace-nowrap ${
+              showLearnDropdown ? 'active' : ''
+            }`}
+            onClick={toggleLearnDropdown}
+            ref={dropdownRefs.learn}
+          >
+            <div className='flex flex-row gap-1'>
+              <div className='learn pl-2'>Learn</div>
+              <div className='arrowNav mt-1'>
+                <img
+                  className='flex flex-col -mt-1 justify-center w-full h-full'
+                  src={ArrowDown}
+                />
+              </div>
             </div>
-          )}
-        </div>
-        <div
-          className='learn pl-8 text-base  text-white whitespace-nowrap'
-          onClick={toggleLearnDropdown}
-        >
-        <div className='flex flex-row gap-1'>
-        <div className='pl-2' >Learn</div>
-        <div className='arrowNav mt-1' ><img className='flex flex-col justify-center w-full h-full' src={ArrowDown}/></div>
-      </div>
-          {showLearnDropdown && (
-            <div className='dropdown2 text-start pt-5 pb-5 pl-2'>
-              <div className='dropdown-item p-0.5'>How it works</div>
-              <div className='dropdown-item p-0.5'>FAQs</div>
-              <div className='dropdown-item p-0.5'>Whitepaper</div>
-              <div className='dropdown-item p-0.5'>Blogs and News</div>
-            </div>
-          )}
-        </div>
+            {showLearnDropdown && (
+              <div className='dropdown2 text-start pt-5 pb-5 pl-2'>
+                <div className='dropdown-item p-0.5'>How it works</div>
+                <div className='dropdown-item p-0.5'>FAQs</div>
+                <div className='dropdown-item p-0.5'>Whitepaper</div>
+                <div className='dropdown-item p-0.5'>Blogs and News</div>
+              </div>
+            )}
+          </div>
         </div>
 
         <div className='clubAccess flex flex-row  -mt-2'>
