@@ -59,21 +59,23 @@ function AboutUs() {
 
 
 
-    <div className='JoinPremium  text-white flex flex-col justify-center gap-10 pl-20 pr-20 pt-20'>
-    <div className='premiumShadow bg-silver flex flex-col justify-center gap-10 p-10'>
-      <div className='text-4xl font-bold'>Join our premium membership</div>
-      <div className='font-normal text-base'>With PropFTX premium membership, Get early access to all the premium benefits.</div>
-      <div className='flex flex-row justify-center gap-2'>
-        <div className='text-lg font-medium bg-blue p-4 rounded-lg text-black'>JOIN NOW</div>
-        <div className='shadowFaq flex'>
-        <div className='flex border border-pink rounded-lg jus'>
-          <div className=' flex flex-col text-xl font-semibold justify-center text-start pl-4 pr-4'>Benefits </div>
+    
+
+    <div className='JoinPremium  text-white flex flex-col justify-center gap-10 pl-24 pr-24 pt-24'>
+      <div className='premiumShadow bg-silver flex flex-col justify-center gap-10 p-10'>
+        <div className='text-4xl font-bold'>Join our premium membership</div>
+        <div className='font-normal text-lg'>With PropFTX premium membership, Get early access to all the premium benefits.</div>
+        <div className='flex flex-row justify-center gap-6'>
+          <div className='button text-base font-medium bg-blue pt-2 pb-2 pl-4 pr-4 rounded-lg text-black'>JOIN NOW</div>
+          <div className='shadowFaq flex'>
+          <div className='flex border border-pink rounded-lg'>
+            <div className=' button flex flex-col text-base font-semibold justify-center text-start pt-2 pb-2 pl-4 pr-4 '>Benefits </div>
+          </div>
+          </div>
         </div>
-        </div>
-        
       </div>
     </div>
-  </div>
+
 
 
 

@@ -293,7 +293,6 @@ export default function Index() {
             <div className=' button flex flex-col text-base font-semibold justify-center text-start pt-2 pb-2 pl-4 pr-4 '>Benefits </div>
           </div>
           </div>
-          
         </div>
       </div>
     </div>
