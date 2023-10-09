@@ -2,6 +2,7 @@ import React, { useState, useEffect, useRef } from 'react';
 import Logo from '../../Assets/Logo.png';
 import './Index.css';
 import ArrowDown from '../../Assets/arrowDown.png';
+import { Link } from 'react-router-dom';
 
 function Navbar() {
   const [showAboutUsDropdown, setShowAboutUsDropdown] = useState(false);
@@ -13,16 +14,15 @@ function Navbar() {
 
   const toggleAboutUsDropdown = () => {
     setShowAboutUsDropdown(!showAboutUsDropdown);
-    setShowLearnDropdown(false); 
+    setShowLearnDropdown(false);
   };
 
   const toggleLearnDropdown = () => {
     setShowLearnDropdown(!showLearnDropdown);
-    setShowAboutUsDropdown(false); 
+    setShowAboutUsDropdown(false);
   };
 
   useEffect(() => {
-  
     const handleClickOutside = (event) => {
       if (
         dropdownRefs.aboutUs.current &&
@@ -38,9 +38,7 @@ function Navbar() {
       }
     };
 
-
     document.addEventListener('click', handleClickOutside);
-
 
     return () => {
       document.removeEventListener('click', handleClickOutside);
@@ -51,20 +49,23 @@ function Navbar() {
     <div className='navbar font-poppins pl-20 text-grey h-24 p-8'>
       <div className='flex flex-row justify-between h-10'>
         <div className='logo'>
+          <Link to="/">
           <img className='w-full h-full pl-2 pr-2 pb-4' src={Logo} alt='Logo' />
+          </Link>
         </div>
         <div className='flex flex-row'>
           <div className='properties pl-28 text-base text-white'>Properties</div>
           <div className='resale pl-8 text-base text-white'>Resale</div>
           <div
-            className={`aboutUs pl-8 text-base whitespace-nowrap text-white ${
+            className={`aboutUs pl-11 flex flex-col gap-1 text-base whitespace-nowrap text-white ${
               showAboutUsDropdown ? 'active' : ''
             }`}
             onClick={toggleAboutUsDropdown}
             ref={dropdownRefs.aboutUs}
+            style={{ zIndex: 9999 }} 
           >
-            <div className='flex flex-row gap-1'>
-              <div className='aboutUs pl-2'>About Us</div>
+            <div className='flex flex-row gap-1 '>
+              <div className='aboutUspl-2'>About Us</div>
               <div className='arrowNav mt-1'>
                 <img
                   className='flex flex-col -mt-1 justify-center w-full h-full'
@@ -74,9 +75,13 @@ function Navbar() {
             </div>
 
             {showAboutUsDropdown && (
-              <div className='dropdown1 text-start pt-5 pb-5 pl-2'>
-                <div className='dropdown-item p-0.5'>Company</div>
-                <div className='dropdown-item pl-1 pr-1'>Team</div>
+              <div className='dropdown1 -ml-1 text-start flex flex-col z-20 pl-2 gap-2 '>
+                <div className='heightdropdown1  flex flex-col justify-center gap-2 '>
+                  <div className='dropdown-item flex flex-row '><Link to="/about">Company</Link></div>
+                  <div className='dropdown-item  flex flex-row '>
+                    <Link to='/team'>Team</Link>
+                  </div>
+                </div>
               </div>
             )}
           </div>
@@ -86,9 +91,10 @@ function Navbar() {
             }`}
             onClick={toggleLearnDropdown}
             ref={dropdownRefs.learn}
+            style={{ zIndex: 9999 }}
           >
-            <div className='flex flex-row gap-1'>
-              <div className='learn pl-2'>Learn</div>
+            <div className='flex flex-row'>
+              <div className='learn'>Learn</div>
               <div className='arrowNav mt-1'>
                 <img
                   className='flex flex-col -mt-1 justify-center w-full h-full'
@@ -97,11 +103,13 @@ function Navbar() {
               </div>
             </div>
             {showLearnDropdown && (
-              <div className='dropdown2 text-start pt-5 pb-5 pl-2'>
-                <div className='dropdown-item p-0.5'>How it works</div>
-                <div className='dropdown-item p-0.5'>FAQs</div>
-                <div className='dropdown-item p-0.5'>Whitepaper</div>
-                <div className='dropdown-item p-0.5'>Blogs and News</div>
+              <div className='dropdown2 text-start z-30 pt-5 pb-5 pl-2'>
+                <div className='dropdown-item p-0.5 z-20'>How it works</div>
+                <Link to='/Faq'>
+                  <div className='dropdown-item p-0.5 z-20'><Link to="/Faq">FAQs</Link></div>
+                </Link>
+                <div className='dropdown-item p-0.5 z-20'>Whitepaper</div>
+                <div className='dropdown-item p-0.5 z-20'>Blogs and News</div>
               </div>
             )}
           </div>

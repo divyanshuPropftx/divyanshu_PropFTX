@@ -1,5 +1,6 @@
 import React from 'react'
 import { useState } from 'react'
+import { Link } from 'react-router-dom';
 import './Index.css'
 import Main from '../../Assets/main.png'
 import Left from '../../Assets/left.png'
@@ -72,7 +73,7 @@ export default function Index() {
     <div className='flex flex-col '>
     <Header/>
 
-    <div className='pl-20  mainPage flex flex-row text-white gap-40 '>
+    <div className='pl-20  z-0 mainPage flex flex-row text-white gap-40 '>
         <div className='mainPageLeft   pt-16 pl-8 pr-8  flex flex-col gap-3 '>
             <div className='flex flex-col'>
                 <div className='topText font-bold text-4xl text-start'>World's First Fractional </div>
@@ -99,7 +100,7 @@ export default function Index() {
               <div className='w-24'></div>
             </div>
         </div>
-        <div className='blurr  mainPageRight w-1100 text-white pt-8 flex flex-row justify-end pr-12'><img src={Main} alt="main" /></div>
+        <div className='blurr  mainPageRight z-0 w-1100 text-white pt-8 flex flex-row justify-end pr-12'><img src={Main} alt="main" /></div>
     </div>
 
 </div>
@@ -370,7 +371,7 @@ export default function Index() {
 
       <div className='shadowFaq flex'>
       <div className='flex border border-pink rounded-lg'>
-        <div className=' flex flex-col justify-center text-start text-base pl-4 pr-2'>View All FAQs</div>
+        <div className=' flex flex-col justify-center text-start text-base pl-4 pr-2'><Link to="/Faq">View All FAQs</Link></div>
         <div><img className='rounded-2xl' src={SmallArrowRight} alt="main"/></div>
       </div>
       
