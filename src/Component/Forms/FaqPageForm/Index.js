@@ -1,5 +1,7 @@
 import React, { useState } from 'react';
 import './Index.css'
+import { toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 function FAQPageForm() {
   const [formData, setFormData] = useState({
@@ -16,6 +18,20 @@ function FAQPageForm() {
       [name]: value,
     });
   };
+{/* const handleSubmit = (e) => {
+    e.preventDefault();
+
+    // Validation logic (you can add your validation logic here)
+
+    if (!formData.email) {
+      setFormErrors({ email: 'Email is required' });
+      return;
+    }
+    toast.success('Submission successful!', {
+      position: toast.POSITION.TOP_CENTER,
+    });
+  };*/}
+
 
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -34,8 +50,17 @@ function FAQPageForm() {
     }
 
     if (Object.keys(newErrors).length === 0) {
+      toast.success('We will answer your query soon!', {
+        position: toast.POSITION.TOP_CENTER,
+      });
+      // Reset the form fields
+      setFormData({
+        question: '',
+        email: '',
+      });
     } else {
       setErrors(newErrors);
+      
     }
   };
 
@@ -79,7 +104,7 @@ function FAQPageForm() {
         </div>
         <div>
 
-          <button className='pt-2 pb-2 pl-12 pr-12 bg-blue text-base font-medium rounded-lg' type="submit">Submit</button>
+          <button className='pt-2 pb-2 pl-12 pr-12 bg-blue text-base font-medium rounded-lg' type="submit" onClick={handleSubmit}>Submit</button>
         </div>
       </form>
     </div>

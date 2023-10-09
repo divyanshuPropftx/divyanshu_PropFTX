@@ -1,3 +1,7 @@
 .clickMe{
     width:25px
 }
+.notOpen{
+border-radius: 8px;
+border: 0.25px solid var(--text-white, #FFF);
+}

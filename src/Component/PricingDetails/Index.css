@@ -10,6 +10,7 @@ backdrop-filter: blur(10px);
 .buttonPricing{
 width:350px;
 height:110px;
+cursor:pointer;
 }
 .buttonPricing.true {
   border-radius: 16px;

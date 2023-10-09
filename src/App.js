@@ -14,6 +14,7 @@ import {
   Route
 } from "react-router-dom";
 import { useEffect } from 'react';
+import { ToastContainer } from 'react-toastify';
 
 
 
@@ -28,6 +29,7 @@ function App() {
 
     <div className="App">
       <Router>
+      <ToastContainer />
         <Routes>
           <Route exact path="/team" element={<Team />} />
           <Route exact path="/Faq" element={<FAQPage />} />
