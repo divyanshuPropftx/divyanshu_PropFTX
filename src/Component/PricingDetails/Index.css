@@ -1,11 +1,41 @@
-.parent{
-    background: var(--BG-color, #091526);
+.pricingRight{
+width:590px;
+height:135px;
+border-radius: 24px;
+border: 1px solid var(--windows-stroke-glass-specular, rgba(255, 255, 255, 0.40));
+background: var(--glass-col, rgba(128, 128, 128, 0.20));
+background-blend-mode: luminosity;
+backdrop-filter: blur(10px);
 }
-.mailMeImage{
-    height:200px;
-    width:370px;
+.buttonPricing{
+width:350px;
+height:110px;
 }
-.locationImage{
-    height:200px;
-    width:370px;
+.buttonPricing.true {
+  border-radius: 16px;
+  background: var(--glass-col, rgba(128, 128, 128, 0.20));
+  backdrop-filter: blur(50px);
+}
+.buttonPricingComingSoon{
+width: 270px;
+height: 50px;
+border-radius: 8px;
+}
+.pricingButtonInsideLeft{
+width:100px;
+}
+.pricingButtonInsideRight{
+width:175px;
+}
+.boxPricingButton {
+height:15px;
+width:15px;
+background:#182230;
+}
+.fontpricing{
+font-size:9px;
+}
+.starsPricing{
+height:35px;
+width:35px;
 }

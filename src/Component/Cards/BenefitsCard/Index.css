@@ -1,0 +1,30 @@
+.features1 {
+  width: 500px;
+  height: 120px;
+  cursor: pointer;
+  border-radius: 8px;
+  
+  transition: background 2s; /* Transition the background color over 2 seconds */
+}
+
+.featurePic1 {
+  width: 50px;
+  height: 30px;
+  background:#264F5D;
+  overflow: hidden;
+}
+
+.features1:hover {
+transition:0.5s;
+    border-radius: 30px; /* Adjust the border-radius as needed */
+  background: linear-gradient(95deg, rgba(211, 40, 167, 0.10) 34.45%, rgba(199, 68, 179, 0.09) 43.31%, rgba(199, 68, 179, 0.09) 56.6%, rgba(120, 249, 255, 0.05) 100%);
+  transition:background 6s;
+}
+.features1:hover .featurePic1{
+transition:1s;
+background: var(--s-gradint-1, linear-gradient(180deg, #AC25EB 0%, #D328A7 100%));;
+}
+.circleFeature1{
+  border-radius: 80px;
+}
+

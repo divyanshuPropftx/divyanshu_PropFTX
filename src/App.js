@@ -17,6 +17,7 @@ import Navbar from './Component/Navbar/Index'; // Import your Navbar component
 
 function App() {
   return (
+
     <div className="App">
       <Router>
         <Routes>
