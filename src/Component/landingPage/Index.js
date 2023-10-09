@@ -1,9 +1,9 @@
 import React from 'react'
 import { useState } from 'react'
+import { useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import './Index.css'
 import Main from '../../Assets/main.png'
-import Left from '../../Assets/left.png'
 import ImageA from '../../Assets/imageA.png'
 import ImageB from '../../Assets/imageB.png'
 import ImageC from '../../Assets/imageC.png'
@@ -34,11 +34,11 @@ import legalDocument from '../../Assets/LegalDocument.png'
 import Research from '../../Assets/Research.png'
 import Footer from '../Footer/Index'
 import Header from '../Navbar/Index'
-import SearchBar from '../SearchBar/Index'
 import { useScrollToTop } from '../ScrollToTop/Index'
 
 export default function Index() {
 
+  
   const [formData, setFormData] = useState({ email: '' });
   const [formErrors, setFormErrors] = useState({ email: '' });
 
@@ -63,6 +63,33 @@ export default function Index() {
   };
 
   const { showScroll, scrollToTop } = useScrollToTop();
+
+
+
+  //Function to scroll to the top of page when link tag gets fired.
+  useEffect(() => {
+    // This function will be called when the component is mounted
+    // It scrolls to the top of the page when a footer link is clicked
+    const toTop = () => {
+      window.scrollTo({
+        top: 0,
+        behavior: 'smooth', // You can change this to 'auto' for instant scroll
+      });
+    };
+
+    // Attach the scrollToTop function to the click event of footer links
+    const footerLinks = document.querySelectorAll('.linkHelper a');
+    footerLinks.forEach((link) => {
+      link.addEventListener('click', toTop);
+    });
+
+    // Clean up the event listeners when the component is unmounted
+    return () => {
+      footerLinks.forEach((link) => {
+        link.removeEventListener('click', toTop);
+      });
+    };
+  }, []);
   
 
 
@@ -114,10 +141,10 @@ export default function Index() {
             <div className='leading-loose '>Real State Made {<span className='text-pink'>Tradable</span>}</div>
             <div className=' flex flex-row justify-center'>
             <div className='tradableContainer flex flex-row gap-12 justify-between'>
-            <CardComp imageUrl={ImageA} heading="Hold Tradable Real Estate Token" description="lorem kjns ajv jjs jkuv svs skv jksvuv jsvv svuv lorem kjns ajv jjs jkuv svs " />
-            <CardComp imageUrl={ImageB} heading="Become Owner of Leased Properties" description="lorem kjns ajv jjs jkuv svs skv jksvuv jsvv svuv lorem kjns ajv jjs jkuv svs " />
-            <CardComp imageUrl={ImageC} heading="Nominal Investment" description="lorem kjns ajv jjs jkuv svs skv jksvuv jsvv svuv lorem kjns ajv jjs jkuv svs " />
-            <CardComp imageUrl={ImageD} heading="Buy of Sell tokens 24/7" description="lorem kjns ajv jjs jkuv svs skv jksvuv jsvv svuv lorem kjns ajv jjs jkuv svs " />
+            <CardComp imageUrl={ImageA} heading="Hold Tradable Real Estate Token" description="Own tradable tokens representing your property shared for liquidity. " />
+            <CardComp imageUrl={ImageB} heading="Become Owner of Leased Properties" description="Invest in fractional leased properties with propFTX! Share ownership, enjoy rental income, and diversify your portfolio for wealth growth. " />
+            <CardComp imageUrl={ImageC} heading="Nominal Investment" description="Real estate investment, minimial capital.No need for substantial funds - begin with a nominal amount and explore real estate opportunities. " />
+            <CardComp imageUrl={ImageD} heading="Buy of Sell tokens 24/7" description="Trade real estate tokens 24/7. Flexibility and accessibility with PropFTX. " />
             </div>
             </div>
         </div>
@@ -128,12 +155,12 @@ export default function Index() {
     <div className='flex flex-col justify-center p-4 gap-3'>
     <div className='leading-loose -mt-20'>Seamless Real Estate Investment in {<span className='text-pink font-bold'>Five Simple Steps </span>}</div>
      <div className='flex flex-row justify-center'>
-    <div className='seamlessContainer flex flex-row gap-4 flex-wrap justify-between'>
-      <InvestmentCards Number="1" heading="Signup & KYC" description="Visit our property or resale page to start investing now."/>
-      <InvestmentCards Number="2" heading="Signup & KYC" description="Visit our property or resale page to start investing now."/>
-      <InvestmentCards Number="3" heading="Invest & Earn" description="Operate your custom AI-powered dashboard to track your real portfolio  estate"/>
-      <InvestmentCards Number="4" heading="Signup & KYC" description="Visit our property or resale page to start investing now."/>
-      <InvestmentCards Number="5" heading="Sell Back" description="Visit our property or resale page to start investing now."/>
+    <div className='seamlessContainer flex flex-row gap-1 justify-between'>
+      <InvestmentCards Number="1" heading="Select your Property" description="Visit our property or resale page to start investing now. Choose from multiple verified properties all around the globe."/>
+      <InvestmentCards Number="2" heading="Signup & KYC" description="After selecting the property, you are required to complete the sign up process by finishing the KYC process to make your journey a smooth one."/>
+      <InvestmentCards Number="3" heading="Invest & Earn" description="Choose the property and number of tokens you wish to invest in, head to the checkout page, and make it yours. The transaction and investment details will be reflected on the user's dashboard."/>
+      <InvestmentCards Number="4" heading="Track & Hold Token" description="Effortlessly manage your real estate portfolio with our AI-powered dashboard. "/>
+      <InvestmentCards Number="5" heading="Sell Back" description="At PropFTX, you can quickly sell your tokens by listing them on our marketplace. Your tokens will be listed in the resale market within 24 hours of placing a request. "/>
       </div>
       </div>
     </div>
@@ -329,7 +356,7 @@ export default function Index() {
     </div>
 
 
-    <div className='flex flex-row justify-between pr-24 pl-24 pt-20'>
+    <div className='linkHelper flex flex-row justify-between pr-24 pl-24 pt-20'>
     <div className=' flex flex-col gap-5 text-white pt-8'>
     <div className='text-4xl font-medium text-white text-start whitespace-nowrap'>Frequenlty Asked {<span className='text-pink font-bold'>Questions </span>}</div>
       <div className=' text-lg font-medium text-start'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
@@ -340,7 +367,7 @@ export default function Index() {
       <div className='flex rounded-lg'>
       <div><img className='faq' src={SmallArrowRight} alt="main"/></div>
 
-      <div className='flex flex-col font-medium justify-center text-start pl-2 pr-40 text-lg'>What is blockchain technology?</div>
+      <div className='flex flex-col font-medium justify-center text-start pl-2 pr-40 text-lg'><Link to="/Faq">What is blockchain technology?</Link></div>
     </div>
     </div>
       </div>
@@ -351,7 +378,7 @@ export default function Index() {
       <div className='flex rounded-lg'>
       <div><img src={SmallArrowRight} alt="main"/></div>
 
-      <div className='flex flex-col font-medium justify-center text-start pl-2 pr-40 text-lg '>What is blockchain technology?</div>
+      <div className='flex flex-col font-medium justify-center text-start pl-2 pr-40 text-lg '><Link to="/Faq">What is blockchain technology?</Link></div>
     </div>
     </div>
       </div>
@@ -363,7 +390,7 @@ export default function Index() {
       <div className='flex rounded-lg'>
       <div><img src={SmallArrowRight} alt="main"/></div>
 
-      <div className='flex flex-col font-medium justify-center text-start pl-2 pr-40 text-lg'>What is blockchain technology?</div>
+      <div className='flex flex-col font-medium justify-center text-start pl-2 pr-40 text-lg'><Link to="/Faq">What is blockchain technology?</Link></div>
     </div>
     </div>
       </div>
@@ -372,14 +399,14 @@ export default function Index() {
       <div className='shadowFaq flex'>
       <div className='flex border border-pink rounded-lg'>
         <div className=' flex flex-col justify-center text-start text-base pl-4 pr-2'><Link to="/Faq">View All FAQs</Link></div>
-        <div><img className='rounded-2xl' src={SmallArrowRight} alt="main"/></div>
+        <div><Link to="/Faq"><img className='rounded-2xl' src={SmallArrowRight} alt="main"/></Link></div>
       </div>
       
       </div>
       <div className='shadowFaq flex'>
       <div className='flex border border-pink rounded-lg'>
-        <div className=' flex flex-col justify-center text-start text-base pl-4'>Ask a Question</div>
-        <div><img className='rounded-2xl' src={SmallArrowRight} alt="main"/></div>
+        <div className=' flex flex-col justify-center text-start text-base pl-4'><Link to="/Faq">Ask a Question</Link></div>
+        <div><Link to="/Faq"><img className='rounded-2xl' src={SmallArrowRight} alt="main"/></Link></div>
       </div>
       </div>
       

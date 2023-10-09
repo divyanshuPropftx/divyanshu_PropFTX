@@ -97,7 +97,7 @@ function Navbar() {
               <div className='learn'>Learn</div>
               <div className='arrowNav mt-1'>
                 <img
-                  className='flex flex-col -mt-1 justify-center w-full h-full'
+                  className='flex flex-col -mt-1 -ml-3 justify-center w-full h-full'
                   src={ArrowDown}
                 />
               </div>
