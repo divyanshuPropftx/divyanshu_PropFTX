@@ -13,9 +13,15 @@ import {
   Routes,
   Route
 } from "react-router-dom";
-import Navbar from './Component/Navbar/Index'; // Import your Navbar component
+import { useEffect } from 'react';
+
 
 function App() {
+  useEffect(() => {
+    // Change the title here
+    document.title = "PropFTX";
+  }, []);
+
   return (
 
     <div className="App">
