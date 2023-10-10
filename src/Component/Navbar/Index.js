@@ -109,7 +109,7 @@ function Navbar() {
                   <div className='dropdown-item p-0.5 z-20'><Link to="/Faq">FAQs</Link></div>
                 </Link>
                 <div className='dropdown-item p-0.5 z-20'>Whitepaper</div>
-                <div className='dropdown-item p-0.5 z-20'>Blogs and News</div>
+                <div className='dropdown-item p-0.5 z-20'><Link to="/blogs">Blogs and News</Link></div>
               </div>
             )}
           </div>

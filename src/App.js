@@ -41,8 +41,8 @@ function App() {
           <Route exact path="/privacy" element={<PrivacyPolicy />} />
           <Route exact path="/riskdisclosure" element={<RiskDisclosure />} />
           <Route exact path="/terms" element={<TermsOfUse />} />
-          <Route exact path="/S" element={<Index />} />
-          <Route exact path="/" element={<BlogsPage />} />
+          <Route exact path="/" element={<Index />} />
+          <Route exact path="/blogs" element={<BlogsPage />} />
         </Routes>
       </Router>
     </div>
