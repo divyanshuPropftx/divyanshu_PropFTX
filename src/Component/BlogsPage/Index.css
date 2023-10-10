@@ -1,0 +1,7 @@
+.blogsButton{
+    width:385px;
+}
+.BlogsToggleActive{
+    color:white;
+background: var(--pink, #D328A7);
+}

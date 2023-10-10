@@ -8,6 +8,7 @@ import PricingDetails from './Component/PricingDetails';
 import PrivacyPolicy from './Component/PrivacyPolicy/Index';
 import RiskDisclosure from './Component/Risk&Concern/Index';
 import TermsOfUse from './Component/TermsOfUse/Index';
+import BlogsPage from './Component/BlogsPage/Index';
 import {
   BrowserRouter as Router,
   Routes,
@@ -15,6 +16,7 @@ import {
 } from "react-router-dom";
 import { useEffect } from 'react';
 import { ToastContainer } from 'react-toastify';
+
 
 
 
@@ -39,7 +41,8 @@ function App() {
           <Route exact path="/privacy" element={<PrivacyPolicy />} />
           <Route exact path="/riskdisclosure" element={<RiskDisclosure />} />
           <Route exact path="/terms" element={<TermsOfUse />} />
-          <Route exact path="/" element={<Index />} />
+          <Route exact path="/S" element={<Index />} />
+          <Route exact path="/" element={<BlogsPage />} />
         </Routes>
       </Router>
     </div>
