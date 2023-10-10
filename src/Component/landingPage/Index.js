@@ -314,7 +314,6 @@ export default function Index() {
 
 
 
-
     <div className='JoinPremium  text-white flex flex-col justify-center gap-10 pl-24 pr-24 pt-24'>
       <div className='premiumShadow bg-silver flex flex-col justify-center gap-10 p-10'>
         <div className='text-4xl font-bold'>Join our premium membership</div>
@@ -332,7 +331,8 @@ export default function Index() {
 
 
 
-
+    <div className='flex flex-row justify-center'>
+    <div className='HelpContainer flex flex-row'>
     <div className='video flex flex-row justify-center text-white gap-12 pl-24 pr-24 pt-24'>
 
       <div className='flex flex-col gap-4'>
@@ -351,12 +351,15 @@ export default function Index() {
       
       <div className='videoContainer border border-white rounded-3xl flex flex-row justify-center'><img className='rounded-3xl' src={Video} alt="main"/></div>
     </div>
+    </div>
+    </div>
 
-
+    <div className='flex flex-row justify-center'>
+    <div className='HelpContainer flex flex-row'>
     <div className='linkHelper flex flex-row justify-between pr-24 pl-24 pt-20'>
     <div className=' flex flex-col gap-5 text-white pt-8'>
     <div className='text-4xl font-medium text-white text-start whitespace-nowrap'>Frequenlty Asked {<span className='text-pink font-bold'>Questions </span>}</div>
-      <div className=' text-lg font-medium text-start'>Whether you're a seasoned investor or taking your first{<br></br>} steps  into the worldof real estate, our FAQs are{<br></br>}  designed to equip you with valuable information.{<br></br>}  Explore the FAQs to gain a deeper understanding {<br></br>} of how PropFTX revolutionizes real estate investing{<br></br>}  and how you can benefit from our platform.</div>
+      <div className=' text-lg font-medium text-start'>Whether you're a seasoned investor or taking your first{<br></br>} steps  into the worldof real estate, our FAQs are{<br></br>}  designed to equip you with valuable information.{<br></br>}  Explore the FAQs to gain a deeper understanding {<br></br>}of how PropFTX revolutionizes real estate investing{<br></br>}  and how you can benefit from our platform.</div>
 
       <div className=' faq flex flex-col'>
       <div className='knowMore shadowFaq flex'>
@@ -405,15 +408,18 @@ export default function Index() {
         <div><Link to="/Faq"><img className='rounded-2xl' src={SmallArrowRight} alt="main"/></Link></div>
       </div>
       </div>
-      
+      </div>
       
       </div>
     </div>
-    <div className=' flex flex-col justify-center'><img className='rounded-3xl ' src={Question} alt="main"/></div>
+    <div className='questionImage mt-28  flex flex-col justify-center'><img className='rounded-3xl w-full h-full cover ' src={Question} alt="main"/></div>
+    </div>
     </div>
 
 
 
+    <div className='flex flex-row justify-center'>
+    <div className='HelpContainer flex flex-row'>
     <div className='dashboard  flex flex-row pt-12 pl-24 pr-24'>
       <div className=' p-12 pl-4'><img className='rounded-3xl' src={Dashboard} alt="main"/></div>
       <div className=' flex flex-col justify-between'>
@@ -425,6 +431,8 @@ export default function Index() {
         </div>
         </div>
       </div>
+    </div>
+    </div>
     </div>
 
 

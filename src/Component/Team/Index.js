@@ -1,5 +1,4 @@
 
-
 import React from 'react'
 import './Index.css'
 import Navbar from '../Navbar/Index'
@@ -34,9 +33,11 @@ function Team() {
 
     <div className='pt-12 pr-64 pl-64 '>
       <div className=' font-medium text-4xl text-white p-6'>About Our Team</div>
-      <div className='leading-8 text-base -ml-36  font-normal text-white pt-8 whitespace-nowrap '>At PropFTX, our team is the heart and soul of 
-      our fractional real estate journey. We are a dedicated group of professionals who share a{<br></br>} passion for real 
-      estate and a commitment to delivering exceptional service to our clients. Get to know the faces behind our success:
+      <div className='flex flex-row justify-center'>
+        <div className='teamText leading-8 text-base font-normal text-white pt-8 whitespace-nowrap '>At PropFTX, our team is the heart and soul of 
+        our fractional real estate journey. We are a dedicated group of professionals who share a{<br></br>} passion for real 
+        estate and a commitment to delivering exceptional service to our clients. Get to know the faces behind our success:
+        </div>
       </div>
     </div>
 
