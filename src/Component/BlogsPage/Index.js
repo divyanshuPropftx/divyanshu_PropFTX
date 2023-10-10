@@ -53,8 +53,8 @@ function BlogsPage() {
           <div className='imageBlog  text-white'><img src={Background} alt="blog"/></div>
           </div>
           <div className='flex flex-row justify-center'>
-          <div className='belowImageBlog text-white flex flex-col justify-between pl-9 pt-4'>
-              <div className=' flex flex-row gap-6 textContentUpMainBlog'>
+          <div className='belowImageBlog ml-16 text-white flex flex-col justify-between pl-9 pt-4'>
+              <div className='flex flex-row gap-6 textContentUpMainBlog'>
                   <div className=' flex flex-row pt-4 gap-2'> 
                     <div className='blogIcons '><img src={Calendar} alt="calendarIcon" className='w-full h-full cover'/></div>
                     <div className=''>18 June 2022</div>

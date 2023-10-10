@@ -6,13 +6,13 @@
 background: var(--pink, #D328A7);
 }
 .imageBlog{
-    width:1200px;
+    width:1150px;
 }
 .belowImageBlog{
-    margin-top:-390px;
+    margin-top:-355px;
     background: linear-gradient(90deg, rgba(0, 0, 0, 0.80) 1.55%, rgba(0, 0, 0, 0.55) 32.24%, rgba(0, 0, 0, 0.55) 52.24%, rgba(0, 0, 0, 0.39) 66.08%, rgba(0, 0, 0, 0.39) 89.16%, rgba(0, 0, 0, 0.23) 99.98%, rgba(0, 0, 0, 0.23) 99.99%, rgba(255, 253, 253, 0.00) 100%);
-    width:650px;
-    height:390px;
+    width:700px;
+    height:355px;
 }
 .textContentUpMainBlog{
     width:650px;
