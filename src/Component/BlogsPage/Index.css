@@ -27,4 +27,10 @@ background: var(--pink, #D328A7);
 .blogHelperPart{
     width:650px;
 }
-
+.blogCardContainer {
+    width:1150px;
+}
+.buttonBlogSmall:hover{
+    background:#78F9FF;
+    color:black; 
+}

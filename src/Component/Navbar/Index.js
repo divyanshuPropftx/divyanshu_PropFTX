@@ -117,7 +117,7 @@ function Navbar() {
 
         <div className='clubAccess flex flex-row  -mt-2'>
           <div className='ml-40 text-base rounded-lg w-32 bg-blue text-black flex flex-col justify-center pl-4 pr-8 font-medium whitespace-nowrap'>
-            Club Access
+            <Link to="/pricing">Club Access</Link>
           </div>
           <div className='loginSignup ml-8 text-base border border-grey w-32 flex flex-col justify-center pl-2 pr-2 text-white font-medium rounded-lg whitespace-nowrap'>
             Login/Signup

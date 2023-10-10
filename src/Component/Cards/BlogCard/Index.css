@@ -1,0 +1,40 @@
+.blogsButton1{
+
+}
+.BlogsToggleActive1{
+    color:white;
+background: var(--pink, #D328A7);
+}
+.belowBlogContainer1 {
+border-radius: 16px;
+border: 0.5px solid rgba(120, 120, 120, 0.87);
+
+}
+.belowImageBlog1:hover{
+    border:1px solid pink;
+    border-radius: 16px;    
+    background: var(--glass-col, rgba(128, 128, 128, 0.20));
+}
+.belowImageBlog1:hover .buttonBlogSmall{
+    background:#78F9FF;
+    color:black; 
+}
+
+.expImage{
+    width:340px;
+}
+
+.textContentUpMainBlog1{
+width:320px;
+}
+
+.textContentDownMainBlog1{
+width:320px;
+}
+.blogIcons1{
+    height:15px;
+}
+.blogHelperPart1{
+ 
+}
+
