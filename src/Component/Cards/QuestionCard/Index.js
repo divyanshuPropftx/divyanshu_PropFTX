@@ -21,16 +21,16 @@ const QuestionCard = ({ question, answer, number }) => {
     >
       <div className='flex flex-row justify-between text-white'>
         <div className='flex flex-row'>
-          <div className='serialNo flex flex-col justify-center pl-2 pr-2'>{number + '.'}</div>
-          <div className='question flex flex-col justify-center text-lg font-medium'>{question}</div>
+          <div className='serialNo flex flex-col justify-center pl-2 pr-2 pt-2' >{number + '.'}</div>
+          <div className='question flex flex-col justify-center text-lg font-medium pt-2'>{question}</div>
         </div>
-        <div className='clickMe'>
+        <div className='clickMe pt-2 '>
           <img className='flex flex-col justify-center' src={ArrowDown} alt="Arrow Down" />
         </div>
       </div>
       <div
         ref={answerRef}
-        className='answer text-white pl-4 text-start pt-4'
+        className='answer text-white pl-4 text-start pt-2'
         style={{ maxHeight: answerHeight, overflow: 'hidden', transition: 'max-height 0.3s ease-in-out' }}
       >
         {answer}

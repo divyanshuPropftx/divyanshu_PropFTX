@@ -136,7 +136,7 @@ export default function Index() {
 
 
 
-    <div className='taradable  text-white font-bold text-4xl pl-24 pr-24 pt-12'>
+    <div className='taradable text-white font-bold text-4xl pl-24 pr-24 pt-12'>
         <div className='flex flex-col justify-center gap-3'>
             <div className='leading-loose '>Real State Made {<span className='text-pink'>Tradable</span>}</div>
             <div className=' flex flex-row justify-center'>
@@ -155,7 +155,7 @@ export default function Index() {
     <div className='flex flex-col justify-center p-4 gap-3'>
     <div className='leading-loose -mt-20'>Seamless Real Estate Investment in {<span className='text-pink font-bold'>Five Simple Steps </span>}</div>
      <div className='flex flex-row justify-center'>
-    <div className='seamlessContainer flex flex-row gap-1 justify-between'>
+    <div className='seamlessContainer  flex flex-row justify-between'>
       <InvestmentCards Number="1" heading="Select your Property" description="Visit our property or resale page to start investing now. Choose from multiple verified properties all around the globe."/>
       <InvestmentCards Number="2" heading="Signup & KYC" description="After selecting the property, you are required to complete the sign up process by finishing the KYC process to make your journey a smooth one."/>
       <InvestmentCards Number="3" heading="Invest & Earn" description="Choose the property and number of tokens you wish to invest in, head to the checkout page, and make it yours. The transaction and investment details will be reflected on the user's dashboard."/>
@@ -339,11 +339,8 @@ export default function Index() {
       <div className=' flex flex-col  '>
       
       <div className='leading-loose text-4xl font-bold text-start'>How do we {<span className='text-pink font-bold'>Work ? </span>}</div>
-      <div className='font-medium text-base text-start'>We'll go over PropFTX tour with you. We firmly {<br></br>}
-      believe that PropFTX holds the key to make{<br></br>}
-    real estate
-      investing easy for everyone.{<br></br>} So take a seat back,unwind,
-       and let us demonstrate our processes.</div>
+      <div className='font-medium text-base text-start'>Join us for a guided tour of PropFTX, {<br></br>}where we simplify real estate investing for all.{<br></br>}  Sit back, relax, and let us
+      walk you through our seamless process.</div>
       </div>
       <div className='shadowFaq flex'>
       <div className='flex rounded-lg bg-blue font-medium text-xl'>
@@ -359,8 +356,7 @@ export default function Index() {
     <div className='linkHelper flex flex-row justify-between pr-24 pl-24 pt-20'>
     <div className=' flex flex-col gap-5 text-white pt-8'>
     <div className='text-4xl font-medium text-white text-start whitespace-nowrap'>Frequenlty Asked {<span className='text-pink font-bold'>Questions </span>}</div>
-      <div className=' text-lg font-medium text-start'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-       incididunt ut labore et dolore magna aliqua.</div>
+      <div className=' text-lg font-medium text-start'>Whether you're a seasoned investor or taking your first{<br></br>} steps  into the worldof real estate, our FAQs are{<br></br>}  designed to equip you with valuable information.{<br></br>}  Explore the FAQs to gain a deeper understanding {<br></br>} of how PropFTX revolutionizes real estate investing{<br></br>}  and how you can benefit from our platform.</div>
 
       <div className=' faq flex flex-col'>
       <div className='knowMore shadowFaq flex'>

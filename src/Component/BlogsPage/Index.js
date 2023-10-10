@@ -43,38 +43,38 @@ function BlogsPage() {
       category: 'Uncategorized',
       title: 'Mindfulness as a strategy and planning for your real estate business',
       description: 'Lorem ipsum dolor sit amet consectetur. In erat vitae consectetur iaculis. Lorem bibendum maecenas enim eu. Eros ipsum nibh nullam elementum.',
-      imageSrc: BlogImage, // Remove curly braces around BlogImage
+      imageSrc: BlogImage, 
     },
     {
       date: '18 June 2022',
       category: 'Uncategorized',
       title: 'Mindfulness as a strategy and planning for your real estate business',
       description: 'Lorem ipsum dolor sit amet consectetur. In erat vitae consectetur iaculis. Lorem bibendum maecenas enim eu. Eros ipsum nibh nullam elementum.',
-      imageSrc: BlogImage, // Remove curly braces around BlogImage
+      imageSrc: BlogImage, 
     },{
       date: '18 June 2022',
       category: 'Uncategorized',
       title: 'Mindfulness as a strategy and planning for your real estate business',
       description: 'Lorem ipsum dolor sit amet consectetur. In erat vitae consectetur iaculis. Lorem bibendum maecenas enim eu. Eros ipsum nibh nullam elementum.',
-      imageSrc: BlogImage, // Remove curly braces around BlogImage
+      imageSrc: BlogImage, 
     },{
       date: '18 June 2022',
       category: 'Uncategorized',
       title: 'Mindfulness as a strategy and planning for your real estate business',
       description: 'Lorem ipsum dolor sit amet consectetur. In erat vitae consectetur iaculis. Lorem bibendum maecenas enim eu. Eros ipsum nibh nullam elementum.',
-      imageSrc: BlogImage, // Remove curly braces around BlogImage
+      imageSrc: BlogImage, 
     },{
       date: '18 June 2022',
       category: 'Uncategorized',
       title: 'Mindfulness as a strategy and planning for your real estate business',
       description: 'Lorem ipsum dolor sit amet consectetur. In erat vitae consectetur iaculis. Lorem bibendum maecenas enim eu. Eros ipsum nibh nullam elementum.',
-      imageSrc: BlogImage, // Remove curly braces around BlogImage
+      imageSrc: BlogImage, 
     },{
       date: '18 June 2022',
       category: 'Uncategorized',
       title: 'Mindfulness as a strategy and planning for your real estate business',
       description: 'Lorem ipsum dolor sit amet consectetur. In erat vitae consectetur iaculis. Lorem bibendum maecenas enim eu. Eros ipsum nibh nullam elementum.',
-      imageSrc: BlogImage, // Remove curly braces around BlogImage
+      imageSrc: BlogImage, 
     },
     // Add more data objects as needed
   ];

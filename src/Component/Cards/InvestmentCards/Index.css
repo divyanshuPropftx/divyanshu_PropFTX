@@ -1,5 +1,5 @@
-.tradableCard{
-width:190px;
+.tradableCard1{
+width:230px;
 height:290px;
 border-radius: 16px;
 box-shadow: 0px 30px 70px 0px rgba(0, 0, 0, 0.76);
@@ -9,7 +9,7 @@ cursor:pointer;
 border-radius: 80px;
 background: var(--gradient-2, linear-gradient(95deg, #D328A7 34.45%, rgba(199, 68, 179, 0.93) 43.31%, rgba(199, 68, 179, 0.93) 56.6%, rgba(120, 249, 255, 0.50) 100%));
 }
-.tradableCard:hover{
+.tradableCard1:hover{
 transition:0.5s;
 border: 1px solid var(--gradient-3, #D328A7);
 }
