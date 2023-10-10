@@ -5,3 +5,26 @@
     color:white;
 background: var(--pink, #D328A7);
 }
+.imageBlog{
+    width:1200px;
+}
+.belowImageBlog{
+    margin-top:-390px;
+    background: linear-gradient(90deg, rgba(0, 0, 0, 0.80) 1.55%, rgba(0, 0, 0, 0.55) 32.24%, rgba(0, 0, 0, 0.55) 52.24%, rgba(0, 0, 0, 0.39) 66.08%, rgba(0, 0, 0, 0.39) 89.16%, rgba(0, 0, 0, 0.23) 99.98%, rgba(0, 0, 0, 0.23) 99.99%, rgba(255, 253, 253, 0.00) 100%);
+    width:650px;
+    height:390px;
+}
+.textContentUpMainBlog{
+    width:650px;
+}
+
+.textContentDownMainBlog{
+    width:650px;
+}
+.blogIcons{
+    height:25px;
+}
+.blogHelperPart{
+    width:650px;
+}
+

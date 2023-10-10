@@ -2,7 +2,10 @@ import React, { useState } from 'react';
 import './Index.css';
 import Navbar from '../Navbar/Index';
 import Footer from '../Footer/Index';
-
+import Background from '../../Assets/BackgroundBlog.png'
+import SmallArrowRight from '../../Assets/smallArrowRight.png'
+import Calendar from '../../Assets/calendar.png'
+import Folder from '../../Assets/folder.png'
 function BlogsPage() {
   const [activeOption, setActiveOption] = useState('Blogs');
 
@@ -34,16 +37,55 @@ function BlogsPage() {
       {/* Render content based on the activeOption */}
       {activeOption === 'Blogs' && (
         <div className="blog-content">
-          {/* Your Blogs content */}
         </div>
       )}
       {activeOption === 'Articles' && (
         <div className="article-content">
-          {/* Your Articles content */}
         </div>
       )}
 
-      {/* Add Footer */}
+
+
+
+
+      <div className=' flex flex-col pt-16'>
+          <div className='flex flex-row justify-center'>
+          <div className='imageBlog  text-white'><img src={Background} alt="blog"/></div>
+          </div>
+          <div className='flex flex-row justify-center'>
+          <div className='belowImageBlog text-white flex flex-col justify-between pl-9 pt-4'>
+              <div className=' flex flex-row gap-6 textContentUpMainBlog'>
+                  <div className=' flex flex-row pt-4 gap-2'> 
+                    <div className='blogIcons '><img src={Calendar} alt="calendarIcon" className='w-full h-full cover'/></div>
+                    <div className=''>18 June 2022</div>
+                  </div>
+                  <div className=' flex flex-row pt-4 gap-2'> 
+                    <div className='blogIcons '><img src={Folder} alt="folderIcon" className='w-full h-full cover'/></div>
+                    <div className=''>Uncategorized</div>
+                  </div>
+              </div>
+              <div className='textContentUpMainBlog  text-3xl text-start pt-12'>Mindfulness as a strategy and planning for your real estate business</div>
+              <div className='textContentDownMainBlog  text-base font-normal text-start pt-6'>Lorem ipsum dolor sit amet consectetur. In erat vitae consectetur iaculis. Lorem bibendum maecenas enim eu. Eros ipsum nibh nullam elementum.</div>
+              <div className=' textContentUpMainBlog  text-start flex flex-row justify-start pt-6'>
+              <div className=' knowMore shadowFaq flex'>
+              <div className='flex border border-pink rounded-lg'>
+              <div className='flex flex-col justify-center text-start pl-4'><p>Read More</p></div>
+              <div className='pr-2' ><img className='mt-1' src={SmallArrowRight} alt="main"/></div>
+            </div>
+            </div>
+              </div>
+          
+          </div>
+          <div className='blogHelperPart text-white'></div>
+          </div>
+      </div>
+
+
+
+
+
+
+
       <div><Footer/></div>
     </div>
   );
