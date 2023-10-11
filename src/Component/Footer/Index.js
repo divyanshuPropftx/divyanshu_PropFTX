@@ -57,7 +57,7 @@ function Footer() {
         <div className=' text-pink'>About Us</div>
         <div className='font-medium'><Link to="/about">Company</Link></div>
         <div className='font-medium'><Link to="/team">Team</Link></div>
-        <div className='font-medium'>Careers</div>
+        <div className='font-medium'><Link to="/careers">Careers</Link></div>
       </div>
       <div className=' flex flex-col text-white gap-2 whitespace-nowrap'>
         <div className=' text-pink'>Legal</div>

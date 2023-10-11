@@ -43,7 +43,7 @@ function App() {
           <Route exact path="/privacy" element={<PrivacyPolicy />} />
           <Route exact path="/riskdisclosure" element={<RiskDisclosure />} />
           <Route exact path="/terms" element={<TermsOfUse />} />
-          <Route exact path="/aa" element={<Index />} />
+          <Route exact path="/" element={<Index />} />
           <Route exact path="/blogs" element={<BlogsPage />} />
           <Route exact path="/blogDetails" element={<BlogsDetails/>} />
           <Route exact path="/careers" element={<Careers/>} />
