@@ -8,7 +8,8 @@ import PricingDetails from './Component/PricingDetails';
 import PrivacyPolicy from './Component/PrivacyPolicy/Index';
 import RiskDisclosure from './Component/Risk&Concern/Index';
 import TermsOfUse from './Component/TermsOfUse/Index';
-import BlogsPage from './Component/BlogsPage/Index';
+import BlogsPage from './Component/BlogsLandingPage/Index';
+import BlogsDetails from './Component/BlogsDetailedPage/Index';
 import {
   BrowserRouter as Router,
   Routes,
@@ -43,6 +44,7 @@ function App() {
           <Route exact path="/terms" element={<TermsOfUse />} />
           <Route exact path="/" element={<Index />} />
           <Route exact path="/blogs" element={<BlogsPage />} />
+          <Route exact path="/blogDetails" element={<BlogsDetails/>} />
         </Routes>
       </Router>
     </div>

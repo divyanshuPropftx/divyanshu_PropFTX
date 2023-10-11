@@ -36,7 +36,7 @@ function PricingDetails() {
       
       <div className=" flex flex-row justify-center  ">
 
-      <div className=" flex flex-row justify-center pl-24 pr-24 gap-12 pt-28">
+      <div className=" flex flex-row justify-center  gap-12 pt-28">
         <div className="border border-pink rounded-2xl text-white flex flex-col pl-4 pr-4 pb-6 pt-6">
           <div className=" text-pink text-3xl font-bold text-start">Benefits</div>
                 <div><BenefitCard imageUrl={Done} heading="Personal Investment Advisor" description="Get a personal investment manager to serve as your advisor 
