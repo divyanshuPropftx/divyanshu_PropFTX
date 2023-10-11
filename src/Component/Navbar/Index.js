@@ -57,15 +57,16 @@ function Navbar() {
           <div className='properties pl-28 text-base text-white'>Properties</div>
           <div className='resale pl-8 text-base text-white'>Resale</div>
           <div
-            className={`aboutUs pl-11 flex flex-col gap-1 text-base whitespace-nowrap text-white ${
+            className={`aboutUs  pl-11 flex flex-col gap-1 text-base whitespace-nowrap text-white ${
               showAboutUsDropdown ? 'active' : ''
             }`}
-            onClick={toggleAboutUsDropdown}
+            onMouseEnter={toggleAboutUsDropdown}
+            onMouseLeave={() => setShowAboutUsDropdown(false)}
             ref={dropdownRefs.aboutUs}
             style={{ zIndex: 9999 }} 
           >
             <div className='flex flex-row gap-1 '>
-              <div className='aboutUspl-2'>About Us</div>
+              <div className='aboutUs'>About Us</div>
               <div className='arrowNav mt-1'>
                 <img
                   className='flex flex-col -mt-1 justify-center w-full h-full'
@@ -86,10 +87,11 @@ function Navbar() {
             )}
           </div>
           <div
-            className={`learn pl-8 text-base  text-white whitespace-nowrap ${
+            className={`learn  pl-8 text-base  text-white whitespace-nowrap ${
               showLearnDropdown ? 'active' : ''
             }`}
-            onClick={toggleLearnDropdown}
+            onMouseEnter={toggleLearnDropdown}
+            onMouseLeave={() => setShowLearnDropdown(false)}
             ref={dropdownRefs.learn}
             style={{ zIndex: 9999 }}
           >
