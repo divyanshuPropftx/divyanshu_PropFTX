@@ -31,7 +31,7 @@ function BlogCard({ date, category, title, description, imageSrc }) {
       <div className='belowBlogContainer1'>
         <div className='flex flex-row justify-center'>
           <div
-            className='belowImageBlog1 bg-darkblue text-white flex flex-col pl-2 pr-2 pt-2'
+            className='belowImageBlog1 text-white flex flex-col pl-2 pr-2 pt-2'
             onMouseEnter={handleMouseEnter}
             onMouseLeave={handleMouseLeave}
           >

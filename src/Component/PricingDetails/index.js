@@ -10,8 +10,9 @@ import Stars from '../../Assets/stars.png'
 function PricingDetails() {
   const [isThreeMonthsSelected, setIsThreeMonthsSelected] = useState(true);
 
+  //if asked for toggle functionality later just do setIsThreeMonthsSelected(!isThreeMonthsSelected); and add  onClick={handleToggle} to second button
   const handleToggle = () => {
-    setIsThreeMonthsSelected(!isThreeMonthsSelected);
+    setIsThreeMonthsSelected(isThreeMonthsSelected);
   };
 
   return (
@@ -78,18 +79,16 @@ function PricingDetails() {
                 className={`buttonPricing  text-white ${
                   isThreeMonthsSelected ? 'false' : 'true'
                 } flex flex-row justify-center`}
-                onClick={handleToggle}
+        
               >
              
               <div className="flex flex-col  h-full justify-center">
             <div className="pricingButtonInsideRight  flex flex-col justify-center gap-2">
               <div className=" flex flex-row gap-2 pl-3 ">
-                <div className=" flex flex-col justify-center font-bold text-2xl -ml-3">Free</div>
-                <div className="starsPricing text-blue text-3xl font-bold "><img src={Stars} className="w-full h-full"/></div>
+                <div className=" flex flex-col justify-center font-bold text-2xl -ml-3">Coming Soon</div>
+                
               </div>
-              <div className="flex flex-row justify-start">
-                 <div className="text-bold text-pink text-base font-semibold rounded -mt-2">Complimentary</div>
-              </div>
+              
             </div>
             </div>
 

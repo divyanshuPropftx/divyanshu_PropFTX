@@ -86,6 +86,8 @@ function BlogsPage() {
         <div className='pt-20 text-white text-5xl font-normal'>Discover the world of {<span className='text-pink'>Knowledge</span>}</div>
 
         <div className=' text-white pt-7 flex flex-row justify-center'>
+
+          <div className='flex flex-row border bg-white rounded-lg'>
           <div
             className={`blogsButton bg-white text-black rounded-lg pt-2 pb-2 text-3xl font-bold ${activeOption === 'Blogs' ? 'BlogsToggleActive' : ''}`}
             onClick={() => toggleOption('Blogs')}
@@ -99,6 +101,8 @@ function BlogsPage() {
             Articles
           </div>
         </div>
+        </div>
+
 
         {/* Render content based on the activeOption */}
         {activeOption === 'Blogs' && (
