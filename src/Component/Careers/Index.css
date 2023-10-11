@@ -19,10 +19,14 @@ width:170px;
 }
 .positionsCareer{
 width:170px;
+cursor:pointer;
 }
 .colorCareers{
 height:5px;
 }
 .careerColor {
     background: linear-gradient(95deg, #D328A7 5.47%, rgba(120, 249, 255, 0.50) 100%);
+}
+.openingsContainer {
+width:1100px;
 }

@@ -1,0 +1,14 @@
+.careerCard{
+width:250px;
+height:130px;
+border-radius: 8px;
+border: 1px solid var(--glass-col, rgba(128, 128, 128, 0.20));
+cursor:pointer;
+}
+.careerCard:hover{
+border:.1px solid #D328A7;
+background: var(--glass-col, rgba(128, 128, 128, 0.20));
+}
+.openingName {
+width:210px;
+}
