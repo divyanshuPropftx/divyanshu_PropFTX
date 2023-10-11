@@ -94,6 +94,20 @@ function Careers() {
       </div>
     </div>
 
+    
+    <div className='flex flex-row justify-center pt-16'>
+        <div className='lifeAtPropFTXCareer border border-white text-white text-4xl font-bold text-start'>Discover Life {<span className='text-pink'>PropFTX</span>}</div>
+    </div>
+    
+
+       
+
+    
+
+
+
+
+
 
     </div>
 
