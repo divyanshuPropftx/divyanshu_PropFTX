@@ -9,6 +9,10 @@ cursor:pointer;
 border:.1px solid #D328A7;
 background: var(--glass-col, rgba(128, 128, 128, 0.20));
 }
+
+.careerCard:hover .opportunity{
+color:#78F9FF;
+}
 .openingName {
 width:210px;
 }

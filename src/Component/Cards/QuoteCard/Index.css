@@ -1,0 +1,20 @@
+.quoteCard{
+width:480px;
+height:210px;
+border-radius: 8px;
+border: 1px solid var(--glass-col, rgba(128, 128, 128, 0.20));
+background: var(--glass-col, rgba(128, 128, 128, 0.20));
+margin-left:60px;
+}
+.quoteImage{
+width:120px;
+height:120px;
+margin-left:-50px;
+border-radius:50px;
+overflow:hidden;
+}
+.quoteQuote{
+width:380px;
+height:120px;
+
+}

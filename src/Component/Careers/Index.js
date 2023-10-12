@@ -7,6 +7,11 @@ import heroCareers from '../../Assets/heroCareers.png'
 import SmallArrowRight from '../../Assets/smallArrowRight.png'
 import CareerCard from '../Cards/CareerCards/Index'
 import LifeAtPropFTXCard from '../Cards/LifeAtPropFTXCard/Index'
+import Image1 from '../../Assets/image1.png'
+import Image2 from '../../Assets/image2.png'
+import QuoteCard from '../Cards/QuoteCard/Index'
+
+
 function Careers() {
     const [option, setOption] = useState('marketing');
 
@@ -36,8 +41,7 @@ function Careers() {
     );
   
   return (
-
-
+    
     <div className='parent font-poppins'>
       <div><Navbar/></div>
 
@@ -117,8 +121,45 @@ function Careers() {
     
 
        
+    <div className='flex flex-row justify-center pt-12'>
+        <div className='imageSection text-white flex flex-col'>
+            <div className='text-white flex flex-row'>
+                <div className='leftTopImage text-white flex flex-col justify-between'>
+                    <div className='xx text-start text-4xl font-bold '>
+                        <div className='text-start text-4xl font-bold'>Office</div>
+                        <div className='text-start text-pink text-4xl font-bold pt-4'>Snapshots</div>
+                    </div>
+                    <div className='p-2'><img src={Image1}/></div>
+                </div>
+                <div className='rightTopImage text-white p-2'><img src={Image2} /></div>
+            </div>
+            <div className='text-white flex flex-row gap-4 pt-2'>
+                <div className='BottomImage text-white'></div>
+                <div className='BottomImage text-white'></div>
+                <div className='BottomImage text-white'></div>
+            </div>
+        </div>
+    </div>
 
-    
+
+    <div className='flex flex-row justify-center pt-16'>
+        <div className='lifeAtPropFTXCareer text-white text-4xl font-bold text-start'>What our team has to say</div>
+    </div>      
+
+
+    <div className='flex flex-row justify-center pt-12'>
+        <div className='lifePropFTXDesc1  flex flex-col  gap-12'>
+                <div className=' flex flex-row justify-between'> 
+                    <div className=''><QuoteCard quote="Lorem ipsum dolor sit amet consectetur. Gravida habitasse neque sodales srfdf at.Lorem ipsum dolor sit amet  dfsfe sef consectetur." name="Rajeev Chhabra"/></div>
+                    <div className=''><QuoteCard quote="Lorem ipsum dolor sit amet consectetur. Gravida habitasse neque sodales srfdf at.Lorem ipsum dolor sit amet  dfsfe sef consectetur." name="Sathinarayan M "/></div>
+                </div>
+                <div className=' flex flex-row justify-between'> 
+                <div className=''><QuoteCard quote="Lorem ipsum dolor sit amet consectetur. Gravida habitasse neque sodales srfdf at.Lorem ipsum dolor sit amet  dfsfe sef consectetur." name="Varun Singhi"/></div>
+                <div className=''><QuoteCard quote="Lorem ipsum dolor sit amet consectetur. Gravida habitasse neque sodales srfdf at.Lorem ipsum dolor sit amet  dfsfe sef consectetur." name="Vishal Rajput"/></div>
+                </div>
+        </div>
+    </div>
+
 
 
 
@@ -126,7 +167,6 @@ function Careers() {
 
 
     </div>
-
 
   )
 }
