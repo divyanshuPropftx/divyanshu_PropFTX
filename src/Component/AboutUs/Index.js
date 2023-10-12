@@ -61,7 +61,7 @@ function AboutUs() {
 
     
 
-    <div className='JoinPremium  text-white flex flex-col justify-center gap-10 pl-24 pr-24 pt-24'>
+    <div className='JoinPremium  text-white flex flex-col justify-center gap-10 pl-24 pr-24 pt-12'>
       <div className='premiumShadow bg-silver flex flex-col justify-center gap-10 p-10'>
         <div className='text-4xl font-bold'>Join our premium membership</div>
         <div className='font-normal text-lg'>With PropFTX premium membership, Get early access to all the premium benefits.</div>
@@ -81,7 +81,7 @@ function AboutUs() {
 
   <div className='seamless pl-12 pr-12 text-white font-normal text-4xl pt-28'>
   <div className='flex flex-col justify-center p-2 gap-3'>
-  <div className='pb-4 leading-loose  text-4xl -mt-20'>The {<span className='text-pink text-4xl font-bold'>Principles</span>} We Uphold at PropFTX</div> 
+  <div className='pb-4 leading-loose  text-4xl -mt-20 font-bold'>The {<span className='text-pink text-4xl font-bold'>Principles</span>} We Uphold at PropFTX</div> 
   <div className='flex flex-row justify-center'>
   <div className='principleContainer  flex flex-row gap-4 justify-between'>
       <PrincipleCard  imageUrl={Transparency} heading="Ensuring Absoute Transparency"  />

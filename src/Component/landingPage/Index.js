@@ -109,7 +109,7 @@ export default function Index() {
                 <div className='bottomText text-base font-medium text-start pt-4'>A marketplace that enables end-to-end encryption, healthy & risk-free returns, and multiple asset classes to grow your money </div>
             </div>
             <div className=' flex flex-row font-semibold gap-8 pt-2'>             
-            <div className='text-black font-medium bg-blue pt-3  pl-3 pr-3 text-base w-20 rounded-lg'>Explore</div>
+            <div className='text-black font-medium bg-blue pt-2.5 pl-3 pr-3 text-base w-20 rounded-lg'>Explore</div>
               <div className='knowMore shadowFaq flex'>
                 <div className='flex border border-pink rounded-lg'>
                 <div className='flex flex-col justify-center text-start pl-4'><p>Know More</p></div>
@@ -151,11 +151,11 @@ export default function Index() {
     </div>
 
 
-    <div className='seamless  text-white font-normal text-4xl pl-24 pr-24 pt-40'>
+    <div className='seamless  text-white font-bold text-4xl pl-24 pr-24 pt-40'>
     <div className='flex flex-col justify-center p-4 gap-3'>
     <div className='leading-loose -mt-20'>Seamless Real Estate Investment in {<span className='text-pink font-bold'>Five Simple Steps </span>}</div>
      <div className='flex flex-row justify-center'>
-    <div className='seamlessContainer  flex flex-row justify-between'>
+    <div className='seamlessContainer  flex flex-row justify-between gap-4'>
       <InvestmentCards Number="1" heading="Select your Property" description="Visit our property or resale page to start investing now. Choose from multiple verified properties all around the globe."/>
       <InvestmentCards Number="2" heading="Signup & KYC" description="After selecting the property, you are required to complete the sign up process by finishing the KYC process to make your journey a smooth one."/>
       <InvestmentCards Number="3" heading="Invest & Earn" description="Choose the property and number of tokens you wish to invest in, head to the checkout page, and make it yours. The transaction and investment details will be reflected on the user's dashboard."/>
@@ -171,7 +171,7 @@ export default function Index() {
     <div className=' flex flex-row justify-center' >
     <div className='middleContainer '>
       <div className='investorLove text-white text-4xl flex pl-24 pr-24 pt-12'>
-      <div className='leading-loose'>Why Investors Love {<span className='text-pink font-bold'>PropFTX </span>}</div>
+      <div className='leading-loose font-bold'>Why Investors Love {<span className='text-pink font-bold'>PropFTX </span>}</div>
       </div>
 
 
@@ -443,7 +443,7 @@ export default function Index() {
         <div className='font-normal text-xl'>Signup to the email newsletter. we will share tips, practical life advice, experience{<br></br>} and valuable information delivered directly to your mail box.</div>
         <div className='flex flex-row justify-center gap-12'>
         <form className='flex flex-row gap-8' onSubmit={handleSubmit}>
-  <div className='flex flex-col form-group text-start'>
+  <div className='subscribeForm flex flex-col form-group text-start'>
     <input
       type='email'
       id='email'
@@ -459,7 +459,7 @@ export default function Index() {
   <div className='shadowFaq flex'>
     <div className='flex flex-col justify-center rounded-lg'>
       <div className='text-start flex flex-col justify-center'>
-        <button type='submit' className='btn btn-primary text-base font-medium flex flex-col leading-5 pl-6 bg-pink pr-6 pt-2 pb-3 rounded-lg'>
+        <button type='submit' className='btn btn-primary text-base font-medium flex flex-col leading-5 pl-6 bg-pink pr-6 pt-2 pb-3 -mt-6 rounded-lg'>
           Submit
         </button>
       </div>

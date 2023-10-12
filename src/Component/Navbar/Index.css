@@ -44,3 +44,7 @@ height:80px;
 height:40px;
 }
 
+.opt:hover{
+cursor:pointer;
+color:#78F9FF;
+}

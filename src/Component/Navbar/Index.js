@@ -54,8 +54,8 @@ function Navbar() {
           </Link>
         </div>
         <div className='flex flex-row'>
-          <div className='properties pl-28 text-base text-white'>Properties</div>
-          <div className='resale pl-8 text-base text-white'>Resale</div>
+          <div className='properties pl-28 text-base text-white opt'>Properties</div>
+          <div className='resale pl-8 text-base text-white opt'>Resale</div>
           <div
             className={`aboutUs  pl-11 flex flex-col gap-1 text-base whitespace-nowrap text-white ${
               showAboutUsDropdown ? 'active' : ''
@@ -66,7 +66,7 @@ function Navbar() {
             style={{ zIndex: 9999 }} 
           >
             <div className='flex flex-row gap-1 '>
-              <div className='aboutUs'>About Us</div>
+              <div className='aboutUs opt'>About Us</div>
               <div className='arrowNav mt-1'>
                 <img
                   className='flex flex-col -mt-1 justify-center w-full h-full'
@@ -78,8 +78,8 @@ function Navbar() {
             {showAboutUsDropdown && (
               <div className='dropdown1 -ml-1 text-start flex flex-col z-20 pl-2 gap-2 '>
                 <div className='heightdropdown1  flex flex-col justify-center gap-2 '>
-                  <div className='dropdown-item flex flex-row '><Link to="/about">Company</Link></div>
-                  <div className='dropdown-item  flex flex-row '>
+                  <div className='dropdown-item flex flex-row opt '><Link to="/about">Company</Link></div>
+                  <div className='dropdown-item  flex flex-row opt '>
                     <Link to='/team'>Team</Link>
                   </div>
                 </div>
@@ -96,7 +96,7 @@ function Navbar() {
             style={{ zIndex: 9999 }}
           >
             <div className='flex flex-row'>
-              <div className='learn'>Learn</div>
+              <div className='learn opt'>Learn</div>
               <div className='arrowNav mt-1'>
                 <img
                   className='flex flex-col -mt-1 -ml-3 justify-center w-full h-full'
@@ -106,12 +106,12 @@ function Navbar() {
             </div>
             {showLearnDropdown && (
               <div className='dropdown2 text-start z-30 pt-5 pb-5 pl-2'>
-                <div className='dropdown-item p-0.5 z-20'>How it works</div>
+                <div className='dropdown-item p-0.5 z-20 opt'>How it works</div>
                 <Link to='/Faq'>
-                  <div className='dropdown-item p-0.5 z-20'><Link to="/Faq">FAQs</Link></div>
+                  <div className='dropdown-item p-0.5 z-20 opt'><Link to="/Faq">FAQs</Link></div>
                 </Link>
-                <div className='dropdown-item p-0.5 z-20'>Whitepaper</div>
-                <div className='dropdown-item p-0.5 z-20'><Link to="/blogs">Blogs and News</Link></div>
+                <div className='dropdown-item p-0.5 z-20 opt'>Whitepaper</div>
+                <div className='dropdown-item p-0.5 z-20 opt'><Link to="/blogs">Blogs and News</Link></div>
               </div>
             )}
           </div>
@@ -121,7 +121,7 @@ function Navbar() {
           <div className='ml-40 text-base rounded-lg w-32 bg-blue text-black flex flex-col justify-center pl-4 pr-8 font-medium whitespace-nowrap'>
             <Link to="/pricing">Club Access</Link>
           </div>
-          <div className='loginSignup ml-8 text-base border border-grey w-32 flex flex-col justify-center pl-2 pr-2 text-white font-medium rounded-lg whitespace-nowrap'>
+          <div className='loginSignup ml-8 text-base border border-grey w-32 flex flex-col justify-center pl-2 pr-2 text-white font-medium rounded-lg opt whitespace-nowrap'>
             Login/Signup
           </div>
         </div>
