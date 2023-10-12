@@ -10,6 +10,7 @@ import LifeAtPropFTXCard from '../Cards/LifeAtPropFTXCard/Index'
 import Image1 from '../../Assets/image1.png'
 import Image2 from '../../Assets/image2.png'
 import QuoteCard from '../Cards/QuoteCard/Index'
+import CareerPageForm from '../Forms/CareerPageForm/Index'
 
 
 function Careers() {
@@ -39,6 +40,9 @@ function Careers() {
     const filteredOpenings = jobOpenings.filter(
       (opening) => opening.field === selectedOption
     );
+
+
+    
   
   return (
     
@@ -159,6 +163,24 @@ function Careers() {
                 </div>
         </div>
     </div>
+
+
+    <div className='flex flex-row justify-center pt-20'>
+    <div className='formSectionCareer  text-white flex flex-row gap-20'>
+            <div className='flex flex-col justify-center'>
+                <div className='boldHeadingCareer  text-white text-4xl font-bold text-start pb-44'>Can’t find the opportunity you are looking for?</div>
+            </div>
+            <div className=' text-white flex flex-col'>
+                <div className='headingCareerForm  text-white text-2xl font-medium'>we are looking for people  that are a cut above the rest. Drop us message and lets talk.</div>
+                <div className='pt-6'>
+
+                <CareerPageForm/>
+                </div>
+            </div>
+    </div>
+    </div>
+
+    <div className='-mt-40'><Footer/></div>
 
 
 

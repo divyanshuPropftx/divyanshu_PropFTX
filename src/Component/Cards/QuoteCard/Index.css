@@ -6,6 +6,11 @@ border: 1px solid var(--glass-col, rgba(128, 128, 128, 0.20));
 background: var(--glass-col, rgba(128, 128, 128, 0.20));
 margin-left:60px;
 }
+.quoteCard:hover {
+border:.1px solid #D328A7;
+background: var(--glass-col, rgba(128, 128, 128, 0.20));
+color:white;
+}
 .quoteImage{
 width:120px;
 height:120px;
