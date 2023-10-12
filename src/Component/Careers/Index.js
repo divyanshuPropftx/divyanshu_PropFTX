@@ -6,6 +6,7 @@ import Footer from '../Footer/Index'
 import heroCareers from '../../Assets/heroCareers.png'
 import SmallArrowRight from '../../Assets/smallArrowRight.png'
 import CareerCard from '../Cards/CareerCards/Index'
+import LifeAtPropFTXCard from '../Cards/LifeAtPropFTXCard/Index'
 function Careers() {
     const [option, setOption] = useState('marketing');
 
@@ -35,6 +36,7 @@ function Careers() {
     );
   
   return (
+
 
     <div className='parent font-poppins'>
       <div><Navbar/></div>
@@ -96,7 +98,21 @@ function Careers() {
 
     
     <div className='flex flex-row justify-center pt-16'>
-        <div className='lifeAtPropFTXCareer border border-white text-white text-4xl font-bold text-start'>Discover Life {<span className='text-pink'>PropFTX</span>}</div>
+        <div className='lifeAtPropFTXCareer text-white text-4xl font-bold text-start'>Discover Life {<span className='text-pink'>PropFTX</span>}</div>
+    </div>
+
+
+    <div className='flex flex-row justify-center pt-8'>
+        <div className='lifePropFTXDesc  flex flex-col  gap-12'>
+                <div className=' flex flex-row justify-between'> 
+                    <div className=''><LifeAtPropFTXCard heading="Innovative Environment" content="As a start-up, we thrive on creativity. Our team is at the helm of change, with a vision to grow together."/></div>
+                    <div className=''><LifeAtPropFTXCard heading="Career Advancement:" content="At PropFTX, we have created an environment where we assist your professional development by providing clear growth possibilities and guidance."/></div>
+                </div>
+                <div className=' flex flex-row justify-between'> 
+                <div className=''><LifeAtPropFTXCard heading="Endless Learning:" content="We believe in endless learning. With us, you'll have access to learning resources, training, and opportunities to expand your skill set."/></div>
+                <div className=''><LifeAtPropFTXCard heading="Impactful Work:" content="What we do matters. Join us in empowering individuals to invest smarter and build financial security."/></div>
+                </div>
+        </div>
     </div>
     
 
@@ -110,6 +126,7 @@ function Careers() {
 
 
     </div>
+
 
   )
 }

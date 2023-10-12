@@ -1,0 +1,7 @@
+.aboutLifeCard{
+width:480px;
+height:180px;
+border-radius: 16px;
+border: 1px solid var(--glass-col, rgba(128, 128, 128, 0.20));
+background: var(--white, #FFF);
+}
