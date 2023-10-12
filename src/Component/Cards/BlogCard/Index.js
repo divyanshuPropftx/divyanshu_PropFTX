@@ -40,7 +40,7 @@ function BlogCard({ date, category, title, description, imageSrc }) {
                 <img src={BlogImage} alt="blog" />
               </div>
             </div>
-            <div className='flex flex-row gap-3 textContentUpMainBlog1'>
+            <div className='flex flex-row gap-3 textContentUpMainBlog1 pt-2'>
               <div className='flex flex-row pt-2'>
                 <div className='blogIcons1'>
                   <img src={Calendar} alt="calendarIcon" className='w-full h-full cover' />
@@ -54,13 +54,13 @@ function BlogCard({ date, category, title, description, imageSrc }) {
                 <div className='text-xs'>{category}</div>
               </div>
             </div>
-            <div className='textContentUpMainBlog1 text-base font-bold text-start pt-2'>
+            <div className='textContentUpMainBlog1 text-base font-bold text-start pt-6'>
               {title}
             </div>
-            <div className='textContentDownMainBlog1 text-sm font-normal text-start pt-2'>
+            <div className='textContentDownMainBlog1 text-sm font-normal text-start pt-6'>
               {description}
             </div>
-            <div className='textContentUpMainBlog1 text-start flex flex-row justify-start pt-2'>
+            <div className='textContentUpMainBlog1 text-start flex flex-row justify-start pt-4'>
               <div className='knowMore shadowFaq flex pt-2 pb-2'>
                 <div className='buttonBlogSmall flex border border-blue rounded-lg'>
                   <div className='flex flex-col justify-center text-start p-1 pl-4 font-semibold'>
