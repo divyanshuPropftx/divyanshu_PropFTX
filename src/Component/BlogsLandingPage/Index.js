@@ -138,7 +138,7 @@ function BlogsPage() {
                     <div className=''>Uncategorized</div>
                   </div>
                 </div>
-                <div className='textContentUpMainBlog text-3xl text-start pt-4'>Mindfulness as a strategy and planning for your real estate business</div>
+                <Link to="/blogDetails"><div className='textContentUpMainBlog text-3xl text-start pt-4'>Mindfulness as a strategy and planning for your real estate business</div></Link>
                 <div className='textContentDownMainBlog text-base font-normal text-start pt-4'>Lorem ipsum dolor sit amet consectetur. In erat vitae consectetur iaculis. Lorem bibendum maecenas enim eu. Eros ipsum nibh nullam elementum.</div>
                 <div className=' textContentUpMainBlog text-start flex flex-row justify-start pt-4'>
                   <Link to="/blogDetails" onClick={() => window.scrollTo(0, 0)}>
