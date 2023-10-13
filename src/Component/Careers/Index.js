@@ -105,7 +105,7 @@ function Careers() {
     </div>
 
     
-    <div className='flex flex-row justify-center pt-16'>
+    <div className='flex flex-row justify-center pt-24'>
         <div className='lifeAtPropFTXCareer text-white text-4xl font-bold text-start'>Discover Life {<span className='text-pink'>PropFTX</span>}</div>
     </div>
 
@@ -125,7 +125,7 @@ function Careers() {
     
 
        
-    <div className='flex flex-row justify-center pt-12'>
+    <div className='flex flex-row justify-center pt-24'>
         <div className='imageSection text-white flex flex-col'>
             <div className='text-white flex flex-row'>
                 <div className='leftTopImage text-white flex flex-col justify-between'>
@@ -146,7 +146,7 @@ function Careers() {
     </div>
 
 
-    <div className='flex flex-row justify-center pt-16'>
+    <div className='flex flex-row justify-center pt-24'>
         <div className='lifeAtPropFTXCareer text-white text-4xl font-bold text-start'>What our team has to say</div>
     </div>      
 
@@ -165,7 +165,7 @@ function Careers() {
     </div>
 
 
-    <div className='flex flex-row justify-center pt-20'>
+    <div className='flex flex-row justify-center pt-40'>
     <div className='formSectionCareer  text-white flex flex-row gap-20'>
             <div className='flex flex-col justify-center'>
                 <div className='boldHeadingCareer  text-white text-4xl font-bold text-start pb-44'>Can’t find the opportunity you are looking for?</div>

@@ -8,7 +8,7 @@ margin-left:60px;
 }
 .quoteCard:hover {
 border:.1px solid #D328A7;
-background: var(--glass-col, rgba(128, 128, 128, 0.20));
+background: linear-gradient(95deg, rgba(211, 40, 167, 0.05) 34.45%, rgba(199, 68, 179, 0.05) 43.31%, rgba(199, 68, 179, 0.05) 56.6%, rgba(120, 249, 255, 0.03) 100%);
 color:white;
 }
 .quoteImage{
