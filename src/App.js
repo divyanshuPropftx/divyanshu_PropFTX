@@ -18,6 +18,7 @@ import {
 } from "react-router-dom";
 import { useEffect } from 'react';
 import { ToastContainer } from 'react-toastify';
+import ApplyCareer from './Component/ApplyCareer/Index';
 
 
 
@@ -47,6 +48,7 @@ function App() {
           <Route exact path="/blogs" element={<BlogsPage />} />
           <Route exact path="/blogDetails" element={<BlogsDetails/>} />
           <Route exact path="/careers" element={<Careers/>} />
+          <Route exact path="/apply" element={<ApplyCareer/>} />
         </Routes>
       </Router>
     </div>
