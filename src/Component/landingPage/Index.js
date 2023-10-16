@@ -109,11 +109,11 @@ export default function Index() {
                 <div className='bottomText text-base font-medium text-start pt-4'>A marketplace that enables end-to-end encryption, healthy & risk-free returns, and multiple asset classes to grow your money </div>
             </div>
             <div className=' flex flex-row font-semibold gap-8 pt-2'>             
-            <div className='text-black font-medium bg-blue pt-2.5 pl-3 pr-3 text-base w-20 rounded-lg'>Explore</div>
+            <button className='text-black font-medium bg-blue  pl-3 pr-3 text-base w-24 rounded-lg'>Explore</button>
               <div className='knowMore shadowFaq flex'>
                 <div className='flex border border-pink rounded-lg'>
-                <div className='flex flex-col justify-center text-start pl-4'><p>Know More</p></div>
-                <div className='pr-2' ><img src={SmallArrowRight} alt="main"/></div>
+                <button className='flex flex-col justify-center text-start pl-4'><p>Know More</p></button>
+                <button className='pr-2' ><img src={SmallArrowRight} alt="main"/></button>
               </div>
               </div>
               
@@ -319,10 +319,10 @@ export default function Index() {
         <div className='text-4xl font-bold'>Join our premium membership</div>
         <div className='font-normal text-lg'>With PropFTX premium membership, Get early access to all the premium benefits.</div>
         <div className='flex flex-row justify-center gap-6'>
-          <div className='button text-base font-medium bg-blue pt-2 pb-2 pl-4 pr-4 rounded-lg text-black'>JOIN NOW</div>
+          <button className='button text-base font-medium bg-blue pt-2 pb-2 pl-4 pr-4 rounded-lg text-black'>JOIN NOW</button>
           <div className='shadowFaq flex'>
           <div className='flex border border-pink rounded-lg'>
-            <div className=' button flex flex-col text-base font-semibold justify-center text-start pt-2 pb-2 pl-4 pr-4 '>Benefits </div>
+            <button className=' button flex flex-col text-base font-semibold justify-center text-start pt-2 pb-2 pl-4 pr-4 '>Benefits </button>
           </div>
           </div>
         </div>
@@ -344,7 +344,7 @@ export default function Index() {
       </div>
       <div className='shadowFaq flex'>
       <div className='flex rounded-lg bg-blue font-medium text-xl'>
-      <div className=' bg-blue text-base rounded-lg text-black pl-4 pr-4 pt-2 pb-2'>Invest Now</div>
+      <button className=' bg-blue text-base rounded-lg text-black pl-4 pr-4 pt-2 pb-2'>Invest Now</button>
       </div>
       </div>
       </div>
@@ -397,14 +397,14 @@ export default function Index() {
 
       <div className='shadowFaq flex'>
       <div className='flex border border-pink rounded-lg'>
-        <div className=' flex flex-col justify-center text-start text-base pl-4 pr-2'><Link to="/Faq">View All FAQs</Link></div>
+        <button className=' flex flex-col justify-center text-start text-base pl-4 pr-2'><Link to="/Faq">View All FAQs</Link></button>
         <div><Link to="/Faq"><img className='rounded-2xl' src={SmallArrowRight} alt="main"/></Link></div>
       </div>
       
       </div>
       <div className='shadowFaq flex'>
       <div className='flex border border-pink rounded-lg'>
-        <div className=' flex flex-col justify-center text-start text-base pl-4'><Link to="/Faq">Ask a Question</Link></div>
+        <button className=' flex flex-col justify-center text-start text-base pl-4'><Link to="/Faq">Ask a Question</Link></button>
         <div><Link to="/Faq"><img className='rounded-2xl' src={SmallArrowRight} alt="main"/></Link></div>
       </div>
       </div>
@@ -476,8 +476,8 @@ export default function Index() {
     <div className='flex flex-row premiumShadow gap-8 p-4  justify-between pr-20 '>
       <div className=' font-bold text-4xl text-white pl-8'>Join our community!</div>
       <div className='flex flex-row gap-4 pr-8'>
-      <div className='text-black font-medium bg-blue pt-2 pb-2 pl-4 pr-4 text-base rounded-lg'>Whatsapp</div>
-      <div className='text-black font-medium bg-blue pt-2 pb-2 pl-4 pr-4 text-base rounded-lg'>Telegram</div>
+      <button className='text-black font-medium bg-blue pt-2 pb-2 pl-4 pr-4 text-base rounded-lg'>Whatsapp</button>
+      <button className='text-black font-medium bg-blue pt-2 pb-2 pl-4 pr-4 text-base rounded-lg'>Telegram</button>
       </div>
     </div>
     </div>

@@ -144,13 +144,13 @@ function BlogsPage() {
                   <Link to="/blogDetails" onClick={() => window.scrollTo(0, 0)}>
                     <div className='knowMore shadowFaq flex pt-2 pb-2'>
                       <div className='buttonBlogSmall flex border border-blue rounded-lg' onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>
-                        <div className='flex flex-col justify-center text-start p-1 pl-4 font-semibold'>
+                        <button className='flex flex-col justify-center text-start p-1 pl-4 font-semibold'>
                           <p>Read More</p>
-                        </div>
+                        </button>
 
-                        <div className='pr-2 mt-1'>
+                        <button className='pr-2 mt-1'>
                           <img src={arrowImage} alt="main" style={arrowStyles} />
-                        </div>
+                        </button>
                       </div>
                     </div>
                   </Link>

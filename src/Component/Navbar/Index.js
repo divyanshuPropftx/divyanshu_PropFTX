@@ -118,12 +118,12 @@ function Navbar() {
         </div>
 
         <div className='clubAccess flex flex-row  -mt-2'>
-          <div className='ml-40 text-base rounded-lg w-32 bg-blue text-black flex flex-col justify-center pl-4 pr-8 font-medium whitespace-nowrap'>
+          <button className='ml-40 text-base rounded-lg w-32 bg-blue text-black flex flex-col justify-center pl-4 pr-8 font-medium whitespace-nowrap'>
             <Link to="/pricing">Club Access</Link>
-          </div>
-          <div className='loginSignup ml-8 text-base border border-grey w-32 flex flex-col justify-center pl-2 pr-2 text-white font-medium rounded-lg opt whitespace-nowrap'>
+          </button>
+          <button className='loginSignup ml-8 text-base border border-grey w-32 flex flex-col justify-center pl-2 pr-2 text-white font-medium rounded-lg opt whitespace-nowrap'>
             Login/Signup
-          </div>
+          </button>
         </div>
       </div>
     </div>

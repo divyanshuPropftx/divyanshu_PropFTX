@@ -23,3 +23,18 @@ width:1125px;
 .moreBlogDetail{
 width:1200px;
 }
+.shareIconsBlog{
+height:30px;
+}
+.socialShare{
+width:100px;
+}
+.sharing-options{
+width:180px;
+}
+.liked{
+    background: var(--glass-col, rgba(128, 128, 128, 0.20));
+}
+.disliked{
+    background: var(--glass-col, rgba(128, 128, 128, 0.20));
+}

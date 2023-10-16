@@ -41,13 +41,13 @@ function BlogCard({ date, category, title, description, imageSrc }) {
               </div>
             </div>
             <div className='flex flex-row gap-3 textContentUpMainBlog1 pt-2'>
-              <div className='flex flex-row pt-2'>
+              <div className='flex flex-row pt-2 gap-1'>
                 <div className='blogIcons1'>
                   <img src={Calendar} alt="calendarIcon" className='w-full h-full cover' />
                 </div>
                 <div className='text-xs whitespace-nowrap'>{date}</div>
               </div>
-              <div className='flex flex-row pt-2'>
+              <div className='flex flex-row pt-2 gap-1'>
                 <div className='blogIcons1'>
                   <img src={Folder} alt="folderIcon" className='w-full h-full cover' />
                 </div>
@@ -63,12 +63,12 @@ function BlogCard({ date, category, title, description, imageSrc }) {
             <div className='textContentUpMainBlog1 text-start flex flex-row justify-start pt-4'>
               <div className='knowMore shadowFaq flex pt-2 pb-2'>
                 <div className='buttonBlogSmall flex border border-blue rounded-lg'>
-                  <div className='flex flex-col justify-center text-start p-1 pl-4 font-semibold'>
+                  <button className='flex flex-col justify-center text-start p-1 pl-4 font-semibold'>
                     <p>Read More</p>
-                  </div>
-                  <div className='pr-2 mt-1'>
+                  </button>
+                  <button className='pr-2 mt-0.5'>
                     <img src={arrowImage} alt="main" style={arrowStyles} />
-                  </div>
+                  </button>
                 </div>
               </div>
             </div>
