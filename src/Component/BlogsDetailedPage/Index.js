@@ -6,7 +6,7 @@ import Share from '../../Assets/share.png';
 import Calendar from '../../Assets/calendar.png';
 import Folder from '../../Assets/folder.png';
 import Bookmark from '../../Assets/bookmark.png';
-import ThumbsUp from '../../Assets/thumbUp.png';
+import ThumbsUp from '../../Assets/ThumbUp.svg';
 import ThumbsDown from '../../Assets/thumbDown.png';
 import Background from '../../Assets/BackgroundBlog.png';
 import BlogImage from '../../Assets/blogSmall.png';
@@ -17,10 +17,17 @@ import Ig from '../../Assets/ig.png';
 import Tw from '../../Assets/tw.png';
 import { toast, ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
+import {AiOutlineLike} from 'react-icons/ai'
+import { IconContext } from 'react-icons';
+import {BiDislike} from 'react-icons/bi'
+import {BsShareFill} from 'react-icons/bs'
+import { BsFillBookmarkFill} from 'react-icons/bs'
+import {  BiFolder} from 'react-icons/bi'
+import {  BsCalendar2Fill } from 'react-icons/bs'
 
 function BlogsDetails() {
-  const [likeNumber, setLikeNumber] = useState(321);
-  const [dislikeNumber, setDislikeNumber] = useState(15);
+  const [likeNumber, setLikeNumber] = useState(0);
+  const [dislikeNumber, setDislikeNumber] = useState(0);
   const [showSharingOptions, setShowSharingOptions] = useState(false);
   const [sharedURL, setSharedURL] = useState('');
   const [liked, setLiked] = useState(false);
@@ -30,6 +37,10 @@ function BlogsDetails() {
     if (!liked) {
       setLikeNumber(likeNumber + 1);
       setLiked(true);
+      if (disliked) {
+        setDislikeNumber(dislikeNumber - 1);
+        setDisliked(false);
+      }
     } else {
       setLikeNumber(likeNumber - 1);
       setLiked(false);
@@ -40,6 +51,10 @@ function BlogsDetails() {
     if (!disliked) {
       setDislikeNumber(dislikeNumber + 1);
       setDisliked(true);
+      if (liked) {
+        setLikeNumber(likeNumber - 1);
+        setLiked(false);
+      }
     } else {
       setDislikeNumber(dislikeNumber - 1);
       setDisliked(false);
@@ -137,10 +152,18 @@ function BlogsDetails() {
             <div className='socialShare flex flex-col'>
               <div className='socialShare flex flex-row gap-6 pr-2'>
                 <div className='shareButton logoBlogDescription text-white p-1' onClick={showShareOptions}>
-                  <img className='w-full h-full cover' src={Share} alt="Share" />
+                <IconContext.Provider value={{ color: "white", className: `iconBlogs${liked ? " liked" : ""} w-5 h-5` }}>
+                <div>
+                  <BsShareFill />
+                </div>
+              </IconContext.Provider>
                 </div>
                 <div className='bookmarkButton logoBlogDescription text-white p-1' onClick={handleBookmark}>
-                  <img className='w-full h-full cover' src={Bookmark} alt="Bookmark" />
+                <IconContext.Provider value={{ color: "white", className: `iconBlogs${liked ? " liked" : ""} w-5 h-5` }}>
+                <div>
+                  <BsFillBookmarkFill />
+                </div>
+              </IconContext.Provider>
                 </div>
               </div>
 
@@ -172,27 +195,43 @@ function BlogsDetails() {
           <div className='MiscBlogDetail flex flex-row gap-8'>
             <div className='flex flex-row pt-4 gap-2'>
               <div className='blogIcons'>
-                <img src={Calendar} alt="calendarIcon" className='w-full h-full cover' />
+              <IconContext.Provider value={{ color: "white", className:"w-5 h-5" }}>
+              <div>
+                <BsCalendar2Fill/>
+              </div>
+            </IconContext.Provider>
               </div>
               <div className='text-white'>18 June 2022</div>
             </div>
             <div className='flex flex-row pt-4 gap-2'>
               <div className='blogIcons'>
-                <img src={Folder} alt="folderIcon" className='w-full h-full cover' />
+              <IconContext.Provider value={{ color: "white", className:"w-5 h-5" }}>
+              <div>
+                <BiFolder />
+              </div>
+            </IconContext.Provider>
               </div>
               <div className='text-white'>Uncategorized</div>
             </div>
             <div className='flex flex-row pt-4 gap-2'>
-              <div className={`likeIcon blogIcons ${liked ? 'liked' : ''}`} onClick={handleLike}>
-                <img src={ThumbsUp} alt="likeIcon" className='w-full h-full cover' />
+              <div className={`likeIcon blogIcons ${liked ? 'liked' : ''}`} onClick={handleLike}  >
+              <IconContext.Provider value={{ color: "white", className: `iconBlogs${liked ? " liked" : ""} w-5 h-5` }}>
+              <div>
+                <AiOutlineLike />
+              </div>
+            </IconContext.Provider>
               </div>
               <div className='likeNumber text-white'>{likeNumber}</div>
             </div>
             <div className='flex flex-row pt-4 gap-2'>
               <div className={`dislikeIcon blogIcons ${disliked ? 'disliked' : ''}`} onClick={handleDislike}>
-                <img src={ThumbsDown} alt="dislikeIcon" className='w-full h-full cover' />
+              <IconContext.Provider value={{ color: "white", className: `iconBlogs${disliked ? " disliked" : ""} w-5 h-5` }}>
+              <div>
+                <BiDislike />
               </div>
-              <div className='dislikeNumber text-white'>{dislikeNumber}</div>
+            </IconContext.Provider>
+              </div>
+              <div className='dislikeNumber text-white -mt-0.5'>{dislikeNumber}</div>
             </div>
           </div>
         </div>

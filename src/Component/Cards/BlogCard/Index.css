@@ -37,7 +37,6 @@ width:320px;
 .blogIcons1{
     height:15px;
 }
-.blogHelperPart1{
- 
+.belowImageBlog1:hover .arrowBlog{
+    fill:black; 
 }
-

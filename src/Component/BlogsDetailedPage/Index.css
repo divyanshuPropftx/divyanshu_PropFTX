@@ -33,8 +33,11 @@ width:100px;
 width:180px;
 }
 .liked{
-    background: var(--glass-col, rgba(128, 128, 128, 0.20));
+    fill:#78F9FF;
 }
 .disliked{
-    background: var(--glass-col, rgba(128, 128, 128, 0.20));
+    fill:#78F9FF;
+    }
+.iconBlogs:hover{
+fill:#78F9FF;
 }

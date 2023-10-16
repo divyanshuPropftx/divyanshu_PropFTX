@@ -1,10 +1,15 @@
 import React, { useState } from 'react';
 import './Index.css';
+import { IconContext } from 'react-icons';
 import Calendar from '../../../Assets/calendar.png';
 import Folder from '../../../Assets/folder.png';
 import SmallArrowRight from '../../../Assets/smallArrowRightBlog.png';
 import BlogImage from '../../../Assets/blogSmall.png';
 import BlackArrow from '../../../Assets/arrowRightHover.png';
+import {  BiFolder} from 'react-icons/bi'
+import {  BsCalendar2Fill } from 'react-icons/bs'
+import { BsArrowRight} from 'react-icons/bs'
+
 
 function BlogCard({ date, category, title, description, imageSrc }) {
   const [isHovered, setIsHovered] = useState(false);
@@ -43,13 +48,21 @@ function BlogCard({ date, category, title, description, imageSrc }) {
             <div className='flex flex-row gap-3 textContentUpMainBlog1 pt-2'>
               <div className='flex flex-row pt-2 gap-1'>
                 <div className='blogIcons1'>
-                  <img src={Calendar} alt="calendarIcon" className='w-full h-full cover' />
+                <IconContext.Provider value={{ color: "white", className:"w-3.5 h-3.5" }}>
+                <div>
+                  <BsCalendar2Fill/>
+                </div>
+              </IconContext.Provider>
                 </div>
                 <div className='text-xs whitespace-nowrap'>{date}</div>
               </div>
               <div className='flex flex-row pt-2 gap-1'>
                 <div className='blogIcons1'>
-                  <img src={Folder} alt="folderIcon" className='w-full h-full cover' />
+                <IconContext.Provider value={{ color: "white", className:"w-4 h-4" }}>
+                <div>
+                  <BiFolder />
+                </div>
+              </IconContext.Provider>
                 </div>
                 <div className='text-xs'>{category}</div>
               </div>
@@ -67,7 +80,11 @@ function BlogCard({ date, category, title, description, imageSrc }) {
                     <p>Read More</p>
                   </button>
                   <button className='pr-2 mt-0.5'>
-                    <img src={arrowImage} alt="main" style={arrowStyles} />
+                  <IconContext.Provider value={{ color: "white", className:" arrowBlog w-3.5 h-3.5" }}>
+                  <div>
+                    <BsArrowRight/>
+                  </div>
+                </IconContext.Provider>
                   </button>
                 </div>
               </div>
