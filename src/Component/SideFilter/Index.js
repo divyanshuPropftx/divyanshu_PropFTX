@@ -1,6 +1,7 @@
 import React from 'react'
 import { toast, ToastContainer } from 'react-toastify';
 import { useState } from 'react';
+import './Index.css'
 
 
 function CityButton({ name, onClick, selectedCities }) {
