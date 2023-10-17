@@ -10,6 +10,7 @@ import RiskDisclosure from './Component/Risk&Concern/Index';
 import TermsOfUse from './Component/TermsOfUse/Index';
 import BlogsPage from './Component/BlogsLandingPage/Index';
 import BlogsDetails from './Component/BlogsDetailedPage/Index';
+import CollectionPage from './Component/CollectionPage/Index';
 import Careers from './Component/Careers/Index'
 import {
   BrowserRouter as Router,
@@ -49,6 +50,7 @@ function App() {
           <Route exact path="/blogDetails" element={<BlogsDetails/>} />
           <Route exact path="/careers" element={<Careers/>} />
           <Route exact path="/apply" element={<ApplyCareer/>} />
+          <Route exact path="/collect" element={<CollectionPage/>} />
         </Routes>
       </Router>
     </div>

@@ -359,14 +359,14 @@ export default function Index() {
     <div className='linkHelper flex flex-row justify-between pr-24 pl-24 pt-20'>
     <div className=' flex flex-col gap-5 text-white pt-8'>
     <div className='text-4xl font-medium text-white text-start whitespace-nowrap'>Frequenlty Asked {<span className='text-pink font-bold'>Questions </span>}</div>
-      <div className=' text-lg font-medium text-start'>Whether you're a seasoned investor or taking your first{<br></br>} steps  into the worldof real estate, our FAQs are{<br></br>}  designed to equip you with valuable information.{<br></br>}  Explore the FAQs to gain a deeper understanding {<br></br>}of how PropFTX revolutionizes real estate investing{<br></br>}  and how you can benefit from our platform.</div>
+      <div className=' text-base font-medium text-start'>Whether you're a seasoned investor or taking your first{<br></br>} steps  into the worldof real estate, our FAQs are{<br></br>}  designed to equip you with valuable information.{<br></br>}  Explore the FAQs to gain a deeper understanding {<br></br>}of how PropFTX revolutionizes real estate investing{<br></br>}  and how you can benefit from our platform.</div>
 
       <div className=' faq flex flex-col'>
       <div className='knowMore shadowFaq flex'>
       <div className='flex rounded-lg'>
       <div><img className='faq' src={SmallArrowRight} alt="main"/></div>
 
-      <div className='flex flex-col font-medium justify-center text-start pl-2 pr-40 text-lg'><Link to="/Faq">What is blockchain technology?</Link></div>
+      <div className='flex flex-col font-medium justify-center text-start pl-2 pr-40 text-base'><Link to="/Faq">What is blockchain technology?</Link></div>
     </div>
     </div>
       </div>
@@ -377,7 +377,7 @@ export default function Index() {
       <div className='flex rounded-lg'>
       <div><img src={SmallArrowRight} alt="main"/></div>
 
-      <div className='flex flex-col font-medium justify-center text-start pl-2 pr-40 text-lg '><Link to="/Faq">What is blockchain technology?</Link></div>
+      <div className='flex flex-col font-medium justify-center text-start pl-2 pr-40 text-base '><Link to="/Faq">What is blockchain technology?</Link></div>
     </div>
     </div>
       </div>
@@ -389,7 +389,7 @@ export default function Index() {
       <div className='flex rounded-lg'>
       <div><img src={SmallArrowRight} alt="main"/></div>
 
-      <div className='flex flex-col font-medium justify-center text-start pl-2 pr-40 text-lg'><Link to="/Faq">What is blockchain technology?</Link></div>
+      <div className='flex flex-col font-medium justify-center text-start pl-2 pr-40 text-base'><Link to="/Faq">What is blockchain technology?</Link></div>
     </div>
     </div>
       </div>
