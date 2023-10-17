@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import './Index.css';
 import Navbar from '../Navbar/Index';
 import Footer from '../Footer/Index';
+import { IconContext } from 'react-icons';
 import { Link } from 'react-router-dom';
 import Background from '../../Assets/BackgroundBlog.png';
 import SmallArrowRight from '../../Assets/smallArrowRightBlog.png';
@@ -10,6 +11,8 @@ import Folder from '../../Assets/folder.png';
 import BlogCard from '../Cards/BlogCard/Index';
 import BlogImage from '../../Assets/blogSmall.png'
 import BlackArrow from '../../Assets/arrowRightHover.png'
+import {  BiFolder} from 'react-icons/bi'
+import {  BsCalendar2Fill } from 'react-icons/bs'
 
 function BlogsPage() {
   const [activeOption, setActiveOption] = useState('Blogs');
@@ -130,11 +133,21 @@ function BlogsPage() {
               <div className='belowImageBlog ml-16 text-white flex flex-col pl-9 pt-2'>
                 <div className='flex flex-row gap-6 textContentUpMainBlog'>
                   <div className=' flex flex-row pt-4 gap-2'>
-                    <div className='blogIcons '><img src={Calendar} alt="calendarIcon" className='w-full h-full cover' /></div>
+                    <div className='blogIcons '>
+                    <IconContext.Provider value={{ color: "white", className:"w-5 h-5" }}>
+                    <div>
+                      <BsCalendar2Fill/>
+                    </div>
+                  </IconContext.Provider></div>
                     <div className=''>18 June 2022</div>
                   </div>
                   <div className=' flex flex-row pt-4 gap-2'>
-                    <div className='blogIcons '><img src={Folder} alt="folderIcon" className='w-full h-full cover' /></div>
+                    <div className='blogIcons '>
+                    <IconContext.Provider value={{ color: "white", className:"w-5 h-5" }}>
+                    <div>
+                      <BiFolder />
+                    </div>
+                  </IconContext.Provider></div>
                     <div className=''>Uncategorized</div>
                   </div>
                 </div>
