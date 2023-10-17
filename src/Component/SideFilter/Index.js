@@ -203,7 +203,7 @@ console.log(endDate);
   </div>
   <div className=' text-black flex flex-col pt-4'>
     <div className=' text-lg font-bold text-start'>Property Phases</div>
-    <div className=' flex flex-row flex-wrap gap-2 p-2'>
+    <div className=' flex flex-row flex-wrap gap-2 p-2 -ml-2'>
       <button
         className={`propertyPhasesButton  text-black text-sm w-28 h-8 ${
           propertyPhases.includes('launching') ? 'propertyCollectButton' : 'propertyCollectButtonBefore'
@@ -233,7 +233,7 @@ console.log(endDate);
 
   <div className=' text-black flex flex-col pt-4'>
     <div className=' text-lg font-bold text-start'>Sale Type</div>
-    <div className=' flex flex-row flex-wrap gap-2 p-2'>
+    <div className=' flex flex-row flex-wrap gap-2 p-2 -ml-2'>
       <button
         className={`propertyPhasesButton  text-black text-sm w-14 h-8 ${
           saleTypes.includes('all') ? 'propertyCollectButton' : 'propertyCollectButtonBefore'
@@ -261,9 +261,9 @@ console.log(endDate);
     </div>
   </div>
 
-  <div className=' text-black flex flex-col pt-4'>
+  <div className=' text-black flex flex-col pt-4 '>
     <div className=' text-lg font-bold text-start'>City</div>
-    <div className=' flex flex-row flex-wrap gap-2 p-2'>
+    <div className=' flex flex-row flex-wrap gap-2 p-2 -ml-2'>
       <CityButton name="Bangalore" onClick={handleCityClick} selectedCities={selectedCities} />
       <CityButton name="Mumbai" onClick={handleCityClick} selectedCities={selectedCities} />
       <CityButton name="Chennai" onClick={handleCityClick} selectedCities={selectedCities} />
@@ -272,7 +272,7 @@ console.log(endDate);
 
   <div className=' text-black flex flex-col pt-4'>
     <div className=' text-lg font-bold text-start'>Builder's Name</div>
-    <div className=' flex flex-row flex-wrap gap-2 p-2'>
+    <div className=' flex flex-row flex-wrap gap-2 p-2 -ml-2'>
       <BuilderButton name="Prestige Builder" onClick={handleBuilderClick} selectedBuilders={selectedBuilders} />
       <BuilderButton name="Varsha" onClick={handleBuilderClick} selectedBuilders={selectedBuilders} />
       <BuilderButton name="Adani" onClick={handleBuilderClick} selectedBuilders={selectedBuilders} />
@@ -281,7 +281,7 @@ console.log(endDate);
 
   <div className=' text-black pt-4 flex flex-col'>
     <div className=' text-lg font-bold text-start'>Asset type</div>
-    <div className=' text-lg font-bold text-start flex flex-col p-2 gap-3'>
+    <div className=' text-lg font-bold text-start flex flex-col p-2 gap-3 -ml-2'>
       <div className=' text-black flex flex-row gap-4 ' >
         <AssetButton name="All" assetType={assetType} onClick={handleAssetTypeClick} />
       </div>
@@ -301,7 +301,7 @@ console.log(endDate);
 
   <div className=' text-black pt-4 flex flex-col'>
     <div className='text-lg font-bold text-start'>Price range</div>
-    <div className='text-lg font-bold text-start flex flex-col p-2 gap-3'>
+    <div className='text-lg font-bold text-start flex flex-col p-2 gap-3 -ml-2'>
       <div className=' text-black flex flex-row gap-4 ' >
         <PriceRangeButton name="Upto 5000" priceRange={priceRange} onClick={handlePriceRangeClick} />
       </div>
@@ -324,7 +324,7 @@ console.log(endDate);
 
   <div className=' text-black flex flex-col pt-4 '>
         <div className='text-lg font-bold text-start'>Listing Date</div>
-        <div className='flex flex-col gap-2 p-2'>
+        <div className='flex flex-col gap-2 p-2 -ml-2'>
           <div className=' flex flex-row gap-1'>
               <div className='startDate'>
                   <input
