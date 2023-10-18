@@ -184,14 +184,15 @@ console.log(endDate);
     <div className=' text-black flex flex-row justify-between'>
     <div className='text-black text-xl font-bold'>Filter By</div>
     <div className='flex flex-row gap-2 pr-2'>
-      <button
-        onClick={() => handleFilterClick()}
-        className={`text-sm w-16 font-medium flex flex-row justify-center pt-1 ${
-          isFilterActive === true ? 'ButtonCollect' : 'ButtonBeforeCollect'
-        }`}
-      >
-        Apply
-      </button>
+    <button
+    onClick={handleFilterClick}
+    className={`text-sm w-16 font-medium flex flex-row justify-center pt-1 ${
+      isFilterActive ? 'ButtonCollect' : 'ButtonBeforeCollect'
+    }`}
+    disabled={!isFilterActive} // Disable the button if no filter is applied
+  >
+    Apply
+  </button>
       <button
         onClick={handleClearClick}
         className={`filterClearButton text-white text-sm w-16 font-medium pt-1 flex flex-row justify-center ${

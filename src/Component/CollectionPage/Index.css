@@ -1,0 +1,38 @@
+.rightPaneCollection{
+width:850px;
+}
+.searchSpace{
+    border-radius: 8px;
+border: 1px solid var(--glass-col, rgba(128, 128, 128, 0.20));
+background: var(--white, #FFF);
+}
+.searchCollect{
+width:20px;
+height:20px;
+}
+/* styles.css */
+.select-container {
+  position: relative;
+  display: inline-block;
+
+}
+
+.sort-select {
+  appearance: none; /* Remove default styles */
+  border: 1px solid white; /* Add border */
+  padding: 5px;
+  cursor: pointer;
+
+}
+
+/* Style the dropdown arrow icon (optional) */
+.sort-select::after {
+  content: '▼'; /* Unicode character for a down arrow */
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  transform: translateY(-50%);
+  pointer-events: none;
+}
+
+
