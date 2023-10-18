@@ -1,8 +1,12 @@
 .rightPaneCollection{
-width:850px;
+width:950px;
+background:#F2F2F2;
+}
+.helperContainer{
+  background:#F2F2F2;
 }
 .searchSpace{
-    border-radius: 8px;
+border-radius: 8px;
 border: 1px solid var(--glass-col, rgba(128, 128, 128, 0.20));
 background: var(--white, #FFF);
 }

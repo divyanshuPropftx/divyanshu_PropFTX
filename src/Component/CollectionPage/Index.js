@@ -5,6 +5,8 @@ import { toast, ToastContainer } from 'react-toastify';
 import SideNav from '../SideFilter/Index';
  import { AiOutlineSearch} from 'react-icons/ai'
  import { AiFillCaretDown} from 'react-icons/ai'
+ import PropertyCard from '../Cards/PropertyCard/Index';
+
  
  import { IconContext } from 'react-icons';
 
@@ -46,17 +48,18 @@ const handleSearchInputChange = (event) => {
     setSortOption(selectedOption);
   };
   return (
+
     <div className='parent font-poppins'>
       <Navbar />
       <div className='bg-white flex flex-row justify-center'>
-        <div className='text-black flex flex-row gap-12 pl-8 pt-8'>
-            <div className='leftPaneCollection text-black flex flex-col p-2'>
+        <div className='helperContainer text-black flex flex-row gap-4 pt-8'>
+            <div className='leftPaneCollection text-black flex flex-col ml-2 p-2'>
               <SideNav/>
             </div>
 
 
 
-            <div className='rightPaneCollection border border-black text-black flex flex-col pl-2 pr-2'>
+            <div className='rightPaneCollection text-black flex flex-col pl-2 pr-2'>
                 <div className=' text-4xl font-semibold text-start'>Properties</div>
                 <div className='searchCollection flex flex-row justify-between p-2 pt-8 ' onClick={handleSortChange}>
                     <div className='searchSpace flex flex-row gap-2 p-1'>
@@ -104,7 +107,18 @@ const handleSearchInputChange = (event) => {
                         
                     </div>
                 </div>
+
+                <div className='flex flex-row flex-wrap gap-2'>
+                  <PropertyCard/>
+                  <PropertyCard/>
+                  <PropertyCard/>
+                  <PropertyCard/>
+                  <PropertyCard/>
+                  <PropertyCard/>
+                 
+                </div>
             </div>
+
 
 
 
@@ -115,6 +129,7 @@ const handleSearchInputChange = (event) => {
         </div>
       </div>
     </div>
+
   );
 }
 
