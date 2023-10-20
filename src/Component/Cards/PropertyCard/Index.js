@@ -37,7 +37,7 @@ function PropertyCard({age,propertyType, imageSrc, name,place,minInvestment,prop
             </div>
 
             <div className='text-black mt-2 flex flex-col p-1'>
-                <div className='text-black text-start text-base font-medium'>Eastern Gard en EG101</div>
+                <div className='text-black text-start text-base font-medium'>{name}</div>
                 <div className='flex flex-row pt-1'>
                     <div className='locationImageCollectCard'>
                         <IconContext.Provider value={{ color: "black", className:"w-4 h-4" }}>
@@ -46,7 +46,7 @@ function PropertyCard({age,propertyType, imageSrc, name,place,minInvestment,prop
                         </div>
                         </IconContext.Provider>
                     </div>
-                    <div className=' text-black text-sm pl-1'>India Gate,New Delhi</div>
+                    <div className=' text-black text-sm pl-1'>{[place]}</div>
                 </div>
             </div>
 

@@ -1,4 +1,5 @@
 import React from 'react'
+import { useEffect } from 'react';
 import { toast, ToastContainer } from 'react-toastify';
 import { useState } from 'react';
 import './Index.css'
@@ -75,7 +76,7 @@ function CityButton({ name, onClick, selectedCities }) {
       );
     }
 
-function SideNav() {
+function SideNav({ updateSelectedFilters }) {
   const [propertyPhases, setPropertyPhases] = useState([]);
   const [saleTypes, setSaleTypes] = useState([]);
   const [isFilterActive, setIsFilterActive] = useState(false);
@@ -88,6 +89,25 @@ function SideNav() {
   const [endDate, setEndDate] = useState('');
 
 
+ useEffect(() => {
+    const updatedFilters = {
+      propertyPhases,
+      saleTypes,
+      selectedCities,
+      selectedBuilders,
+      assetType,
+      priceRange,
+      startDate,
+      endDate,
+    };
+
+     // Update filters when any of the filter options change
+  }, [propertyPhases, saleTypes, selectedCities, selectedBuilders, assetType, priceRange, startDate, endDate]);
+
+
+  
+  // console.log('Selected Filters:', selectedFilters);
+
   const handleStartDateChange = (event) => {
     setStartDate(event.target.value);
   };
@@ -99,9 +119,23 @@ function SideNav() {
 
 
   const handleFilterClick = () => {
+    const updatedFilters = {
+      propertyPhases,
+      saleTypes,
+      selectedCities,
+      selectedBuilders,
+      assetType,
+      priceRange,
+      startDate,
+      endDate,
+    };
+
+    updateSelectedFilters(updatedFilters); // Pass the filters to the parent component
+
     toast.success('Filter Applied!', {
       position: toast.POSITION.TOP_CENTER,
     });
+
     setIsClearButtonActive(true);
     setIsFilterActive(false);
   };
@@ -162,23 +196,23 @@ function SideNav() {
   const handleClearClick = () => {
     setPropertyPhases([]);
     setSaleTypes([]);
-    setAssetType([]);
     setSelectedCities([]);
     setSelectedBuilders([]);
+    setAssetType([]);
+    setPriceRange([]);
+    setStartDate('');
+    setEndDate('');
     setIsFilterActive(false);
     setIsClearButtonActive(false);
-    setEndDate("");
-    setStartDate("");
-    setPriceRange([]);
   };
-console.log(propertyPhases);
-console.log(saleTypes);
-console.log(assetType);
-console.log(selectedCities);
-console.log(selectedBuilders);
-console.log(priceRange);
-console.log(startDate);
-console.log(endDate);
+// console.log(propertyPhases);
+// console.log(saleTypes);
+// console.log(assetType);
+// console.log(selectedCities);
+// console.log(selectedBuilders);
+// console.log(priceRange);
+// console.log(startDate);
+// console.log(endDate);
   return (
     <>
     <div className=' text-black flex flex-row justify-between'>
@@ -186,14 +220,14 @@ console.log(endDate);
     <div className='flex flex-row gap-2 pr-2'>
     <button
     onClick={handleFilterClick}
-    className={`text-sm w-16 font-medium flex flex-row justify-center pt-1 ${
+    className={`text-sm w-16 font-medium ${
       isFilterActive ? 'ButtonCollect' : 'ButtonBeforeCollect'
     }`}
-    disabled={!isFilterActive} // Disable the button if no filter is applied
+    disabled={!isFilterActive}
   >
     Apply
   </button>
-      <button
+  <button
         onClick={handleClearClick}
         className={`filterClearButton text-white text-sm w-16 font-medium pt-1 flex flex-row justify-center ${
           isClearButtonActive ? 'ButtonCollect' : 'ButtonBeforeCollect'
@@ -201,7 +235,8 @@ console.log(endDate);
       >
         Clear
       </button>
-    </div>
+
+</div> 
   </div>
   <div className=' text-black flex flex-col pt-4'>
     <div className=' text-lg font-bold text-start'>Property Phases</div>

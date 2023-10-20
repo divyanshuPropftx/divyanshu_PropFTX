@@ -1,60 +1,61 @@
+
 .cardProp {
-width:300px;
-background:#FEFEFE;
-}
-.cardImageCollect{
     width:300px;
-    height:160px;
-}
-.shareProp {
-width:45px;
-height:20px;
-border-radius: 8px;
-background: rgba(9, 21, 38, 0.50);
-}
-.ageProp{
-width:45px;
-height:20px;
-border-radius: 6px;
-background: var(--pink, #D328A7);
-box-shadow: 0px 2px 10px 0px rgba(0, 0, 0, 0.17);
-}
-.propTypeProp{
-border-radius: 6px;
-height:20px;
-border: 1px solid var(--Primary, #184241);
-background: var(--light-blue, #78F9FF);
-box-shadow: 0px 2px 10px 0px rgba(0, 0, 0, 0.17);
-}
-.propTypeProphelper{
-margin-top:95px;
-}
-.collectCardDetail{
- border-radius: 8px;
-border: 1px solid var(--glass-col, rgba(128, 128, 128, 0.20));
-}
-.tokenSoldProgressbar{
-background:#B5B9BE;
-height:12px;
-width:300px;
-border-radius: 16px;
-box-shadow: 5px 5px 30px 0px rgba(0, 0, 0, 0.10);
-}
-.progressLength{
-border-radius: 16px;
-}
-.tokenIcon{
-width:14px;
-border-radius:20px;
-}
-.fontTokenPB {
-font-size:8px;
-}
-.detailCardCollect{
-border-right:1px solid black;
-}
-.launchingCardCollect{
-border-radius: 8px;
-border: 1px solid var(--gradient-2, #D328A7);
-background: var(--pink, #D328A7);
-}
+    background:#FEFEFE;
+    }
+    .cardImageCollect{
+        width:300px;
+        height:160px;
+    }
+    .shareProp {
+    width:45px;
+    height:20px;
+    border-radius: 8px;
+    background: rgba(9, 21, 38, 0.50);
+    }
+    .ageProp{
+    width:45px;
+    height:20px;
+    border-radius: 6px;
+    background: var(--pink, #D328A7);
+    box-shadow: 0px 2px 10px 0px rgba(0, 0, 0, 0.17);
+    }
+    .propTypeProp{
+    border-radius: 6px;
+    height:20px;
+    border: 1px solid var(--Primary, #184241);
+    background: var(--light-blue, #78F9FF);
+    box-shadow: 0px 2px 10px 0px rgba(0, 0, 0, 0.17);
+    }
+    .propTypeProphelper{
+    margin-top:95px;
+    }
+    .collectCardDetail{
+     border-radius: 8px;
+    border: 1px solid var(--glass-col, rgba(128, 128, 128, 0.20));
+    }
+    .tokenSoldProgressbar{
+    background:#B5B9BE;
+    height:12px;
+    width:300px;
+    border-radius: 16px;
+    box-shadow: 5px 5px 30px 0px rgba(0, 0, 0, 0.10);
+    }
+    .progressLength{
+    border-radius: 16px;
+    }
+    .tokenIcon{
+    width:14px;
+    border-radius:20px;
+    }
+    .fontTokenPB {
+    font-size:8px;
+    }
+    .detailCardCollect{
+    border-right:1px solid black;
+    }
+    .launchingCardCollect{
+    border-radius: 8px;
+    border: 1px solid var(--gradient-2, #D328A7);
+    background: var(--pink, #D328A7);
+    }

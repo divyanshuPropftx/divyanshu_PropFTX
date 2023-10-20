@@ -1,67 +1,184 @@
 .leftPaneCollection{
-width:310px;
-background: var(--white, #FFF);
-box-shadow: 0px 30px 70px 0px rgba(128, 128, 128, 0.25);
-}
-.ButtonCollect{
-color:white;
-border-radius: 4px;
-background: var(--pink, #D328A7);
-}
-
-.ButtonBeforeCollect{
-color:black;
-border-radius: 8px;
-border: 1px solid var(--glass-col, rgba(128, 128, 128, 0.20));
-}
-.propertyCollectButton{
-color:white;
-border-radius: 8px;
-border: 1px solid var(--glass-col, rgba(128, 128, 128, 0.20));
-border-radius: 8px;
-background: var(--blue, #091526);
-
-}
-.propertyCollectButtonBefore{
-border-radius: 8px;
-border: 1px solid var(--glass-col, rgba(128, 128, 128, 0.20));
-}
-.cityButton{
-border-radius: 8px;
-border: 1px solid var(--glass-col, rgba(128, 128, 128, 0.20));
-}
-.BuilderButton{
-border-radius: 8px;
-border: 1px solid var(--glass-col, rgba(128, 128, 128, 0.20));
-}
-.clickedButton{
+    width:310px;
+    background: var(--white, #FFF);
+    box-shadow: 0px 30px 70px 0px rgba(128, 128, 128, 0.25);
+    }
+    .ButtonCollect{
     color:white;
-border-radius: 8px;
-border: 1px solid var(--glass-col, rgba(128, 128, 128, 0.20));
-border-radius: 8px;
-background: var(--blue, #091526);
-}
-.checkBox{
-width:20px;
-height:20px;
-border-radius: 3px;
-background: var(--glass-col, rgba(128, 128, 128, 0.20));
-}
-.checked{
-border-radius: 3px;
-background: var(--blue, #091526);
-}
-.calendarIconCollect{
-width:25px;
-height:25px;
-}
-.startDate{
-border-radius: 4px;
-border: 1px solid var(--glass-col, rgba(128, 128, 128, 0.20));
-background: var(--glass-col, rgba(128, 128, 128, 0.20));
-}
-.endDate{
-border-radius: 4px;
-border: 1px solid var(--glass-col, rgba(128, 128, 128, 0.20));
-background: var(--glass-col, rgba(128, 128, 128, 0.20));
-}
+    border-radius: 4px;
+    background: var(--pink, #D328A7);
+    }
+    
+    .ButtonBeforeCollect{
+    color:black;
+    border-radius: 8px;
+    border: 1px solid var(--glass-col, rgba(128, 128, 128, 0.20));
+    }
+    .propertyCollectButton{
+    color:white;
+    border-radius: 8px;
+    border: 1px solid var(--glass-col, rgba(128, 128, 128, 0.20));
+    border-radius: 8px;
+    background: var(--blue, #091526);
+    
+    }
+    .propertyCollectButtonBefore{
+    border-radius: 8px;
+    border: 1px solid var(--glass-col, rgba(128, 128, 128, 0.20));
+    }
+    .cityButton{
+    border-radius: 8px;
+    border: 1px solid var(--glass-col, rgba(128, 128, 128, 0.20));
+    }
+    .BuilderButton{
+    border-radius: 8px;
+    border: 1px solid var(--glass-col, rgba(128, 128, 128, 0.20));
+    }
+    .clickedButton{
+        color:white;
+    border-radius: 8px;
+    border: 1px solid var(--glass-col, rgba(128, 128, 128, 0.20));
+    border-radius: 8px;
+    background: var(--blue, #091526);
+    }
+    .checkBox{
+    width:20px;
+    height:20px;
+    border-radius: 3px;
+    background: var(--glass-col, rgba(128, 128, 128, 0.20));
+    }
+    .checked{
+    border-radius: 3px;
+    background: var(--blue, #091526);
+    }
+    .calendarIconCollect{
+    width:25px;
+    height:25px;
+    }
+    .startDate{
+    border-radius: 4px;
+    border: 1px solid var(--glass-col, rgba(128, 128, 128, 0.20));
+    background: var(--glass-col, rgba(128, 128, 128, 0.20));
+    }
+    .endDate{
+    border-radius: 4px;
+    border: 1px solid var(--glass-col, rgba(128, 128, 128, 0.20));
+    background: var(--glass-col, rgba(128, 128, 128, 0.20));
+    }
+    
+    
+    CollectionPage Index.js
+    
+    .leftPaneCollection{
+    width:310px;
+    background: var(--white, #FFF);
+    box-shadow: 0px 30px 70px 0px rgba(128, 128, 128, 0.25);
+    }
+    .ButtonCollect{
+    color:white;
+    border-radius: 4px;
+    background: var(--pink, #D328A7);
+    }
+    
+    .ButtonBeforeCollect{
+    color:black;
+    border-radius: 8px;
+    border: 1px solid var(--glass-col, rgba(128, 128, 128, 0.20));
+    }
+    .propertyCollectButton{
+    color:white;
+    border-radius: 8px;
+    border: 1px solid var(--glass-col, rgba(128, 128, 128, 0.20));
+    border-radius: 8px;
+    background: var(--blue, #091526);
+    
+    }
+    .propertyCollectButtonBefore{
+    border-radius: 8px;
+    border: 1px solid var(--glass-col, rgba(128, 128, 128, 0.20));
+    }
+    .cityButton{
+    border-radius: 8px;
+    border: 1px solid var(--glass-col, rgba(128, 128, 128, 0.20));
+    }
+    .BuilderButton{
+    border-radius: 8px;
+    border: 1px solid var(--glass-col, rgba(128, 128, 128, 0.20));
+    }
+    .clickedButton{
+        color:white;
+    border-radius: 8px;
+    border: 1px solid var(--glass-col, rgba(128, 128, 128, 0.20));
+    border-radius: 8px;
+    background: var(--blue, #091526);
+    }
+    .checkBox{
+    width:20px;
+    height:20px;
+    border-radius: 3px;
+    background: var(--glass-col, rgba(128, 128, 128, 0.20));
+    }
+    .checked{
+    border-radius: 3px;
+    background: var(--blue, #091526);
+    }
+    .calendarIconCollect{
+    width:25px;
+    height:25px;
+    }
+    .startDate{
+    border-radius: 4px;
+    border: 1px solid var(--glass-col, rgba(128, 128, 128, 0.20));
+    background: var(--glass-col, rgba(128, 128, 128, 0.20));
+    }
+    .endDate{
+    border-radius: 4px;
+    border: 1px solid var(--glass-col, rgba(128, 128, 128, 0.20));
+    background: var(--glass-col, rgba(128, 128, 128, 0.20));
+    }
+    
+    
+    CollectionPage Index.css
+    
+    .rightPaneCollection{
+    width:950px;
+    background:#F2F2F2;
+    }
+    .helperContainer{
+      background:#F2F2F2;
+    }
+    .searchSpace{
+    border-radius: 8px;
+    border: 1px solid var(--glass-col, rgba(128, 128, 128, 0.20));
+    background: var(--white, #FFF);
+    }
+    .searchCollect{
+    width:20px;
+    height:20px;
+    }
+    /* styles.css */
+    .select-container {
+      position: relative;
+      display: inline-block;
+    
+    }
+    
+    .sort-select {
+      appearance: none; /* Remove default styles */
+      border: 1px solid white; /* Add border */
+      padding: 5px;
+      cursor: pointer;
+    
+    }
+    
+    /* Style the dropdown arrow icon (optional) */
+    .sort-select::after {
+      content: '▼'; /* Unicode character for a down arrow */
+      position: absolute;
+      top: 50%;
+      right: 10px;
+      transform: translateY(-50%);
+      pointer-events: none;
+    }
+    
+    
